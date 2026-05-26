@@ -331,7 +331,7 @@
         </div>
         <p class="price">${escapeHtml(court.rank_note || court.category || "Basketball option")}</p>
         <div class="court-distances">
-          <div><strong>${formatMiles(court.office_distance_mi)}</strong><span>to 225 Arizona Ave</span></div>
+          <div><strong>${formatMiles(court.office_distance_mi)}</strong><span>to 255 Arizona Ave</span></div>
           <div><strong>${formatMiles(court.metro_distance_mi)}</strong><span>to ${escapeHtml(court.nearest_metro_name)}</span></div>
           <div><strong>${escapeHtml(court.metro_walk_minutes)} min</strong><span>estimated Metro walk</span></div>
         </div>
@@ -431,7 +431,7 @@
       <div class="popup">
         <h3>${escapeHtml(court.id)}. ${escapeHtml(court.name)}</h3>
         <p><strong>Address:</strong> ${escapeHtml(court.address)}</p>
-        <p><strong>Office:</strong> ${formatMiles(court.office_distance_mi)} driving-route miles from 225 Arizona Ave.</p>
+        <p><strong>Office:</strong> ${formatMiles(court.office_distance_mi)} driving-route miles from 255 Arizona Ave.</p>
         <p><strong>Metro:</strong> ${formatMiles(court.metro_distance_mi)} to ${escapeHtml(court.nearest_metro_name)}.</p>
         <p><strong>Access:</strong> ${escapeHtml(court.access || "Verify before going.")}</p>
         <div class="links"><a class="primary-source" href="${escapeAttr(court.office_directions_url)}" target="_blank" rel="noopener">Office directions</a>${sourceLinks}</div>

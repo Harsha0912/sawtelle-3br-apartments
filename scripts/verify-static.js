@@ -35,6 +35,8 @@ const checks = [
       /top-picks\.js/,
       /id="ranked-list"/,
       /href="index\.html#map-section"/,
+      /id="lifestyle-routes"/,
+      /id="route-priority"/,
       /id="availability-filter"/,
       /data\/availability-checks\.json/
     ]
@@ -47,6 +49,8 @@ const checks = [
       /rank-card/,
       /primary-source/,
       /tourChecklist/,
+      /renderTravelContext/,
+      /renderLifestyleFit/,
       /AVAILABILITY_URL/,
       /renderAvailabilityReport/,
       /availability-card/
@@ -56,6 +60,8 @@ const checks = [
     file: "data/top-picks.json",
     tests: [
       /"rankings"\s*:/,
+      /"travelContext"\s*:/,
+      /"lifestyleFit"\s*:/,
       /"tourChecklist"\s*:/,
       /"reviewSources"\s*:/
     ]
@@ -75,6 +81,8 @@ const checks = [
       /\.ranking-hero/,
       /\.primary-source/,
       /\.availability-card/,
+      /\.lifestyle-fit/,
+      /\.anchor-grid/,
       /\.court-card/,
       /#basketball-map/
     ]
@@ -124,5 +132,14 @@ if (!Array.isArray(topPicks.rankings) || topPicks.rankings.length === 0) {
 }
 if (!topPicks.rankings.some((item) => item.primaryUrl && Array.isArray(item.links) && item.links.length)) {
   throw new Error("data/top-picks.json failed verification: expected at least one ranked item with primaryUrl and links.");
+}
+if (!topPicks.travelContext || !Array.isArray(topPicks.travelContext.shortlist) || topPicks.travelContext.shortlist.length < 3) {
+  throw new Error("data/top-picks.json failed verification: expected UCLA/Sawtelle travel context shortlist.");
+}
+if (!topPicks.rankings.every((item) => item.lifestyleFit && item.lifestyleFit.distances && item.lifestyleFit.distances.ucla && item.lifestyleFit.distances.sawtelleFood && item.lifestyleFit.distances.office)) {
+  throw new Error("data/top-picks.json failed verification: each ranked item needs office, UCLA, and Sawtelle route distances.");
+}
+if (!/255 Arizona Ave/.test(appData.basketball.title) || appData.basketball.office.address.indexOf("255 Arizona") === -1) {
+  throw new Error("data/app-data.json failed verification: basketball office should use 255 Arizona Ave.");
 }
 console.log("Static app verification passed.");

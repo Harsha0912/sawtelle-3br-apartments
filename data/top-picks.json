@@ -5,16 +5,18 @@
   "methodology": [
     "Filtered out obvious co-living/private-room listings for primary rankings.",
     "Prioritized listings near $4k-$6.5k, 3BR/2+ bath layouts, direct listing links, review-source depth, amenity strength, and management/reputation risk.",
-    "Used existing mapped listing data plus fresh text-rendered scrapes from VeryApt, Birdeye, ApartmentHomeLiving, Zumper/HotPads/Rent.com where accessible."
+    "Used existing mapped listing data plus fresh text-rendered scrapes from VeryApt, Birdeye, ApartmentHomeLiving, Zumper/HotPads/Rent.com where accessible.",
+    "Added a separate route/lifestyle overlay using road-route miles to 255 Arizona Ave, UCLA John Wooden Center/Pardee Gym, and the Sawtelle Japantown food corridor. The original ranking score remains review/budget/amenity focused; the lifestyle score highlights UCLA + Sawtelle convenience."
   ],
   "sourceLimitations": [
     "Rental availability and concessions change quickly; verify every price and unit before applying.",
     "Zillow/Yelp/Apartments.com/ApartmentRatings and some portals may block automated access, so blocked pages are listed as manual-review leads rather than summarized as facts.",
     "Manager-wide reviews do not prove conditions at a specific building, but recurring themes are useful tour questions.",
     "The page now includes a separate strict-budget availability table; public Available Now signals are not guarantees of same-day keys or application approval.",
-    "Public availability pages may expose active listings without exact move-in dates; those are marked call-to-confirm rather than available today."
+    "Public availability pages may expose active listings without exact move-in dates; those are marked call-to-confirm rather than available today.",
+    "Route times are traffic-free/estimate based, not live traffic or transit schedules; use the Google Maps links on each card before touring or commuting."
   ],
-  "summary": "Strict $4k-$6.5k availability filtering is now on this page. The public scrape found 12 in-range candidates with 3BR Available Now/date-on-or-before-today signals, but none combines strong positive building-specific reviews with confirmed immediate availability. The Adler remains the best-reviewed full-service option, but its parsed HotPads 3BR row is future-dated (7/12/2026) while Zumper only shows an active 3BR floorplan without a date. Available-now options should be treated as tour/call candidates and filtered heavily by review risk, especially Wiseman-managed buildings and Maxwell.",
+  "summary": "Updated with a UCLA basketball + Sawtelle food lifestyle lens: each top pick now shows the route to UCLA John Wooden Center/Pardee Gym, Sawtelle Japantown food, and the 255 Arizona Ave office. Strict $4k-$6.5k availability filtering is now on this page. The public scrape found 12 in-range candidates with 3BR Available Now/date-on-or-before-today signals, but none combines strong positive building-specific reviews with confirmed immediate availability. The Adler remains the best-reviewed full-service option, but its parsed HotPads 3BR row is future-dated (7/12/2026) while Zumper only shows an active 3BR floorplan without a date. Available-now options should be treated as tour/call candidates and filtered heavily by review risk, especially Wiseman-managed buildings and Maxwell.",
   "rankings": [
     {
       "rank": 1,
@@ -70,6 +72,38 @@
         "reviews": 8,
         "amenities": 10,
         "risk": 7
+      },
+      "lifestyleFit": {
+        "fitScore": 4.1,
+        "fitType": "Car/bike dependent",
+        "summary": "Works only if you are comfortable driving or biking for the UCLA/Sawtelle routine.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.39,
+            "driveMinutesNoTraffic": 8,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11950+%2F+12000+Idaho+Ave%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 4.78,
+            "driveMinutesNoTraffic": 10,
+            "bikeMinutesEstimate": 26,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11950+%2F+12000+Idaho+Ave%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.64,
+            "walkMinutesEstimate": 33,
+            "bikeMinutesEstimate": 9,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11950+%2F+12000+Idaho+Ave%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 4.78 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 10 min with no traffic, or about 26 min by bike.",
+          "Sawtelle food: about 1.64 mi to the Sawtelle Japantown food-corridor marker; estimate 33 min walking or 9 min biking.",
+          "Office: about 3.39 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -130,6 +164,38 @@
         "reviews": 9,
         "amenities": 7,
         "risk": 8
+      },
+      "lifestyleFit": {
+        "fitScore": 5.5,
+        "fitType": "Sawtelle-food-first",
+        "summary": "Excellent Sawtelle food access, but UCLA basketball is noticeably farther than the Westwood/Purdue/Barry-side picks.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 5.57,
+            "driveMinutesNoTraffic": 9,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1771+Beloit+Ave%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 4.04,
+            "driveMinutesNoTraffic": 8,
+            "bikeMinutesEstimate": 22,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1771+Beloit+Ave%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 0.54,
+            "walkMinutesEstimate": 11,
+            "bikeMinutesEstimate": 5,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1771+Beloit+Ave%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 4.04 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 8 min with no traffic, or about 22 min by bike.",
+          "Sawtelle food: about 0.54 mi to the Sawtelle Japantown food-corridor marker; estimate 11 min walking or 5 min biking.",
+          "Office: about 5.57 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -191,6 +257,38 @@
         "reviews": 2,
         "amenities": 8,
         "risk": 2
+      },
+      "lifestyleFit": {
+        "fitScore": 6.6,
+        "fitType": "UCLA-first",
+        "summary": "Closest UCLA-basketball fit in this shortlist; Sawtelle food is a bike/short-drive routine rather than a quick everyday walk.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 6.01,
+            "driveMinutesNoTraffic": 11,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1855+Westwood+Blvd%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 2.39,
+            "driveMinutesNoTraffic": 8,
+            "bikeMinutesEstimate": 13,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1855+Westwood+Blvd%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.24,
+            "walkMinutesEstimate": 25,
+            "bikeMinutesEstimate": 7,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1855+Westwood+Blvd%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 2.39 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 8 min with no traffic, or about 13 min by bike.",
+          "Sawtelle food: about 1.24 mi to the Sawtelle Japantown food-corridor marker; estimate 25 min walking or 7 min biking.",
+          "Office: about 6.01 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -238,6 +336,38 @@
         "reviews": 4,
         "amenities": 6,
         "risk": 7
+      },
+      "lifestyleFit": {
+        "fitScore": 5.5,
+        "fitType": "UCLA-viable / food by bike",
+        "summary": "UCLA basketball is still practical, but Sawtelle food is more bike/short-drive than walk-first.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.26,
+            "driveMinutesNoTraffic": 9,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1247+Stoner+Ave%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.37,
+            "driveMinutesNoTraffic": 8,
+            "bikeMinutesEstimate": 19,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1247+Stoner+Ave%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.56,
+            "walkMinutesEstimate": 31,
+            "bikeMinutesEstimate": 9,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1247+Stoner+Ave%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.37 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 8 min with no traffic, or about 19 min by bike.",
+          "Sawtelle food: about 1.56 mi to the Sawtelle Japantown food-corridor marker; estimate 31 min walking or 9 min biking.",
+          "Office: about 3.26 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -314,6 +444,38 @@
         "reviews": 8,
         "amenities": 7,
         "risk": 5
+      },
+      "lifestyleFit": {
+        "fitScore": 5.7,
+        "fitType": "UCLA + Sawtelle balanced",
+        "summary": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.37,
+            "driveMinutesNoTraffic": 9,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=90025%3B+property+name+implies+Santa+Monica+Blvd+%2F+Federal+Ave+area&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.52,
+            "driveMinutesNoTraffic": 9,
+            "bikeMinutesEstimate": 19,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=90025%3B+property+name+implies+Santa+Monica+Blvd+%2F+Federal+Ave+area&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.04,
+            "walkMinutesEstimate": 21,
+            "bikeMinutesEstimate": 6,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=90025%3B+property+name+implies+Santa+Monica+Blvd+%2F+Federal+Ave+area&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.52 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 9 min with no traffic, or about 19 min by bike.",
+          "Sawtelle food: about 1.04 mi to the Sawtelle Japantown food-corridor marker; estimate 21 min walking or 6 min biking.",
+          "Office: about 3.37 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -365,6 +527,38 @@
         "reviews": 3,
         "amenities": 6,
         "risk": 6
+      },
+      "lifestyleFit": {
+        "fitScore": 5.7,
+        "fitType": "UCLA-viable / food by bike",
+        "summary": "UCLA basketball is still practical, but Sawtelle food is more bike/short-drive than walk-first.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.51,
+            "driveMinutesNoTraffic": 10,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1319+Barry+Ave%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.36,
+            "driveMinutesNoTraffic": 8,
+            "bikeMinutesEstimate": 18,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1319+Barry+Ave%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.33,
+            "walkMinutesEstimate": 27,
+            "bikeMinutesEstimate": 7,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1319+Barry+Ave%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.36 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 8 min with no traffic, or about 18 min by bike.",
+          "Sawtelle food: about 1.33 mi to the Sawtelle Japantown food-corridor marker; estimate 27 min walking or 7 min biking.",
+          "Office: about 3.51 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -416,6 +610,38 @@
         "reviews": 3,
         "amenities": 6,
         "risk": 6
+      },
+      "lifestyleFit": {
+        "fitScore": 5.7,
+        "fitType": "UCLA + Sawtelle balanced",
+        "summary": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.58,
+            "driveMinutesNoTraffic": 10,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11540+Rochester+Ave+%23103%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.41,
+            "driveMinutesNoTraffic": 8,
+            "bikeMinutesEstimate": 19,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11540+Rochester+Ave+%23103%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.16,
+            "walkMinutesEstimate": 23,
+            "bikeMinutesEstimate": 6,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11540+Rochester+Ave+%23103%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.41 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 8 min with no traffic, or about 19 min by bike.",
+          "Sawtelle food: about 1.16 mi to the Sawtelle Japantown food-corridor marker; estimate 23 min walking or 6 min biking.",
+          "Office: about 3.58 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -467,6 +693,38 @@
         "reviews": 6,
         "amenities": 7,
         "risk": 4
+      },
+      "lifestyleFit": {
+        "fitScore": 5.5,
+        "fitType": "Sawtelle-food-first",
+        "summary": "Excellent Sawtelle food access, but UCLA basketball is noticeably farther than the Westwood/Purdue/Barry-side picks.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 5.79,
+            "driveMinutesNoTraffic": 10,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1929+Beloit+Ave%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 4.26,
+            "driveMinutesNoTraffic": 9,
+            "bikeMinutesEstimate": 23,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1929+Beloit+Ave%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 0.33,
+            "walkMinutesEstimate": 7,
+            "bikeMinutesEstimate": 5,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1929+Beloit+Ave%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 4.26 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 9 min with no traffic, or about 23 min by bike.",
+          "Sawtelle food: about 0.33 mi to the Sawtelle Japantown food-corridor marker; estimate 7 min walking or 5 min biking.",
+          "Office: about 5.79 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -514,6 +772,38 @@
         "reviews": 2,
         "amenities": 6,
         "risk": 5
+      },
+      "lifestyleFit": {
+        "fitScore": 4.8,
+        "fitType": "Food-access balanced",
+        "summary": "Solid Sawtelle-food access with a manageable UCLA trip, but not the closest UCLA option.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.36,
+            "driveMinutesNoTraffic": 10,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1621+Barry+Ave+%23PH3%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 4.38,
+            "driveMinutesNoTraffic": 9,
+            "bikeMinutesEstimate": 24,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1621+Barry+Ave+%23PH3%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.18,
+            "walkMinutesEstimate": 24,
+            "bikeMinutesEstimate": 6,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1621+Barry+Ave+%23PH3%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 4.38 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 9 min with no traffic, or about 24 min by bike.",
+          "Sawtelle food: about 1.18 mi to the Sawtelle Japantown food-corridor marker; estimate 24 min walking or 6 min biking.",
+          "Office: about 3.36 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -576,6 +866,38 @@
         "reviews": 4,
         "amenities": 6,
         "risk": 4
+      },
+      "lifestyleFit": {
+        "fitScore": 6.0,
+        "fitType": "UCLA + Sawtelle balanced",
+        "summary": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 5.58,
+            "driveMinutesNoTraffic": 9,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1500+Purdue+Ave%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.32,
+            "driveMinutesNoTraffic": 8,
+            "bikeMinutesEstimate": 18,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1500+Purdue+Ave%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 0.88,
+            "walkMinutesEstimate": 18,
+            "bikeMinutesEstimate": 5,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=1500+Purdue+Ave%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.32 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 8 min with no traffic, or about 18 min by bike.",
+          "Sawtelle food: about 0.88 mi to the Sawtelle Japantown food-corridor marker; estimate 18 min walking or 5 min biking.",
+          "Office: about 5.58 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -638,6 +960,38 @@
         "reviews": 4,
         "amenities": 5,
         "risk": 4
+      },
+      "lifestyleFit": {
+        "fitScore": 5.6,
+        "fitType": "UCLA + Sawtelle balanced",
+        "summary": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 5.76,
+            "driveMinutesNoTraffic": 10,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=90025%3B+Butler+Ave+area&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.48,
+            "driveMinutesNoTraffic": 9,
+            "bikeMinutesEstimate": 19,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=90025%3B+Butler+Ave+area&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.11,
+            "walkMinutesEstimate": 22,
+            "bikeMinutesEstimate": 6,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=90025%3B+Butler+Ave+area&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.48 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 9 min with no traffic, or about 19 min by bike.",
+          "Sawtelle food: about 1.11 mi to the Sawtelle Japantown food-corridor marker; estimate 22 min walking or 6 min biking.",
+          "Office: about 5.76 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     },
     {
@@ -689,6 +1043,38 @@
         "reviews": 2,
         "amenities": 6,
         "risk": 5
+      },
+      "lifestyleFit": {
+        "fitScore": 5.6,
+        "fitType": "UCLA + Sawtelle balanced",
+        "summary": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy.",
+        "distances": {
+          "office": {
+            "label": "255 Arizona Ave office",
+            "routeMiles": 3.35,
+            "driveMinutesNoTraffic": 10,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11610+Ohio+Ave+%231%2C+Los+Angeles%2C+CA+90025&destination=255+Arizona+Ave%2C+Santa+Monica%2C+CA+90401&travelmode=driving"
+          },
+          "ucla": {
+            "label": "UCLA John Wooden Center / Pardee Gym",
+            "routeMiles": 3.55,
+            "driveMinutesNoTraffic": 9,
+            "bikeMinutesEstimate": 20,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11610+Ohio+Ave+%231%2C+Los+Angeles%2C+CA+90025&destination=221+Westwood+Plaza%2C+Los+Angeles%2C+CA+90095&travelmode=driving"
+          },
+          "sawtelleFood": {
+            "label": "Sawtelle Japantown food corridor",
+            "routeMiles": 1.18,
+            "walkMinutesEstimate": 24,
+            "bikeMinutesEstimate": 6,
+            "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=11610+Ohio+Ave+%231%2C+Los+Angeles%2C+CA+90025&destination=Sawtelle+Blvd+near+Olympic+Blvd%2C+Los+Angeles%2C+CA+90025&travelmode=walking"
+          }
+        },
+        "routeNotes": [
+          "UCLA basketball: about 3.55 mi by road to John Wooden Center/Pardee Gym; drive/rideshare is roughly 9 min with no traffic, or about 20 min by bike.",
+          "Sawtelle food: about 1.18 mi to the Sawtelle Japantown food-corridor marker; estimate 24 min walking or 6 min biking.",
+          "Office: about 3.35 mi by road to 255 Arizona Ave in Downtown Santa Monica; Google Maps live traffic matters more than the no-traffic estimate."
+        ]
       }
     }
   ],
@@ -717,6 +1103,11 @@
       "name": "Availability scrape data",
       "url": "data/availability-checks.json",
       "notes": "Strict $4k-$6.5k availability/move-in check for 52 whole-unit 3BR candidates."
+    },
+    {
+      "name": "OSRM / Google Maps route overlay",
+      "url": "https://project-osrm.org/",
+      "notes": "Used for route-mile/no-traffic estimates; each apartment card links to Google Maps for live routing."
     }
   ],
   "tourChecklist": [
@@ -726,6 +1117,77 @@
     "Verify exact unit bath count and floor plan, especially listings with conflicting portal text.",
     "Ask about package theft, garage/car break-ins, bike storage, and controlled access.",
     "Ask about recent maintenance response times, water shutoffs, elevator reliability, noise, and construction.",
-    "Tour during evening/commute hours near Santa Monica Blvd, Olympic, Wilshire, Sepulveda, Barrington, Federal, and the 405."
-  ]
+    "Tour during evening/commute hours near Santa Monica Blvd, Olympic, Wilshire, Sepulveda, Barrington, Federal, and the 405.",
+    "Do a real test run to UCLA John Wooden Center/Pardee Gym and Sawtelle food from finalist units at the time of day you expect to go."
+  ],
+  "travelContext": {
+    "updatedAt": "2026-05-26",
+    "priorityStatement": "Reframed around the three recurring destinations: 255 Arizona Ave office, UCLA John Wooden Center/Pardee Gym basketball, and Sawtelle Japantown food. Because UCLA basketball is now the fixed routine, the best lifestyle fit is not always the same as the original review/budget rank.",
+    "distanceMethod": "Road miles and no-traffic drive minutes use OSRM demo routing; walking and biking minutes are estimates from route miles (about 20 min/mi walking and 5-6 min/mi biking). Use the Google Maps links for live traffic/transit.",
+    "anchors": {
+      "office": {
+        "name": "255 Arizona Ave office",
+        "address": "255 Arizona Ave, Santa Monica, CA 90401",
+        "lat": 34.0168374,
+        "lon": -118.4979873
+      },
+      "ucla": {
+        "name": "UCLA John Wooden Center / Pardee Gym",
+        "address": "221 Westwood Plaza, Los Angeles, CA 90095",
+        "lat": 34.071649,
+        "lon": -118.4454088
+      },
+      "sawtelle": {
+        "name": "Sawtelle Japantown food corridor",
+        "address": "Sawtelle Blvd near Olympic Blvd, Los Angeles, CA 90025",
+        "lat": 34.0392,
+        "lon": -118.4419
+      }
+    },
+    "shortlistTitle": "UCLA basketball + Sawtelle food fit",
+    "shortlist": [
+      {
+        "rank": 3,
+        "name": "Maxwell",
+        "fitScore": 6.6,
+        "fitType": "UCLA-first",
+        "reason": "Closest UCLA-basketball fit in this shortlist; Sawtelle food is a bike/short-drive routine rather than a quick everyday walk."
+      },
+      {
+        "rank": 10,
+        "name": "Purdue Ohio by Wiseman",
+        "fitScore": 6.0,
+        "fitType": "UCLA + Sawtelle balanced",
+        "reason": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy."
+      },
+      {
+        "rank": 5,
+        "name": "Santa Monica Federal by Wiseman",
+        "fitScore": 5.7,
+        "fitType": "UCLA + Sawtelle balanced",
+        "reason": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy."
+      },
+      {
+        "rank": 6,
+        "name": "1319 Barry Apartments",
+        "fitScore": 5.7,
+        "fitType": "UCLA-viable / food by bike",
+        "reason": "UCLA basketball is still practical, but Sawtelle food is more bike/short-drive than walk-first."
+      },
+      {
+        "rank": 7,
+        "name": "11540 Rochester Ave #103",
+        "fitScore": 5.7,
+        "fitType": "UCLA + Sawtelle balanced",
+        "reason": "Good compromise for regular UCLA basketball and Sawtelle food: short drive/bike to UCLA and close enough to make Sawtelle food easy."
+      }
+    ],
+    "keyTakeaways": [
+      "If UCLA basketball is the anchor, Maxwell is the closest listed pick to John Wooden Center/Pardee Gym. The next practical UCLA tier is the Purdue/Barry/Rochester/Stoner/Federal cluster, roughly a short drive or bike away.",
+      "For the best combined UCLA + Sawtelle-food routine, start with Maxwell for UCLA proximity, then compare Purdue Ohio, 11540 Rochester, Santa Monica Federal, 1319 Barry, and Stoner1247 for better Sawtelle/office tradeoffs.",
+      "Bellerive and 1771 Beloit are excellent for walkable Sawtelle food, but they are not the closest UCLA-basketball choices.",
+      "The 255 Arizona Ave office is a Downtown Santa Monica commute from all West LA picks. The Adler/Stoner/Barrington-side picks are closer to the office; Westwood/Sawtelle-food picks trade office proximity for UCLA/food convenience.",
+      "Use the lifestyle score as a second lens, not a replacement for the review score: Maxwell wins UCLA proximity but still carries the highest review-risk warning."
+    ]
+  }
 }

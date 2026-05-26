@@ -1555,14 +1555,14 @@
   },
   "basketball": {
     "generated": "2026-05-26",
-    "title": "Closest indoor basketball courts from 225 Arizona Ave",
+    "title": "Closest indoor basketball courts from 255 Arizona Ave",
     "summary": "Shortlist of the closest indoor or gym-based basketball options from the office, prioritizing public drop-in access and then college/rec-center options with transparent access caveats.",
     "office": {
       "id": "O",
-      "name": "225 Arizona Ave office",
-      "address": "225 Arizona Ave, Santa Monica, CA 90401",
-      "lat": 34.016733,
-      "lon": -118.498116,
+      "name": "255 Arizona Ave office",
+      "address": "255 Arizona Ave, Santa Monica, CA 90401",
+      "lat": 34.0168374,
+      "lon": -118.4979873,
       "marker_class": "office"
     },
     "metro_stations": [
@@ -1611,7 +1611,7 @@
     ],
     "methodology": [
       "Started from official city/college/YMCA/UCLA pages, not review snippets, and kept only facilities with indoor gym/basketball evidence or a clearly marked verify-first caveat.",
-      "Ranked by route distance from 225 Arizona Ave, while flagging whether a court is truly public drop-in, membership-based, college-affiliated, or verify-first.",
+      "Ranked by route distance from 255 Arizona Ave, while flagging whether a court is truly public drop-in, membership-based, college-affiliated, or verify-first.",
       "Mapped each court with a dashed connector to the office and a blue connector to the nearest Metro E Line station. Use each card's directions links for live routing and current traffic/transit details.",
       "Call ahead before going: open-gym schedules can be preempted by leagues, classes, camps, permits, and campus construction."
     ],
@@ -1642,7 +1642,7 @@
       }
     ],
     "distance_notes": {
-      "sourceDistanceMethod": "Office miles are traffic-free OSRM driving-route miles from 225 Arizona Ave. Metro miles are OSRM route miles from each court to the nearest Metro E Line station; walking minutes are estimated at 20 min/mi because the public OSRM demo returns car-speed durations for foot routes.",
+      "sourceDistanceMethod": "Office miles are traffic-free OSRM driving-route miles from 255 Arizona Ave. Metro miles are OSRM route miles from each court to the nearest Metro E Line station; walking minutes are estimated at 20 min/mi because the public OSRM demo returns car-speed durations for foot routes.",
       "mapMethod": "Map connector lines are straight-line visual guides, not turn-by-turn route polylines; directions links open Google Maps for live routing."
     },
     "courts": [
@@ -1658,7 +1658,7 @@
         "indoor_status": "Confirmed gym; basketball programming/free-play noted by YMCA sources.",
         "college": false,
         "rank_note": "Closest indoor gym option to the office, but not true public drop-in.",
-        "office_distance_mi": 0.3,
+        "office_distance_mi": 0.29,
         "nearest_metro_id": "M1",
         "nearest_metro_name": "Downtown Santa Monica E Line",
         "metro_distance_mi": 0.51,
@@ -1668,7 +1668,7 @@
           "https://www.ymca.org/locations/santa-monica-family-ymca",
           "https://ymcasm.org/youth-basketball/"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0187586,-118.4943432&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.0187586,-118.4943432&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0187586,-118.4943432&destination=34.0136604,-118.4916499&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0187586,-118.4943432"
       },
@@ -1684,7 +1684,7 @@
         "indoor_status": "Confirmed indoor gymnasium.",
         "college": false,
         "rank_note": "Best true public indoor drop-in option close to the office.",
-        "office_distance_mi": 1.51,
+        "office_distance_mi": 1.5,
         "nearest_metro_id": "M2",
         "nearest_metro_name": "17th Street/SMC E Line",
         "metro_distance_mi": 0.44,
@@ -1694,7 +1694,7 @@
           "https://www.santamonica.gov/places/city-facilities/memorial-park-gym-and-fitness-room",
           "https://www.santamonica.gov/process-explainers/how-to-access-memorial-park-gym-drop-in-sports"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.019769,-118.480427&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.019769,-118.480427&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.019769,-118.480427&destination=34.0231598,-118.480379&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.019769,-118.480427"
       },
@@ -1710,7 +1710,7 @@
         "indoor_status": "Confirmed indoor college gym used for basketball classes/competitions.",
         "college": true,
         "rank_note": "Closest college-court lead, but treat as verify-first rather than guaranteed open gym.",
-        "office_distance_mi": 2.34,
+        "office_distance_mi": 2.33,
         "nearest_metro_id": "M2",
         "nearest_metro_name": "17th Street/SMC E Line",
         "metro_distance_mi": 0.76,
@@ -1720,7 +1720,7 @@
           "https://www.smc.edu/academics/academic-departments/kinesiology-athletics/facilities.php",
           "https://www.smc.edu/about/campuses/maps-directions.php"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0189,-118.4711&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.0189,-118.4711&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0189,-118.4711&destination=34.0231598,-118.480379&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0189,-118.4711"
       },
@@ -1736,7 +1736,7 @@
         "indoor_status": "Confirmed indoor/lighted basketball courts in facility features.",
         "college": false,
         "rank_note": "Strong public indoor-court fallback north of Santa Monica; not Metro-convenient.",
-        "office_distance_mi": 2.55,
+        "office_distance_mi": 2.56,
         "nearest_metro_id": "M1",
         "nearest_metro_name": "Downtown Santa Monica E Line",
         "metro_distance_mi": 3.35,
@@ -1745,7 +1745,7 @@
         "links": [
           "https://recreation.parks.lacity.gov/reccenter/rustic-canyon"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0390043,-118.5144192&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.0390043,-118.5144192&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0390043,-118.5144192&destination=34.0136604,-118.4916499&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0390043,-118.5144192"
       },
@@ -1761,7 +1761,7 @@
         "indoor_status": "Gym/open-gym basketball noted; indoor basketball court details should be verified by phone.",
         "college": false,
         "rank_note": "Closest public West LA option near the Expo/Bundy station.",
-        "office_distance_mi": 4.34,
+        "office_distance_mi": 4.33,
         "nearest_metro_id": "M4",
         "nearest_metro_name": "Expo/Bundy E Line",
         "metro_distance_mi": 0.73,
@@ -1770,7 +1770,7 @@
         "links": [
           "https://recreation.parks.lacity.gov/reccenter/stoner"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.038829,-118.4533616&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.038829,-118.4533616&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.038829,-118.4533616&destination=34.0316631,-118.4531105&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.038829,-118.4533616"
       },
@@ -1786,7 +1786,7 @@
         "indoor_status": "Basketball court confirmed; indoor status not clearly confirmed in the official page extract.",
         "college": false,
         "rank_note": "Useful nearby backup, especially if Stoner is booked; verify indoor/open-gym before traveling.",
-        "office_distance_mi": 5.96,
+        "office_distance_mi": 5.95,
         "nearest_metro_id": "M5",
         "nearest_metro_name": "Expo/Sepulveda E Line",
         "metro_distance_mi": 1.48,
@@ -1795,7 +1795,7 @@
         "links": [
           "https://recreation.parks.lacity.gov/reccenter/westwood"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0532353,-118.448078&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.0532353,-118.448078&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0532353,-118.448078&destination=34.0354335,-118.4341435&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0532353,-118.448078"
       },
@@ -1811,7 +1811,7 @@
         "indoor_status": "Confirmed indoor college basketball; Collins Courts closed during JWC project and sport activity is relocated to Pardee Gym.",
         "college": true,
         "rank_note": "Best full college-rec option if someone has or can obtain UCLA Rec access; farthest from office among this shortlist.",
-        "office_distance_mi": 9.07,
+        "office_distance_mi": 9.06,
         "nearest_metro_id": "M6",
         "nearest_metro_name": "Westwood/Rancho Park E Line",
         "metro_distance_mi": 3.57,
@@ -1820,7 +1820,7 @@
         "links": [
           "https://recreation.ucla.edu/facilities/jwc"
         ],
-        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.071649,-118.4454088&travelmode=driving",
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0168374,-118.4979873&destination=34.071649,-118.4454088&travelmode=driving",
         "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.071649,-118.4454088&destination=34.0368181,-118.4245788&travelmode=walking",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=34.071649,-118.4454088"
       }

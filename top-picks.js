@@ -38,10 +38,49 @@
     $("limitations-list").innerHTML = renderList(data.sourceLimitations);
     $("review-sources").innerHTML = renderReviewSources(data.reviewSources);
     $("tour-checklist").innerHTML = renderList(data.tourChecklist);
+    renderTravelContext(data.travelContext);
 
     const rankings = Array.isArray(data.rankings) ? data.rankings.slice().sort((a, b) => a.rank - b.rank) : [];
     $("ranking-count").textContent = `${rankings.length} reviewed picks`;
     $("ranked-list").innerHTML = rankings.map(renderRankCard).join("");
+  }
+
+  function renderTravelContext(context) {
+    if (!$("travel-context-summary")) return;
+    const data = context || {};
+    $("travel-context-summary").textContent = data.priorityStatement || "Route context unavailable.";
+    if ($("travel-updated")) $("travel-updated").textContent = data.updatedAt ? `Updated ${data.updatedAt}` : "Route estimates";
+    if ($("route-priority")) $("route-priority").textContent = data.shortlistTitle || "UCLA + Sawtelle";
+    if ($("travel-method")) $("travel-method").textContent = data.distanceMethod || "Use live maps before touring.";
+    if ($("anchor-list")) $("anchor-list").innerHTML = renderAnchorCards(data.anchors);
+    if ($("travel-takeaways")) $("travel-takeaways").innerHTML = renderList(data.keyTakeaways);
+    if ($("lifestyle-shortlist-title")) $("lifestyle-shortlist-title").textContent = data.shortlistTitle || "Lifestyle shortlist";
+    if ($("lifestyle-shortlist")) $("lifestyle-shortlist").innerHTML = renderLifestyleShortlist(data.shortlist);
+  }
+
+  function renderAnchorCards(anchors) {
+    const items = anchors && typeof anchors === "object" ? Object.values(anchors) : [];
+    if (!items.length) return '<div class="empty-state">No route anchors loaded.</div>';
+    return items.map((anchor) => `
+      <article class="anchor-card">
+        <strong>${escapeHtml(anchor.name || "Destination")}</strong>
+        <span>${escapeHtml(anchor.address || "Address to verify")}</span>
+      </article>
+    `).join("");
+  }
+
+  function renderLifestyleShortlist(shortlist) {
+    const items = Array.isArray(shortlist) ? shortlist : [];
+    if (!items.length) return '<div class="empty-state">No lifestyle shortlist loaded.</div>';
+    return `<ol class="lifestyle-shortlist">${items.map((item) => `
+      <li>
+        <div>
+          <strong>#${escapeHtml(item.rank || "?")} ${escapeHtml(item.name || "Unnamed pick")}</strong>
+          <p>${escapeHtml(item.reason || "Route fit needs review.")}</p>
+        </div>
+        <span>${escapeHtml(item.fitScore || "?")}/10 · ${escapeHtml(item.fitType || "fit")}</span>
+      </li>
+    `).join("")}</ol>`;
   }
 
   function renderAvailabilityReport(data) {
@@ -74,6 +113,7 @@
   function renderRankCard(item) {
     const links = renderLinks(item.links);
     const evidence = renderEvidence(item.evidence);
+    const lifestyle = renderLifestyleFit(item.lifestyleFit);
     const primaryUrl = item.primaryUrl || firstLinkUrl(item.links);
     const primary = primaryUrl
       ? `<a class="primary-source" href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">Open primary source</a>`
@@ -96,6 +136,7 @@
           </div>
           <p><strong>${escapeHtml(item.headline || "Why it ranks")}</strong></p>
           <p>${escapeHtml(item.whyRanked || "")}</p>
+          ${lifestyle}
           <div class="detail-grid">
             <section class="detail-block">
               <h4>Pros</h4>
@@ -117,6 +158,46 @@
         </div>
       </article>
     `;
+  }
+
+  function renderLifestyleFit(fit) {
+    if (!fit || !fit.distances) return "";
+    const office = fit.distances.office || {};
+    const ucla = fit.distances.ucla || {};
+    const sawtelle = fit.distances.sawtelleFood || {};
+    return `
+      <section class="lifestyle-fit" aria-label="UCLA basketball, Sawtelle food, and office route fit">
+        <div class="lifestyle-fit-header">
+          <div>
+            <h4>Your three anchors</h4>
+            <p>${escapeHtml(fit.summary || "Route fit needs review.")}</p>
+          </div>
+          <span class="lifestyle-score">${escapeHtml(fit.fitScore || "?")}/10 · ${escapeHtml(fit.fitType || "fit")}</span>
+        </div>
+        <div class="route-card-grid">
+          ${renderRouteTile("🏀", "UCLA hoops", `${formatMiles(ucla.routeMiles)} · ${formatMinutes(ucla.driveMinutesNoTraffic, "drive, no traffic")} · ${formatMinutes(ucla.bikeMinutesEstimate, "bike est.")}`, ucla.directionsUrl)}
+          ${renderRouteTile("🍜", "Sawtelle food", `${formatMiles(sawtelle.routeMiles)} · ${formatMinutes(sawtelle.walkMinutesEstimate, "walk est.")} · ${formatMinutes(sawtelle.bikeMinutesEstimate, "bike est.")}`, sawtelle.directionsUrl)}
+          ${renderRouteTile("🏢", "255 Arizona office", `${formatMiles(office.routeMiles)} · ${formatMinutes(office.driveMinutesNoTraffic, "drive, no traffic")}`, office.directionsUrl)}
+        </div>
+        <ul class="route-notes">${renderList(fit.routeNotes)}</ul>
+      </section>
+    `;
+  }
+
+  function renderRouteTile(icon, label, value, url) {
+    const safeValue = value.replace(/undefined[^·]*/g, "").replace(/\s+·\s+$/g, "");
+    const title = `<span class="route-icon">${escapeHtml(icon)}</span><span>${escapeHtml(label)}</span>`;
+    const body = `<strong>${escapeHtml(safeValue || "Route needs review")}</strong>`;
+    if (!url) return `<div class="route-tile">${title}${body}</div>`;
+    return `<a class="route-tile" href="${escapeAttr(url)}" target="_blank" rel="noopener">${title}${body}</a>`;
+  }
+
+  function formatMiles(value) {
+    return Number.isFinite(Number(value)) ? `${Number(value).toFixed(2)} mi` : "miles?";
+  }
+
+  function formatMinutes(value, label) {
+    return Number.isFinite(Number(value)) ? `${Math.round(Number(value))} min ${label}` : "time?";
   }
 
   function renderAvailabilityStats(counts, total) {

@@ -16,6 +16,7 @@
           <a href="index.html#map-section">Map</a>
           <a href="index.html#basketball-courts">Courts</a>
           <a href="index.html#listings">Listings</a>
+          <a href="top-picks.html#lifestyle-routes">UCLA/Sawtelle fit</a>
           <a href="top-picks.html#availability-filter">Availability</a>
           <a href="top-picks.html" aria-current="page">Top picks</a>
         </div>
@@ -26,7 +27,8 @@
           <h1>Top Sawtelle 3-bedroom apartment picks</h1>
           <p id="top-picks-summary">Loading ranked recommendations...</p>
           <div class="hero-actions">
-            <a class="button primary" href="#availability-filter">Check availability</a>
+            <a class="button primary" href="#lifestyle-routes">UCLA/Sawtelle fit</a>
+            <a class="button secondary" href="#availability-filter">Check availability</a>
             <a class="button secondary" href="index.html#listings">Back to map and listings</a>
             <a class="button secondary" href="#ranked-list">View review rankings</a>
           </div>
@@ -34,6 +36,7 @@
         <aside class="summary-panel" aria-label="Budget summary">
           <dl>
             <div><dt>Budget target</dt><dd id="budget-target">--</dd></div>
+            <div><dt>Route lens</dt><dd id="route-priority">--</dd></div>
             <div><dt>Generated</dt><dd id="generated-at">--</dd></div>
             <div><dt>Scope</dt><dd id="scope">--</dd></div>
           </dl>
@@ -57,6 +60,32 @@
           <article class="info-card">
             <h3>Limitations</h3>
             <ul id="limitations-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="lifestyle-routes" aria-labelledby="lifestyle-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Daily route fit</p>
+            <h2 id="lifestyle-title">UCLA basketball + Sawtelle food lens</h2>
+            <p id="travel-context-summary">Loading route context...</p>
+          </div>
+          <p class="result-count" id="travel-updated">Loading...</p>
+        </div>
+        <div class="anchor-grid" id="anchor-list" aria-label="Route anchors"></div>
+        <div class="top-picks-grid lifestyle-context-grid">
+          <article class="info-card lifestyle-shortlist-card">
+            <h3 id="lifestyle-shortlist-title">Lifestyle shortlist</h3>
+            <div id="lifestyle-shortlist"></div>
+          </article>
+          <article class="info-card">
+            <h3>Route takeaways</h3>
+            <ul id="travel-takeaways"></ul>
+          </article>
+          <article class="info-card">
+            <h3>Distance caveat</h3>
+            <p id="travel-method">Route estimates are loading.</p>
           </article>
         </div>
       </section>
