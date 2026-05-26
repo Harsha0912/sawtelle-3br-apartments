@@ -15,6 +15,7 @@
         <div class="nav-links">
           <a href="index.html#map-section">Map</a>
           <a href="index.html#listings">Listings</a>
+          <a href="top-picks.html#availability-filter">Availability</a>
           <a href="top-picks.html" aria-current="page">Top picks</a>
         </div>
       </nav>
@@ -24,8 +25,9 @@
           <h1>Top Sawtelle 3-bedroom apartment picks</h1>
           <p id="top-picks-summary">Loading ranked recommendations...</p>
           <div class="hero-actions">
-            <a class="button primary" href="index.html#listings">Back to map and listings</a>
-            <a class="button secondary" href="#ranked-list">View rankings</a>
+            <a class="button primary" href="#availability-filter">Check availability</a>
+            <a class="button secondary" href="index.html#listings">Back to map and listings</a>
+            <a class="button secondary" href="#ranked-list">View review rankings</a>
           </div>
         </div>
         <aside class="summary-panel" aria-label="Budget summary">
@@ -56,6 +58,53 @@
             <ul id="limitations-list"></ul>
           </article>
         </div>
+      </section>
+
+      <section class="section" id="availability-filter" aria-labelledby="availability-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Availability + review filter</p>
+            <h2 id="availability-title">$4k-$6.5k listings checked for move-in timing</h2>
+            <p id="availability-summary">Loading strict-budget availability checks...</p>
+          </div>
+          <p class="result-count" id="availability-generated" aria-live="polite">Loading...</p>
+        </div>
+
+        <div id="availability-stats" class="availability-stats" aria-label="Availability status counts"></div>
+
+        <div class="top-picks-grid availability-notes">
+          <article class="info-card">
+            <h3>Move-in today caveat</h3>
+            <p id="availability-caveat">Loading caveat...</p>
+          </article>
+          <article class="info-card">
+            <h3>Availability methodology</h3>
+            <ul id="availability-methodology"></ul>
+          </article>
+          <article class="info-card">
+            <h3>Limitations</h3>
+            <ul id="availability-limitations"></ul>
+          </article>
+        </div>
+
+        <div class="availability-subsection">
+          <div class="section-heading compact-heading">
+            <div>
+              <h3>Public Available Now signals</h3>
+              <p class="meta">These are the listings whose accessible source pages showed a 3BR Available Now or date on/before the checked date. Call before assuming same-day keys.</p>
+            </div>
+            <p class="result-count" id="available-now-count">Loading...</p>
+          </div>
+          <div class="availability-list priority" id="available-now-list"></div>
+        </div>
+
+        <details class="availability-subsection all-options" open>
+          <summary>
+            <span>All strict-budget options, including future, call-to-confirm, manual-check, and stale/mismatch rows</span>
+            <span class="result-count" id="availability-count">Loading...</span>
+          </summary>
+          <div class="availability-list compact" id="availability-list"></div>
+        </details>
       </section>
 
       <section class="section" aria-labelledby="rankings-title">
@@ -90,7 +139,7 @@
     </main>
 
     <footer class="footer">
-      <p>Data loaded from <code>data/top-picks.json</code>. Verify availability, fees, concessions, parking, pets, utilities, and lease terms before applying.</p>
+      <p>Data loaded from <code>data/top-picks.json</code> and <code>data/availability-checks.json</code>. Verify availability, fees, concessions, parking, pets, utilities, and lease terms before applying.</p>
     </footer>
 
     <script src="top-picks.js"></script>

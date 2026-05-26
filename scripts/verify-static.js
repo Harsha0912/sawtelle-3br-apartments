@@ -29,7 +29,9 @@ const checks = [
       /data\/top-picks\.json/,
       /top-picks\.js/,
       /id="ranked-list"/,
-      /href="index\.html#map-section"/
+      /href="index\.html#map-section"/,
+      /id="availability-filter"/,
+      /data\/availability-checks\.json/
     ]
   },
   {
@@ -39,7 +41,10 @@ const checks = [
       /renderTopPicks/,
       /rank-card/,
       /primary-source/,
-      /tourChecklist/
+      /tourChecklist/,
+      /AVAILABILITY_URL/,
+      /renderAvailabilityReport/,
+      /availability-card/
     ]
   },
   {
@@ -51,11 +56,20 @@ const checks = [
     ]
   },
   {
+    file: "data/availability-checks.json",
+    tests: [
+      /"listings"\s*:/,
+      /"available_now"\s*:/,
+      /"moveInTodayCaveat"\s*:/
+    ]
+  },
+  {
     file: "styles.css",
     tests: [
       /\.rank-card/,
       /\.ranking-hero/,
-      /\.primary-source/
+      /\.primary-source/,
+      /\.availability-card/
     ]
   },
   {
@@ -83,6 +97,13 @@ for (const check of checks) {
 }
 
 JSON.parse(fs.readFileSync("data/app-data.json", "utf8"));
+const availabilityChecks = JSON.parse(fs.readFileSync("data/availability-checks.json", "utf8"));
+if (!Array.isArray(availabilityChecks.listings) || availabilityChecks.listings.length < 40) {
+  throw new Error("data/availability-checks.json failed verification: expected strict-budget listing rows.");
+}
+if (!availabilityChecks.listings.some((item) => item.availabilityStatus === "available_now")) {
+  throw new Error("data/availability-checks.json failed verification: expected at least one available_now row.");
+}
 const topPicks = JSON.parse(fs.readFileSync("data/top-picks.json", "utf8"));
 if (!Array.isArray(topPicks.rankings) || topPicks.rankings.length === 0) {
   throw new Error("data/top-picks.json failed verification: rankings must be a non-empty array.");

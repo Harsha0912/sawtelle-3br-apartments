@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26 00:06 PDT",
+  "generatedAt": "2026-05-26 00:45 PDT",
   "budgetTarget": "$4,000-$6,500, with slight stretch for exceptional units",
   "scope": "Sawtelle / West Los Angeles 3-bedroom candidates from the mapped report, prioritized for whole-unit listings and review/reputation evidence.",
   "methodology": [
@@ -10,9 +10,11 @@
   "sourceLimitations": [
     "Rental availability and concessions change quickly; verify every price and unit before applying.",
     "Zillow/Yelp/Apartments.com/ApartmentRatings and some portals may block automated access, so blocked pages are listed as manual-review leads rather than summarized as facts.",
-    "Manager-wide reviews do not prove conditions at a specific building, but recurring themes are useful tour questions."
+    "Manager-wide reviews do not prove conditions at a specific building, but recurring themes are useful tour questions.",
+    "The page now includes a separate strict-budget availability table; public Available Now signals are not guarantees of same-day keys or application approval.",
+    "Public availability pages may expose active listings without exact move-in dates; those are marked call-to-confirm rather than available today."
   ],
-  "summary": "The Adler and 1771 Beloit are the strongest reviewed picks. Maxwell and Stoner1247 look attractive on budget/amenities but need more resident review verification. Wiseman-managed options are abundant and often well-located, but management/package/security/noise questions should be asked before applying.",
+  "summary": "Strict $4k-$6.5k availability filtering is now on this page. The public scrape found 12 in-range candidates with 3BR Available Now/date-on-or-before-today signals, but none combines strong positive building-specific reviews with confirmed immediate availability. The Adler remains the best-reviewed full-service option, but its parsed HotPads 3BR row is future-dated (7/12/2026) while Zumper only shows an active 3BR floorplan without a date. Available-now options should be treated as tour/call candidates and filtered heavily by review risk, especially Wiseman-managed buildings and Maxwell.",
   "rankings": [
     {
       "rank": 1,
@@ -138,20 +140,20 @@
       "priceText": "$4,167-$5,357",
       "minPrice": 4167,
       "bedsBaths": "3 bed",
-      "score": 83,
-      "headline": "Best modern amenities/value candidate, but review coverage is incomplete.",
-      "reviewSummary": "ApartmentHomeLiving scrape describes Maxwell as a newer/modern community with 1\u20133 bedrooms, $2,768-$5,357 pricing, in-unit laundry, balcony/views, rooftop deck, BBQ/seating, quartz countertops, stainless appliances, and rent specials. ApartmentRatings lead exists but was blocked.",
+      "score": 61,
+      "headline": "Available-now modern option, but recent review themes make it a high-caution tour.",
+      "reviewSummary": "ApartmentHomeLiving currently exposes 3BR ApartmentHomeLiving availability for Maxwell, including Unit 311 ($4,643) and Unit 604 ($5,357) listed Available Now. The same public page also includes Apartments.com review snippets with strong negative themes: noise isolation complaints, package theft, management responsiveness problems, leaks/water issues, trash/chute problems, fob/intercom/security concerns, and Airbnb/neighbor-noise complaints. Treat Maxwell as available but review-risky, not as a clean top pick.",
       "pros": [
-        "Budget fit is strong for the stated $4k-$6.5k target.",
-        "Modern-building profile and amenities look strong for the price.",
-        "ApartmentHomeLiving calls it materially cheaper than West LA neighborhood averages in its affordability section."
+        "Public ApartmentHomeLiving data showed two 3BR/2BA units listed Available Now within the budget range.",
+        "Modern finishes, in-unit laundry, rooftop deck/gym, and rent-special/concession language remain attractive if verified.",
+        "Good price fit compared with newer West LA inventory."
       ],
       "cautions": [
-        "Exact 3BR bath count and available unit details need verification.",
-        "Independent resident reviews were not fully accessible in this run.",
-        "1,152 sqft max listed by ApartmentHomeLiving may feel compact for roommates."
+        "Recent review snippets are materially negative around noise, management, packages/security, leaks/water, trash, and building operations.",
+        "3BR units are 2 bath, not 3 bath, so it may be less ideal for roommates than true 3/3 layouts.",
+        "If toured, ask current residents direct questions and test noise/security before applying."
       ],
-      "whyRanked": "High upside because of price + modern amenities, with a review-data discount.",
+      "whyRanked": "Moved down on review risk: available-now and modern, but review themes require heavy due diligence.",
       "primaryUrl": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
       "links": [
         {
@@ -173,13 +175,22 @@
             "About section describes modern finishes, stainless appliances, white quartz countertops, large windows, in-unit laundry, balconies/views, and rooftop deck with BBQ/seating.",
             "ApartmentHomeLiving affordability section describes Maxwell as cheaper than West LA neighborhood averages; verify with current unit sheet."
           ]
+        },
+        {
+          "sourceTitle": "Maxwell ApartmentHomeLiving availability and resident review snippets",
+          "sourceUrl": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
+          "snippets": [
+            "ApartmentHomeLiving availability section showed 3 Bed 2 Bath Unit 311 at $4,643 Available Now and Unit 604 at $5,357 Available Now.",
+            "Review snippets on the same rendered page include complaints about noise isolation, management, package theft/security, leaks/water issues, trash/chute problems, and fob/intercom problems.",
+            "Use as an available-now tour candidate only if the review concerns are resolved by recent residents and an in-person tour."
+          ]
         }
       ],
       "scoreBreakdown": {
         "budgetFit": 9,
-        "reviews": 5,
-        "amenities": 9,
-        "risk": 6
+        "reviews": 2,
+        "amenities": 8,
+        "risk": 2
       }
     },
     {
@@ -192,7 +203,7 @@
       "bedsBaths": "3 bed / 3 bath",
       "score": 81,
       "headline": "Best 3 bed / 3 bath budget-fit listing with limited review coverage.",
-      "reviewSummary": "No strong independent review page surfaced in the prior scrape. Zumper source notes showed a 9.4 \u201cExcellent\u201d listing/building score, plus on-site laundry, balcony, and assigned parking.",
+      "reviewSummary": "No strong independent review page surfaced in the prior scrape. Zumper source notes showed a 9.4 “Excellent” listing/building score, plus on-site laundry, balcony, and assigned parking.",
       "pros": [
         "3 bed / 3 bath at about $4,095 is excellent budget fit.",
         "Core Sawtelle/West LA address and useful everyday amenities.",
@@ -217,7 +228,7 @@
           "sourceUrl": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca",
           "snippets": [
             "Zumper is the primary listing lead for 1247 Stoner/Stoner1247.",
-            "Mapped report source notes recorded Zumper score 9.4 \u201cExcellent,\u201d on-site laundry, balcony, and assigned parking.",
+            "Mapped report source notes recorded Zumper score 9.4 “Excellent,” on-site laundry, balcony, and assigned parking.",
             "No independent review compilation was confirmed during the scrape, so verify with tour questions and recent residents."
           ]
         }
@@ -695,15 +706,21 @@
     {
       "name": "ApartmentHomeLiving",
       "url": "https://www.apartmenthomeliving.com/",
-      "notes": "Used for Maxwell pricing, amenity, and affordability text."
+      "notes": "Used for Maxwell pricing, availability, amenity text, and newly exposed negative review snippets; also used for other AHL availability rows when accessible."
     },
     {
       "name": "Zumper / HotPads / Rent.com listing pages",
       "url": "data/app-data.json",
       "notes": "Used for direct listing links, rent, beds/baths, and availability notes from the mapped report."
+    },
+    {
+      "name": "Availability scrape data",
+      "url": "data/availability-checks.json",
+      "notes": "Strict $4k-$6.5k availability/move-in check for 52 whole-unit 3BR candidates."
     }
   ],
   "tourChecklist": [
+    "Ask whether the exact unit is physically ready today and what the fastest realistic application/approval/key handoff timeline is.",
     "Confirm whole-unit rent, not per-bedroom pricing.",
     "Ask for a full monthly fee sheet: parking, trash, utilities, internet, pets, amenities, application/admin fees.",
     "Verify exact unit bath count and floor plan, especially listings with conflicting portal text.",

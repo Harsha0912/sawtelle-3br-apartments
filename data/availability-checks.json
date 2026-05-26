@@ -1,0 +1,2780 @@
+{
+  "generatedAt": "2026-05-26 00:50 PDT",
+  "checkedDate": "2026-05-26",
+  "budgetRange": "$4,000-$6,500",
+  "strictBudgetMin": 4000,
+  "strictBudgetMax": 6500,
+  "scope": "Whole-unit 3-bedroom Sawtelle/West LA candidates from data/app-data.json whose min parsed rent is within $4,000-$6,500; adjacent 90064 entries are retained but labeled by section.",
+  "moveInTodayCaveat": "A public 'Available Now' or date on/before the checked date is treated as a same-day move-in signal, not a guarantee. Leasing offices must confirm application timing, deposit, unit readiness, and keys before assuming move-in today.",
+  "counts": {
+    "available_now": 12,
+    "active_no_date": 26,
+    "future_availability": 3,
+    "contact_for_availability": 2,
+    "needs_manual": 7,
+    "unavailable_or_stale": 2
+  },
+  "dispositions": {
+    "available-but-review-caution": 5,
+    "available-review-light": 7,
+    "call-to-confirm": 1,
+    "waitlist-or-future-tour": 1,
+    "backup-or-manual-check": 36,
+    "likely-stale": 2
+  },
+  "methodology": [
+    "Filtered to non-co-living 3BR candidates with min_price between $4,000 and $6,500.",
+    "Fetched accessible Zumper, HotPads, Rent.com, and ApartmentHomeLiving listing pages; review-only sources were not used for availability.",
+    "Parsed explicit 3BR unit rows and floorplan sections for Available Now or dated availability; active pages with no date are marked call-to-confirm.",
+    "Merged availability signals with review tiers from the ranked shortlist and manager/building review notes."
+  ],
+  "limitations": [
+    "Rental pages change quickly; prices and availability can differ from the cached public page by the time you call.",
+    "Public 'Available Now' does not guarantee same-day move-in; management must confirm unit readiness and approval timeline.",
+    "Some portals block or partially render automated access; those are marked needs_manual/contact rather than asserted unavailable.",
+    "Review tiers are an aggregation aid, not a substitute for reading recent reviews and touring."
+  ],
+  "listings": [
+    {
+      "id": "40",
+      "name": "Santa Monica Federal by Wiseman",
+      "section": "core",
+      "address": "90025; property name implies Santa Monica Blvd / Federal Ave area",
+      "rent": "$4,595",
+      "minPrice": 4595,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "HotPads showed 1 unit available. VeryApt page for Santa Monica at Federal has 7.4/10 from 32 renter reviews and mixed comments.",
+      "links": [
+        "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad",
+        "https://www.veryapt.com/ApartmentReview-a1591-santa-monica-at-federal-los-angeles"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "416",
+          "price": "$4,595",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,295",
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "416",
+              "price": "$4,595",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,295",
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 79,
+      "reviewRank": 5,
+      "reviewHeadline": "Best data-rich Wiseman option, with management caveats.",
+      "reviewSummary": "VeryApt page exposes 32 reviews and a 7.4/10 safety score with location 9.1, management 4.9, value 7.1, and mixed review text. Themes include good location/newer apartments but subpar management, package/security concerns, and Santa Monica Blvd noise.",
+      "disposition": "available-but-review-caution",
+      "availabilityRank": 1
+    },
+    {
+      "id": "33",
+      "name": "Purdue Ohio by Wiseman",
+      "section": "core",
+      "address": "1500 Purdue Ave, Los Angeles, CA 90025",
+      "rent": "$4,895",
+      "minPrice": 4895,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Rent.com; detached garage, gated entry, wood flooring.",
+      "links": [
+        "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "Rent.com floor-plan section exposes 1 matching 3BR row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "5 images Three-Bedroom Three-Bathroom - A",
+          "price": "$4,895",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,772",
+          "availabilityRaw": "Available Now",
+          "availabilityDate": "2026-05-26",
+          "unitCount": "1",
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Rent.com floor-plan section exposes 1 matching 3BR row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "5 images Three-Bedroom Three-Bathroom - A",
+              "price": "$4,895",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,772",
+              "availabilityRaw": "Available Now",
+              "availabilityDate": "2026-05-26",
+              "unitCount": "1"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 68,
+      "reviewRank": 10,
+      "reviewHeadline": "Budget-fit Wiseman listing; management-wide reviews make due diligence important.",
+      "reviewSummary": "No building-specific review compilation was confirmed. Management-wide sources: Birdeye shows Wiseman Residential 3.1/5 from 215 reviews; VeryApt shows Wiseman Management 91 reviews, 7.9 building rating, 6.8 management rating, and notes unresponsiveness can be an issue.",
+      "disposition": "available-but-review-caution",
+      "availabilityRank": 2
+    },
+    {
+      "id": "30",
+      "name": "Maxwell",
+      "section": "core",
+      "address": "1855 Westwood Blvd, Los Angeles, CA 90025",
+      "rent": "$4,167-$5,357",
+      "minPrice": 4167,
+      "bedsBaths": "3 bed",
+      "sourceNotes": "ApartmentHomeLiving; ApartmentRatings page exists but was bot-blocked.",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
+        "https://www.apartmentratings.com/ca/los-angeles/maxwell_9199332346275219221/"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "ApartmentHomeLiving pricing/availability section exposes 2 matching 3BR row(s). 2 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "Unit 311",
+          "price": "$4,643",
+          "beds": 3,
+          "baths": "2",
+          "sqft": "1152",
+          "availabilityRaw": "Available Now",
+          "availabilityDate": "2026-05-26",
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784"
+        },
+        {
+          "unit": "Unit 604",
+          "price": "$5,357",
+          "beds": 3,
+          "baths": "2",
+          "sqft": "1107",
+          "availabilityRaw": "Available Now",
+          "availabilityDate": "2026-05-26",
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "ApartmentHomeLiving pricing/availability section exposes 2 matching 3BR row(s). 2 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "Unit 311",
+              "price": "$4,643",
+              "beds": 3,
+              "baths": "2",
+              "sqft": "1152",
+              "availabilityRaw": "Available Now",
+              "availabilityDate": "2026-05-26"
+            },
+            {
+              "unit": "Unit 604",
+              "price": "$5,357",
+              "beds": 3,
+              "baths": "2",
+              "sqft": "1107",
+              "availabilityRaw": "Available Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 61,
+      "reviewRank": 3,
+      "reviewHeadline": "Available-now modern option, but recent review themes make it a high-caution tour.",
+      "reviewSummary": "ApartmentHomeLiving currently exposes 3BR ApartmentHomeLiving availability for Maxwell, including Unit 311 ($4,643) and Unit 604 ($5,357) listed Available Now. The same public page also includes Apartments.com review snippets with strong negative themes: noise isolation complaints, package theft, management responsiveness problems, leaks/water issues, trash/chute problems, fob/intercom/security concerns, and Airbnb/neighbor-noise complaints. Treat Maxwell as available but review-risky, not as a clean top pick.",
+      "disposition": "available-but-review-caution",
+      "availabilityRank": 3
+    },
+    {
+      "id": "34",
+      "name": "Stoner Homes by Wiseman",
+      "section": "core",
+      "address": "1605 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$4,595",
+      "minPrice": 4595,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "HotPads/Rent.com; townhouse-style units noted.",
+      "links": [
+        "https://hotpads.com/stoner-homes-by-wiseman-los-angeles-ca-90025-tmusbn/pad",
+        "https://www.rent.com/apartment/stoner-homes-by-wiseman-los-angeles-ca-lc6178204"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "2",
+          "price": "$4,595",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,750",
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/stoner-homes-by-wiseman-los-angeles-ca-90025-tmusbn/pad"
+        },
+        {
+          "unit": "21 images Three-Bedroom Three-Bathroom",
+          "price": "$4,595",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,750",
+          "availabilityRaw": "Available Now",
+          "availabilityDate": "2026-05-26",
+          "unitCount": "1",
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/stoner-homes-by-wiseman-los-angeles-ca-lc6178204"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/stoner-homes-by-wiseman-los-angeles-ca-90025-tmusbn/pad",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "2",
+              "price": "$4,595",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,750",
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/stoner-homes-by-wiseman-los-angeles-ca-90025-tmusbn/pad"
+        },
+        {
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/stoner-homes-by-wiseman-los-angeles-ca-lc6178204",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Rent.com floor-plan section exposes 1 matching 3BR row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "21 images Three-Bedroom Three-Bathroom",
+              "price": "$4,595",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,750",
+              "availabilityRaw": "Available Now",
+              "availabilityDate": "2026-05-26",
+              "unitCount": "1"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.rent.com/apartment/stoner-homes-by-wiseman-los-angeles-ca-lc6178204"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "available-but-review-caution",
+      "availabilityRank": 4
+    },
+    {
+      "id": "35",
+      "name": "Westgate Wonder by Wiseman",
+      "section": "core",
+      "address": "1233 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "$4,795+ on Rent.com; HotPads showed $4,795-$5,395",
+      "minPrice": 4795,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Multiple source pages; check exact unit.",
+      "links": [
+        "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad",
+        "https://www.rent.com/apartment/westgate-wonder-by-wiseman-los-angeles-ca-lc6004309"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "HotPads exposes 3 matching 3BR unit row(s). 2 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "108",
+          "price": "$4,795",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,450",
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad"
+        },
+        {
+          "unit": "203",
+          "price": "$5,045",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,450",
+          "availabilityRaw": "6/10/2026",
+          "availabilityDate": "2026-06-10",
+          "source": "HotPads",
+          "url": "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad"
+        },
+        {
+          "unit": "308",
+          "price": "$5,395",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,450",
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "HotPads exposes 3 matching 3BR unit row(s). 2 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "108",
+              "price": "$4,795",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,450",
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            },
+            {
+              "unit": "203",
+              "price": "$5,045",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,450",
+              "availabilityRaw": "6/10/2026",
+              "availabilityDate": "2026-06-10"
+            },
+            {
+              "unit": "308",
+              "price": "$5,395",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,450",
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad"
+        },
+        {
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/westgate-wonder-by-wiseman-los-angeles-ca-lc6004309",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Rent.com exposes a 3BR Available Now signal, but a unit table was not parseable.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.rent.com/apartment/westgate-wonder-by-wiseman-los-angeles-ca-lc6004309"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "available-but-review-caution",
+      "availabilityRank": 5
+    },
+    {
+      "id": "10",
+      "name": "1319 Barry Apartments",
+      "section": "core",
+      "address": "1319 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$4,995 on Zumper; HotPads showed $4,995-$5,295 depending row/unit",
+      "minPrice": 4995,
+      "bedsBaths": "3 bed / 2 bath on Zumper; HotPads had 3 bed / 3 bath on one row",
+      "sourceNotes": "Verify unit-specific bed/bath and price.",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca",
+        "https://hotpads.com/1319-barry-apartments-los-angeles-ca-90025-1m2kzn3/pad"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "1319",
+          "price": "$4,995",
+          "beds": 3,
+          "baths": "2",
+          "sqft": null,
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/1319-barry-apartments-los-angeles-ca-90025-1m2kzn3/pad"
+        },
+        {
+          "unit": "1319 Barry Ave",
+          "price": 4995,
+          "beds": 3,
+          "baths": 2,
+          "sqft": 0,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-21",
+          "modifiedOn": "2026-05-14",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1319-barry-apartments-los-angeles-ca-90025-1m2kzn3/pad",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "1319",
+              "price": "$4,995",
+              "beds": 3,
+              "baths": "2",
+              "sqft": null,
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1319-barry-apartments-los-angeles-ca-90025-1m2kzn3/pad"
+        },
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). Parsed Zumper canonical path: /apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-los-angeles-ca. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1319 Barry Ave",
+              "price": 4995,
+              "beds": 3,
+              "baths": 2,
+              "sqft": 0,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-21",
+              "modifiedOn": "2026-05-14"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 76,
+      "reviewRank": 6,
+      "reviewHeadline": "Solid core Sawtelle candidate with source links, but reviews need manual verification.",
+      "reviewSummary": "No independent review page was confirmed in the scrape. Zumper and HotPads sources show 3BR availability around $4,995-$5,295, with bath count needing unit-level verification.",
+      "disposition": "available-review-light",
+      "availabilityRank": 6
+    },
+    {
+      "id": "12",
+      "name": "11540 Rochester Ave #103",
+      "section": "core",
+      "address": "11540 Rochester Ave #103, Los Angeles, CA 90025",
+      "rent": "$4,900 on Zumper; HotPads showed a related page",
+      "minPrice": 4900,
+      "bedsBaths": "3 bed / 3 bath on Zumper",
+      "sourceNotes": "Balcony, assigned parking, hardwood floor.",
+      "links": [
+        "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa",
+        "https://hotpads.com/11540-rochester-ave-los-angeles-ca-90025-srbv30/103/pad"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "Zumper listing entity 64363051 shows 3 bed/3 bath, $4,900 if price is exposed, status=1, date_available=2026/05/15. Parsed Zumper canonical path: /listings/3579473p/3-bedroom-west-los-angeles-los-angeles-ca. 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "11540 Rochester Ave #103",
+          "price": 4900,
+          "beds": 3,
+          "baths": 3,
+          "sqft": null,
+          "availabilityRaw": "2026/05/15",
+          "availabilityDate": "2026-05-15",
+          "listedOn": "2026-05-15",
+          "modifiedOn": "2026-05-16",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/11540-rochester-ave-los-angeles-ca-90025-srbv30/103/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/11540-rochester-ave-los-angeles-ca-90025-srbv30/103/pad"
+        },
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Zumper listing entity 64363051 shows 3 bed/3 bath, $4,900 if price is exposed, status=1, date_available=2026/05/15. Parsed Zumper canonical path: /listings/3579473p/3-bedroom-west-los-angeles-los-angeles-ca. 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "11540 Rochester Ave #103",
+              "price": 4900,
+              "beds": 3,
+              "baths": 3,
+              "sqft": null,
+              "availabilityRaw": "2026/05/15",
+              "availabilityDate": "2026-05-15",
+              "listedOn": "2026-05-15",
+              "modifiedOn": "2026-05-16"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 74,
+      "reviewRank": 7,
+      "reviewHeadline": "Straightforward 3 bed / 3 bath unit near the middle of the budget.",
+      "reviewSummary": "No independent review page surfaced. Listing sources showed about $4,900 with balcony, assigned parking, and hardwood floor notes.",
+      "disposition": "available-review-light",
+      "availabilityRank": 7
+    },
+    {
+      "id": "A8",
+      "name": "Sardis",
+      "section": "adjacent",
+      "address": "11210 W Sardis Ave, Los Angeles, CA 90064",
+      "rent": "$4,595",
+      "minPrice": 4595,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Rent.com; pet friendly, dishwasher, dryer.",
+      "links": [
+        "https://www.rent.com/apartment/sardis-los-angeles-ca-lc6424610"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "Rent.com exposes a 3BR Available Now signal, but a unit table was not parseable.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/sardis-los-angeles-ca-lc6424610",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Rent.com exposes a 3BR Available Now signal, but a unit table was not parseable.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.rent.com/apartment/sardis-los-angeles-ca-lc6424610"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "available-review-light",
+      "availabilityRank": 8
+    },
+    {
+      "id": "13",
+      "name": "1726 S Bentley Ave #304",
+      "section": "core",
+      "address": "1726 S Bentley Ave #304, Los Angeles, CA 90025",
+      "rent": "$4,650",
+      "minPrice": 4650,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Zumper; in-unit laundry, balcony, assigned parking.",
+      "links": [
+        "https://www.zumper.com/address/1726-s-bentley-ave-los-angeles-ca-90025-usa"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "Zumper listing entity 64359353 shows 3 bed/2 bath, $4,650 if price is exposed, status=1, date_available=2026/05/14. Parsed Zumper canonical path: /listings/5367834p/3-bedroom-westside-los-angeles-ca. 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "1726 S Bentley Ave #304",
+          "price": 4650,
+          "beds": 3,
+          "baths": 2,
+          "sqft": null,
+          "availabilityRaw": "2026/05/14",
+          "availabilityDate": "2026-05-14",
+          "listedOn": "2026-05-15",
+          "modifiedOn": "2026-05-16",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/1726-s-bentley-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/1726-s-bentley-ave-los-angeles-ca-90025-usa",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Zumper listing entity 64359353 shows 3 bed/2 bath, $4,650 if price is exposed, status=1, date_available=2026/05/14. Parsed Zumper canonical path: /listings/5367834p/3-bedroom-westside-los-angeles-ca. 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "1726 S Bentley Ave #304",
+              "price": 4650,
+              "beds": 3,
+              "baths": 2,
+              "sqft": null,
+              "availabilityRaw": "2026/05/14",
+              "availabilityDate": "2026-05-14",
+              "listedOn": "2026-05-15",
+              "modifiedOn": "2026-05-16"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/address/1726-s-bentley-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "available-review-light",
+      "availabilityRank": 9
+    },
+    {
+      "id": "71",
+      "name": "1526 Armacost Ave",
+      "section": "core",
+      "address": "1526 Armacost Ave, Los Angeles, CA 90025",
+      "rent": "$4,690 in HotPads text",
+      "minPrice": 4690,
+      "bedsBaths": "3 bed / 2.5 bath; 1 unit available",
+      "sourceNotes": "Apt building.",
+      "links": [
+        "https://hotpads.com/1526-armacost-ave-los-angeles-ca-90025-wdt8h5/pad"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "302",
+          "price": "$4,690",
+          "beds": 3,
+          "baths": "2.5",
+          "sqft": "1,500",
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/1526-armacost-ave-los-angeles-ca-90025-wdt8h5/pad"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1526-armacost-ave-los-angeles-ca-90025-wdt8h5/pad",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "302",
+              "price": "$4,690",
+              "beds": 3,
+              "baths": "2.5",
+              "sqft": "1,500",
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1526-armacost-ave-los-angeles-ca-90025-wdt8h5/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "available-review-light",
+      "availabilityRank": 10
+    },
+    {
+      "id": "36",
+      "name": "10608 Santa Monica Blvd",
+      "section": "core",
+      "address": "10608 Santa Monica Blvd, Los Angeles, CA 90025",
+      "rent": "$5,099+",
+      "minPrice": 5099,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Rent.com; rooftop deck, gated entry, EV chargers.",
+      "links": [
+        "https://www.rent.com/apartment/10608-santa-monica-blvd-los-angeles-ca-lc6324257"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "Rent.com floor-plan section exposes 1 matching 3BR row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "5,099 -",
+          "price": "$5,295",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,345",
+          "availabilityRaw": "Available Now",
+          "availabilityDate": "2026-05-26",
+          "unitCount": "1",
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/10608-santa-monica-blvd-los-angeles-ca-lc6324257"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/10608-santa-monica-blvd-los-angeles-ca-lc6324257",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "Rent.com floor-plan section exposes 1 matching 3BR row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "5,099 -",
+              "price": "$5,295",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,345",
+              "availabilityRaw": "Available Now",
+              "availabilityDate": "2026-05-26",
+              "unitCount": "1"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.rent.com/apartment/10608-santa-monica-blvd-los-angeles-ca-lc6324257"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "available-review-light",
+      "availabilityRank": 11
+    },
+    {
+      "id": "70",
+      "name": "Wellesley House",
+      "section": "core",
+      "address": "Los Angeles, CA 90025; Wellesley Ave area",
+      "rent": "$5,750 in HotPads text",
+      "minPrice": 5750,
+      "bedsBaths": "3 bed / 2 bath; 1 unit available",
+      "sourceNotes": "Apt building.",
+      "links": [
+        "https://hotpads.com/wellesley-house-los-angeles-ca-90025-241tftc/pad"
+      ],
+      "availabilityStatus": "available_now",
+      "moveInTodaySignal": "listed-available-now",
+      "availabilitySummary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+      "availableUnits": [
+        {
+          "unit": "405",
+          "price": "$5,750",
+          "beds": 3,
+          "baths": "2",
+          "sqft": "1,515",
+          "availabilityRaw": "Now",
+          "availabilityDate": "2026-05-26",
+          "source": "HotPads",
+          "url": "https://hotpads.com/wellesley-house-los-angeles-ca-90025-241tftc/pad"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/wellesley-house-los-angeles-ca-90025-241tftc/pad",
+          "status": "available_now",
+          "moveInTodaySignal": "listed-available-now",
+          "summary": "HotPads exposes 1 matching 3BR unit row(s). 1 matching 3BR unit(s) are publicly listed as Available Now / date on or before today",
+          "units": [
+            {
+              "unit": "405",
+              "price": "$5,750",
+              "beds": 3,
+              "baths": "2",
+              "sqft": "1,515",
+              "availabilityRaw": "Now",
+              "availabilityDate": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/wellesley-house-los-angeles-ca-90025-241tftc/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "available-review-light",
+      "availabilityRank": 12
+    },
+    {
+      "id": "6",
+      "name": "Stoner1247",
+      "section": "core",
+      "address": "1247 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$4,095",
+      "minPrice": 4095,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Zumper score 9.4 “Excellent”; on-site laundry, balcony, assigned parking.",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1247 Stoner Ave",
+          "price": 4095,
+          "beds": 3,
+          "baths": 3,
+          "sqft": 1100,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-24",
+          "modifiedOn": "2026-05-25",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1247 Stoner Ave",
+              "price": 4095,
+              "beds": 3,
+              "baths": 3,
+              "sqft": 1100,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-24",
+              "modifiedOn": "2026-05-25"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "some-specific",
+      "reviewScore": 81,
+      "reviewRank": 4,
+      "reviewHeadline": "Best 3 bed / 3 bath budget-fit listing with limited review coverage.",
+      "reviewSummary": "No strong independent review page surfaced in the prior scrape. Zumper source notes showed a 9.4 “Excellent” listing/building score, plus on-site laundry, balcony, and assigned parking.",
+      "disposition": "call-to-confirm",
+      "availabilityRank": 13
+    },
+    {
+      "id": "3",
+      "name": "The Adler Apartments",
+      "section": "core",
+      "address": "11950 / 12000 Idaho Ave, Los Angeles, CA 90025",
+      "rent": "$5,178-$6,078 on Zumper/HotPads; Rent.com showed $5,146+",
+      "minPrice": 5146,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Zumper listed rent special; HotPads showed 4 units; VeryApt rating 8.3/10 from 3 renter reviews.",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca",
+        "https://hotpads.com/the-adler-apartments-los-angeles-ca-90049-23zdm0n/pad",
+        "https://www.veryapt.com/ApartmentReview-a16222-the-adler-apartments-los-angeles"
+      ],
+      "availabilityStatus": "future_availability",
+      "moveInTodaySignal": "no",
+      "availabilitySummary": "HotPads exposes 1 matching 3BR unit row(s). Earliest matching 3BR public availability: 2026-07-12",
+      "availableUnits": [
+        {
+          "unit": "2-305",
+          "price": "$5,178",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,315",
+          "availabilityRaw": "7/12/2026",
+          "availabilityDate": "2026-07-12",
+          "source": "HotPads",
+          "url": "https://hotpads.com/the-adler-apartments-los-angeles-ca-90049-23zdm0n/pad"
+        },
+        {
+          "unit": "11950 11950 and 12000 Idaho Ave",
+          "price": 5178,
+          "beds": 3,
+          "baths": 3,
+          "sqft": 1315,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-23",
+          "modifiedOn": "2026-05-25",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/the-adler-apartments-los-angeles-ca-90049-23zdm0n/pad",
+          "status": "future_availability",
+          "moveInTodaySignal": "no",
+          "summary": "HotPads exposes 1 matching 3BR unit row(s). Earliest matching 3BR public availability: 2026-07-12",
+          "units": [
+            {
+              "unit": "2-305",
+              "price": "$5,178",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,315",
+              "availabilityRaw": "7/12/2026",
+              "availabilityDate": "2026-07-12"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/the-adler-apartments-los-angeles-ca-90049-23zdm0n/pad"
+        },
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "11950 11950 and 12000 Idaho Ave",
+              "price": 5178,
+              "beds": 3,
+              "baths": 3,
+              "sqft": 1315,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-23",
+              "modifiedOn": "2026-05-25"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "strong-specific",
+      "reviewScore": 92,
+      "reviewRank": 1,
+      "reviewHeadline": "Best overall reviewed full-service option inside the target budget.",
+      "reviewSummary": "VeryApt currently exposes an 8.3/10 user rating from 3 reviews; earlier report themes: secure feel, strong amenities, in-unit laundry, gym/pool, good floor plans; cautions around expensive rent, noise/footsteps, and maintenance responsiveness.",
+      "disposition": "waitlist-or-future-tour",
+      "availabilityRank": 14
+    },
+    {
+      "id": "42",
+      "name": "Colby Missouri by Wiseman",
+      "section": "core",
+      "address": "90025; Colby/Missouri area",
+      "rent": "$4,695-$4,950",
+      "minPrice": 4695,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "HotPads showed 3 units available.",
+      "links": [
+        "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad"
+      ],
+      "availabilityStatus": "future_availability",
+      "moveInTodaySignal": "no",
+      "availabilitySummary": "HotPads exposes 3 matching 3BR unit row(s). Earliest matching 3BR public availability: 2026-06-15",
+      "availableUnits": [
+        {
+          "unit": "New 102",
+          "price": "$4,695",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,354",
+          "availabilityRaw": "6/15/2026",
+          "availabilityDate": "2026-06-15",
+          "source": "HotPads",
+          "url": "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad"
+        },
+        {
+          "unit": "306",
+          "price": "$4,895",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,354",
+          "availabilityRaw": "6/30/2026",
+          "availabilityDate": "2026-06-30",
+          "source": "HotPads",
+          "url": "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad"
+        },
+        {
+          "unit": "New 304",
+          "price": "$4,950",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,354",
+          "availabilityRaw": "6/30/2026",
+          "availabilityDate": "2026-06-30",
+          "source": "HotPads",
+          "url": "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad",
+          "status": "future_availability",
+          "moveInTodaySignal": "no",
+          "summary": "HotPads exposes 3 matching 3BR unit row(s). Earliest matching 3BR public availability: 2026-06-15",
+          "units": [
+            {
+              "unit": "New 102",
+              "price": "$4,695",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,354",
+              "availabilityRaw": "6/15/2026",
+              "availabilityDate": "2026-06-15"
+            },
+            {
+              "unit": "306",
+              "price": "$4,895",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,354",
+              "availabilityRaw": "6/30/2026",
+              "availabilityDate": "2026-06-30"
+            },
+            {
+              "unit": "New 304",
+              "price": "$4,950",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,354",
+              "availabilityRaw": "6/30/2026",
+              "availabilityDate": "2026-06-30"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 15
+    },
+    {
+      "id": "41",
+      "name": "Armacost Bella by Wiseman",
+      "section": "core",
+      "address": "90025; Armacost Ave area",
+      "rent": "$4,850-$4,945",
+      "minPrice": 4850,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "HotPads showed 3 units available.",
+      "links": [
+        "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad"
+      ],
+      "availabilityStatus": "future_availability",
+      "moveInTodaySignal": "no",
+      "availabilitySummary": "HotPads exposes 3 matching 3BR unit row(s). Earliest matching 3BR public availability: 2026-05-27",
+      "availableUnits": [
+        {
+          "unit": "303",
+          "price": "$4,850",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,546",
+          "availabilityRaw": "6/3/2026",
+          "availabilityDate": "2026-06-03",
+          "source": "HotPads",
+          "url": "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad"
+        },
+        {
+          "unit": "206",
+          "price": "$4,850",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,546",
+          "availabilityRaw": "5/31/2026",
+          "availabilityDate": "2026-05-31",
+          "source": "HotPads",
+          "url": "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad"
+        },
+        {
+          "unit": "302",
+          "price": "$4,945",
+          "beds": 3,
+          "baths": "3",
+          "sqft": "1,546",
+          "availabilityRaw": "5/27/2026",
+          "availabilityDate": "2026-05-27",
+          "source": "HotPads",
+          "url": "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad",
+          "status": "future_availability",
+          "moveInTodaySignal": "no",
+          "summary": "HotPads exposes 3 matching 3BR unit row(s). Earliest matching 3BR public availability: 2026-05-27",
+          "units": [
+            {
+              "unit": "303",
+              "price": "$4,850",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,546",
+              "availabilityRaw": "6/3/2026",
+              "availabilityDate": "2026-06-03"
+            },
+            {
+              "unit": "206",
+              "price": "$4,850",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,546",
+              "availabilityRaw": "5/31/2026",
+              "availabilityDate": "2026-05-31"
+            },
+            {
+              "unit": "302",
+              "price": "$4,945",
+              "beds": 3,
+              "baths": "3",
+              "sqft": "1,546",
+              "availabilityRaw": "5/27/2026",
+              "availabilityDate": "2026-05-27"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 16
+    },
+    {
+      "id": "45",
+      "name": "Butler Cabana by Wiseman",
+      "section": "core",
+      "address": "90025; Butler Ave area",
+      "rent": "$4,695",
+      "minPrice": 4695,
+      "bedsBaths": "3 bed / 2.5 bath",
+      "sourceNotes": "HotPads listing. VeryApt has related Wiseman management reviews; verify building-specific reviews.",
+      "links": [
+        "https://hotpads.com/butler-cabana-by-wiseman-los-angeles-ca-90025-stec83/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/butler-cabana-by-wiseman-los-angeles-ca-90025-stec83/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/butler-cabana-by-wiseman-los-angeles-ca-90025-stec83/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 66,
+      "reviewRank": 11,
+      "reviewHeadline": "2.5-bath Wiseman option in budget, lower priority than 3/3 choices.",
+      "reviewSummary": "No building-specific review compilation was confirmed. Prior report noted related Wiseman management review signals; DuckDuckGo exposed Apartments.com as a listing lead.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 17
+    },
+    {
+      "id": "68",
+      "name": "1321 Brockton Ave / Brockton Palace by Wiseman",
+      "section": "core",
+      "address": "1321 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$4,995-$5,095 in HotPads text",
+      "minPrice": 4995,
+      "bedsBaths": "3 bed / 2.5 bath; 2 units available in text",
+      "sourceNotes": "Apt building.",
+      "links": [
+        "https://hotpads.com/brockton-palace-by-wiseman-los-angeles-ca-90025-ttum7w/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/brockton-palace-by-wiseman-los-angeles-ca-90025-ttum7w/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/brockton-palace-by-wiseman-los-angeles-ca-90025-ttum7w/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 18
+    },
+    {
+      "id": "31",
+      "name": "1842 Purdue Ave / #208",
+      "section": "core",
+      "address": "1842 Purdue Ave, Los Angeles, CA 90025",
+      "rent": "$4,100-$4,350 on ApartmentHomeLiving; HotPads exposed a $4,995 row for #208",
+      "minPrice": 4100,
+      "bedsBaths": "3 bed",
+      "sourceNotes": "Verify exact unit and price.",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/1842-Purdue-Ave-Los-Angeles-CA-90025-1879988",
+        "https://hotpads.com/1842-purdue-ave-los-angeles-ca-90025-244bdkb/208/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1842-purdue-ave-los-angeles-ca-90025-244bdkb/208/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1842-purdue-ave-los-angeles-ca-90025-244bdkb/208/pad"
+        },
+        {
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/1842-Purdue-Ave-Los-Angeles-CA-90025-1879988",
+          "status": "contact_for_availability",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "ApartmentHomeLiving says to contact/check for availability; no 3BR date exposed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.apartmenthomeliving.com/apartment-finder/1842-Purdue-Ave-Los-Angeles-CA-90025-1879988"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 19
+    },
+    {
+      "id": "18",
+      "name": "1819 Parnell Ave #5",
+      "section": "core",
+      "address": "1819 Parnell Ave #5, Los Angeles, CA 90025",
+      "rent": "$4,195",
+      "minPrice": 4195,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "In-unit laundry, A/C, on-site laundry.",
+      "links": [
+        "https://www.zumper.com/listings/6045889p/3-bedroom-westside-los-angeles-ca"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper listing entity 20632599 shows 3 bed/3 bath, $4,195 if price is exposed, status=1, date_available=not shown. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1819 Parnell Avenue #5",
+          "price": 4195,
+          "beds": 3,
+          "baths": 3,
+          "sqft": 0,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2025-11-24",
+          "modifiedOn": "2026-05-03",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/6045889p/3-bedroom-westside-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/6045889p/3-bedroom-westside-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper listing entity 20632599 shows 3 bed/3 bath, $4,195 if price is exposed, status=1, date_available=not shown. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1819 Parnell Avenue #5",
+              "price": 4195,
+              "beds": 3,
+              "baths": 3,
+              "sqft": 0,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2025-11-24",
+              "modifiedOn": "2026-05-03"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/listings/6045889p/3-bedroom-westside-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 20
+    },
+    {
+      "id": "53",
+      "name": "2121 Beloit Ave #303",
+      "section": "core",
+      "address": "2121 Beloit Ave #303, Los Angeles, CA 90025",
+      "rent": "HotPads text exposed a nearby $4,195 row; verify on page.",
+      "minPrice": 4195,
+      "bedsBaths": "3 bed / 2 bath in text vicinity",
+      "sourceNotes": "Condo listing; ambiguous text extraction, verify directly.",
+      "links": [
+        "https://hotpads.com/2121-beloit-ave-los-angeles-ca-90025-skpwuu/303/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/2121-beloit-ave-los-angeles-ca-90025-skpwuu/303/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/2121-beloit-ave-los-angeles-ca-90025-skpwuu/303/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 21
+    },
+    {
+      "id": "8",
+      "name": "1850 Camden Ave",
+      "section": "core",
+      "address": "1850 Camden Ave, Los Angeles, CA 90025",
+      "rent": "$4,250",
+      "minPrice": 4250,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Zumper; 3D tour; in-unit laundry, A/C, assigned parking.",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p234734/1850-greenfield-ave-westside-los-angeles-ca"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1850 Camden Ave",
+          "price": 4250,
+          "beds": 3,
+          "baths": 2,
+          "sqft": 1000,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-22",
+          "modifiedOn": "2026-05-26",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p234734/1850-greenfield-ave-westside-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p234734/1850-greenfield-ave-westside-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1850 Camden Ave",
+              "price": 4250,
+              "beds": 3,
+              "baths": 2,
+              "sqft": 1000,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-22",
+              "modifiedOn": "2026-05-26"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/apartment-buildings/p234734/1850-greenfield-ave-westside-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 22
+    },
+    {
+      "id": "17",
+      "name": "1247 Stoner Ave #109",
+      "section": "core",
+      "address": "1247 Stoner Ave #109, Los Angeles, CA 90025",
+      "rent": "$4,295",
+      "minPrice": 4295,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Same building vicinity as Stoner1247 but distinct unit/price.",
+      "links": [
+        "https://www.zumper.com/listings/9729182p/3-bedroom-west-los-angeles-los-angeles-ca"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper listing entity 64259514 shows 3 bed/3 bath, $4,295 if price is exposed, status=1, date_available=not shown. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1247 Stoner Ave #109",
+          "price": 4295,
+          "beds": 3,
+          "baths": 3,
+          "sqft": 1100,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-03",
+          "modifiedOn": "2026-05-07",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/9729182p/3-bedroom-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/9729182p/3-bedroom-west-los-angeles-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper listing entity 64259514 shows 3 bed/3 bath, $4,295 if price is exposed, status=1, date_available=not shown. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1247 Stoner Ave #109",
+              "price": 4295,
+              "beds": 3,
+              "baths": 3,
+              "sqft": 1100,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-03",
+              "modifiedOn": "2026-05-07"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/listings/9729182p/3-bedroom-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 23
+    },
+    {
+      "id": "1",
+      "name": "Maison De Glen LLC",
+      "section": "core",
+      "address": "1238 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$4,300",
+      "minPrice": 4300,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Zumper; 4d ago; amenities included on-site laundry, balcony, storage.",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p422950/maison-de-glen-llc-west-los-angeles-los-angeles-ca"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1238 Barry Ave",
+          "price": 4300,
+          "beds": 3,
+          "baths": 2,
+          "sqft": 1400,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-22",
+          "modifiedOn": "2026-05-22",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p422950/maison-de-glen-llc-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p422950/maison-de-glen-llc-west-los-angeles-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1238 Barry Ave",
+              "price": 4300,
+              "beds": 3,
+              "baths": 2,
+              "sqft": 1400,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-22",
+              "modifiedOn": "2026-05-22"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/apartment-buildings/p422950/maison-de-glen-llc-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 24
+    },
+    {
+      "id": "A5",
+      "name": "2415 Federal Ave #2419",
+      "section": "adjacent",
+      "address": "2415 Federal Ave #2419, Los Angeles, CA 90064",
+      "rent": "$4,395 in HotPads text",
+      "minPrice": 4395,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Condo; adjacent 90064.",
+      "links": [
+        "https://hotpads.com/2415-federal-ave-los-angeles-ca-90064-1m2ruyp/2419/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/2415-federal-ave-los-angeles-ca-90064-1m2ruyp/2419/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/2415-federal-ave-los-angeles-ca-90064-1m2ruyp/2419/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 25
+    },
+    {
+      "id": "48",
+      "name": "11516 Ohio Ave #101",
+      "section": "core",
+      "address": "11516 Ohio Ave #101, Los Angeles, CA 90025",
+      "rent": "$4,495 in HotPads text",
+      "minPrice": 4495,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/11516-ohio-ave-los-angeles-ca-90025-swyyq6/101/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/11516-ohio-ave-los-angeles-ca-90025-swyyq6/101/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/11516-ohio-ave-los-angeles-ca-90025-swyyq6/101/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 26
+    },
+    {
+      "id": "7",
+      "name": "1824 Fairburn Ave",
+      "section": "core",
+      "address": "1824 Fairburn Ave, Los Angeles, CA 90025",
+      "rent": "$4,637",
+      "minPrice": 4637,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Zumper; in-unit laundry, on-site laundry, dishwasher.",
+      "links": [
+        "https://www.zumper.com/listings/28246329p/3-bedroom-westside-los-angeles-ca"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper listing entity 64114194 shows 3 bed/2 bath, $4,637 if price is exposed, status=1, date_available=not shown. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1824 Fairburn Ave",
+          "price": 4637,
+          "beds": 3,
+          "baths": 2,
+          "sqft": 1500,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-23",
+          "modifiedOn": "2026-05-23",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/28246329p/3-bedroom-westside-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/28246329p/3-bedroom-westside-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper listing entity 64114194 shows 3 bed/2 bath, $4,637 if price is exposed, status=1, date_available=not shown. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1824 Fairburn Ave",
+              "price": 4637,
+              "beds": 3,
+              "baths": 2,
+              "sqft": 1500,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-23",
+              "modifiedOn": "2026-05-23"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/listings/28246329p/3-bedroom-westside-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 27
+    },
+    {
+      "id": "A7",
+      "name": "2452 Colby Ave",
+      "section": "adjacent",
+      "address": "2452 Colby Ave, Los Angeles, CA 90064",
+      "rent": "$4,650",
+      "minPrice": 4650,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "House; adjacent 90064.",
+      "links": [
+        "https://hotpads.com/2452-colby-ave-los-angeles-ca-90064-1m2rv1a/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/2452-colby-ave-los-angeles-ca-90064-1m2rv1a/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/2452-colby-ave-los-angeles-ca-90064-1m2rv1a/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 28
+    },
+    {
+      "id": "54",
+      "name": "1672 Federal Ave #1",
+      "section": "core",
+      "address": "1672 Federal Ave #1, Los Angeles, CA 90025",
+      "rent": "HotPads text exposed a nearby $4,750 row; verify on page.",
+      "minPrice": 4750,
+      "bedsBaths": "3 bed / 2.5 bath in text vicinity",
+      "sourceNotes": "Condo listing; ambiguous text extraction, verify directly.",
+      "links": [
+        "https://hotpads.com/1672-federal-ave-los-angeles-ca-90025-ttuqf4/1/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1672-federal-ave-los-angeles-ca-90025-ttuqf4/1/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1672-federal-ave-los-angeles-ca-90025-ttuqf4/1/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 29
+    },
+    {
+      "id": "64",
+      "name": "1449 Butler Ave #3",
+      "section": "core",
+      "address": "1449 Butler Ave #3, Los Angeles, CA 90025",
+      "rent": "$4,750 in HotPads text",
+      "minPrice": 4750,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/1449-butler-ave-los-angeles-ca-90025-skp8z8/3/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1449-butler-ave-los-angeles-ca-90025-skp8z8/3/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1449-butler-ave-los-angeles-ca-90025-skp8z8/3/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 30
+    },
+    {
+      "id": "14",
+      "name": "1522 Amherst Ave #402",
+      "section": "core",
+      "address": "1522 Amherst Ave #402, Los Angeles, CA 90025",
+      "rent": "$4,950 on Zumper/HotPads text",
+      "minPrice": 4950,
+      "bedsBaths": "3 bed / 3 bath on Zumper",
+      "sourceNotes": "Condo; in-unit laundry, balcony, hardwood floor.",
+      "links": [
+        "https://www.zumper.com/listings/9133806p/3-bedroom-west-los-angeles-ca",
+        "https://hotpads.com/1522-amherst-ave-los-angeles-ca-90025-skq2yd/402/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [
+        {
+          "unit": "1522 Amherst Ave #402",
+          "price": 4950,
+          "beds": 3,
+          "baths": 3,
+          "sqft": 1741,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-14",
+          "modifiedOn": "2026-05-15",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/9133806p/3-bedroom-west-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1522-amherst-ave-los-angeles-ca-90025-skq2yd/402/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1522-amherst-ave-los-angeles-ca-90025-skq2yd/402/pad"
+        },
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/9133806p/3-bedroom-west-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper listing entity 64350340 shows 3 bed/3 bath, $4,950 if price is exposed, status=1, date_available=not shown. Parsed Zumper canonical path: /listings/9133806p/3-bedroom-west-los-angeles-los-angeles-ca. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1522 Amherst Ave #402",
+              "price": 4950,
+              "beds": 3,
+              "baths": 3,
+              "sqft": 1741,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-14",
+              "modifiedOn": "2026-05-15"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/listings/9133806p/3-bedroom-west-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 31
+    },
+    {
+      "id": "29",
+      "name": "1403 Brockton Ave / #1403",
+      "section": "core",
+      "address": "1403 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$4,995",
+      "minPrice": 4995,
+      "bedsBaths": "3 bed / 3 bath in HotPads text",
+      "sourceNotes": "ApartmentHomeLiving and HotPads both had listings.",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/1403-Brockton-Ave-Los-Angeles-CA-90025-5973814",
+        "https://hotpads.com/1403-brockton-ave-los-angeles-ca-90025-1m2kzr4/1403/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1403-brockton-ave-los-angeles-ca-90025-1m2kzr4/1403/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1403-brockton-ave-los-angeles-ca-90025-1m2kzr4/1403/pad"
+        },
+        {
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/1403-Brockton-Ave-Los-Angeles-CA-90025-5973814",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "ApartmentHomeLiving page loaded, but no current 3BR availability signal was found.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.apartmenthomeliving.com/apartment-finder/1403-Brockton-Ave-Los-Angeles-CA-90025-5973814"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 32
+    },
+    {
+      "id": "62",
+      "name": "1851 Brockton Ave",
+      "section": "core",
+      "address": "1851 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$5,000 in HotPads text",
+      "minPrice": 5000,
+      "bedsBaths": "3 bed / 1 bath",
+      "sourceNotes": "House listing.",
+      "links": [
+        "https://hotpads.com/1851-brockton-ave-los-angeles-ca-90025-suawfk/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1851-brockton-ave-los-angeles-ca-90025-suawfk/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1851-brockton-ave-los-angeles-ca-90025-suawfk/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 33
+    },
+    {
+      "id": "19",
+      "name": "1330 Federal Ave #302",
+      "section": "core",
+      "address": "1330 Federal Ave #302, Los Angeles, CA 90025",
+      "rent": "$5,195",
+      "minPrice": 5195,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "In-unit laundry, A/C, balcony.",
+      "links": [
+        "https://www.zumper.com/address/1330-federal-ave-los-angeles-ca-90025-usa"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Zumper listing entity 62907523 shows 3 bed/2 bath, $5,195 if price is exposed, status=1, date_available=not shown. Parsed Zumper canonical path: /listings/10230622p/3-bedroom-west-los-angeles-los-angeles-ca. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+      "availableUnits": [
+        {
+          "unit": "1330 Federal Avenue #302",
+          "price": 5195,
+          "beds": 3,
+          "baths": 2,
+          "sqft": 0,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2025-11-07",
+          "modifiedOn": "2026-04-27",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/1330-federal-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/1330-federal-ave-los-angeles-ca-90025-usa",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper listing entity 62907523 shows 3 bed/2 bath, $5,195 if price is exposed, status=1, date_available=not shown. Parsed Zumper canonical path: /listings/10230622p/3-bedroom-west-los-angeles-los-angeles-ca. 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1330 Federal Avenue #302",
+              "price": 5195,
+              "beds": 3,
+              "baths": 2,
+              "sqft": 0,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2025-11-07",
+              "modifiedOn": "2026-04-27"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/address/1330-federal-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 34
+    },
+    {
+      "id": "A6",
+      "name": "2441 Federal Ave",
+      "section": "adjacent",
+      "address": "2441 Federal Ave, Los Angeles, CA 90064",
+      "rent": "$5,295 in HotPads text",
+      "minPrice": 5295,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Townhouse; adjacent 90064.",
+      "links": [
+        "https://hotpads.com/2441-federal-ave-los-angeles-ca-90064-1m2rv07/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/2441-federal-ave-los-angeles-ca-90064-1m2rv07/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/2441-federal-ave-los-angeles-ca-90064-1m2rv07/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 35
+    },
+    {
+      "id": "55",
+      "name": "11260 Mississippi Ave #405",
+      "section": "core",
+      "address": "11260 Mississippi Ave #405, Los Angeles, CA 90025",
+      "rent": "$5,299 in HotPads text",
+      "minPrice": 5299,
+      "bedsBaths": "3 bed / 2.5 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/11260-mississippi-ave-los-angeles-ca-90025-1m2kx2t/405/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/11260-mississippi-ave-los-angeles-ca-90025-1m2kx2t/405/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/11260-mississippi-ave-los-angeles-ca-90025-1m2kx2t/405/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 36
+    },
+    {
+      "id": "59",
+      "name": "1815 Armacost Ave #A",
+      "section": "core",
+      "address": "1815 Armacost Ave #A, Los Angeles, CA 90025",
+      "rent": "$5,300 total price in HotPads text",
+      "minPrice": 5300,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/1815-armacost-ave-los-angeles-ca-90025-1m2m21t/a/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1815-armacost-ave-los-angeles-ca-90025-1m2m21t/a/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1815-armacost-ave-los-angeles-ca-90025-1m2m21t/a/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 37
+    },
+    {
+      "id": "66",
+      "name": "1525 S Carmelina Ave #1527-1/2",
+      "section": "core",
+      "address": "1525 S Carmelina Ave #1527-1/2, Los Angeles, CA 90025",
+      "rent": "$5,312 in HotPads text",
+      "minPrice": 5312,
+      "bedsBaths": "3 bed / 2 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/1525-s-carmelina-ave-los-angeles-ca-90025-1n1w3yk/1527-12/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1525-s-carmelina-ave-los-angeles-ca-90025-1n1w3yk/1527-12/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1525-s-carmelina-ave-los-angeles-ca-90025-1n1w3yk/1527-12/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 38
+    },
+    {
+      "id": "9",
+      "name": "Navda LLC / 1261 Stoner Ave",
+      "section": "core",
+      "address": "1261 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$5,495 on Zumper; HotPads had a related page with 3BR availability",
+      "minPrice": 5495,
+      "bedsBaths": "3 bed / 2 bath on Zumper; HotPads text showed 3 bed / 2.5 bath on one row",
+      "sourceNotes": "Price drop on Zumper; verify unit-specific bed/bath.",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p716309/navda-llc-1261-stoner-ave-west-los-angeles-los-angeles-ca",
+        "https://hotpads.com/navda-llc-(1261-stoner-ave)-los-angeles-ca-90025-tyg7wv/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [
+        {
+          "unit": "1261 Stoner Ave",
+          "price": 5495,
+          "beds": 3,
+          "baths": 2,
+          "sqft": 1450,
+          "availabilityRaw": "Active / date not shown",
+          "availabilityDate": null,
+          "listedOn": "2026-05-22",
+          "modifiedOn": "2026-04-24",
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p716309/navda-llc-1261-stoner-ave-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/navda-llc-(1261-stoner-ave)-los-angeles-ca-90025-tyg7wv/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/navda-llc-(1261-stoner-ave)-los-angeles-ca-90025-tyg7wv/pad"
+        },
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/apartment-buildings/p716309/navda-llc-1261-stoner-ave-west-los-angeles-los-angeles-ca",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Zumper building data exposes 1 active 3BR floorplan/listing record(s). 1 matching 3BR active unit/floorplan record(s), but no date exposed",
+          "units": [
+            {
+              "unit": "1261 Stoner Ave",
+              "price": 5495,
+              "beds": 3,
+              "baths": 2,
+              "sqft": 1450,
+              "availabilityRaw": "Active / date not shown",
+              "availabilityDate": null,
+              "listedOn": "2026-05-22",
+              "modifiedOn": "2026-04-24"
+            }
+          ],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/apartment-buildings/p716309/navda-llc-1261-stoner-ave-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 39
+    },
+    {
+      "id": "37",
+      "name": "RBM Westwood Apartments",
+      "section": "core",
+      "address": "2121 Westwood Blvd, Los Angeles, CA 90025",
+      "rent": "$6,000+",
+      "minPrice": 6000,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Rent.com showed available Aug 1; rooftop/fitness amenities.",
+      "links": [
+        "https://www.rent.com/apartment/rbm-westwood-apartments-los-angeles-ca-lc6593380"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "Rent.com page loads but no 3BR date/Available Now row was parseable.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "Rent.com",
+          "url": "https://www.rent.com/apartment/rbm-westwood-apartments-los-angeles-ca-lc6593380",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "Rent.com page loads but no 3BR date/Available Now row was parseable.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.rent.com/apartment/rbm-westwood-apartments-los-angeles-ca-lc6593380"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 40
+    },
+    {
+      "id": "60",
+      "name": "11254 Mississippi Ave #104A",
+      "section": "core",
+      "address": "11254 Mississippi Ave #104A, Los Angeles, CA 90025",
+      "rent": "$6,500",
+      "minPrice": 6500,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Townhouse; HotPads marked special offer.",
+      "links": [
+        "https://hotpads.com/11254-mississippi-ave-los-angeles-ca-90025-1m2kx2m/104a/pad"
+      ],
+      "availabilityStatus": "active_no_date",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/11254-mississippi-ave-los-angeles-ca-90025-1m2kx2m/104a/pad",
+          "status": "active_no_date",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads page loads and has contact/tour flow, but no parseable 3BR availability table.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/11254-mississippi-ave-los-angeles-ca-90025-1m2kx2m/104a/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 41
+    },
+    {
+      "id": "26",
+      "name": "Bentley Luxury Investments LLC",
+      "section": "core",
+      "address": "2050 S Bentley Ave, Los Angeles, CA 90025",
+      "rent": "$5,295",
+      "minPrice": 5295,
+      "bedsBaths": "3 bed",
+      "sourceNotes": "ApartmentHomeLiving showed contact for availability.",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Bentley-Luxury-Investments-LLC-Los-Angeles-CA-90025-1996126"
+      ],
+      "availabilityStatus": "contact_for_availability",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "ApartmentHomeLiving says to contact/check for availability; no 3BR date exposed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/Bentley-Luxury-Investments-LLC-Los-Angeles-CA-90025-1996126",
+          "status": "contact_for_availability",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "ApartmentHomeLiving says to contact/check for availability; no 3BR date exposed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.apartmenthomeliving.com/apartment-finder/Bentley-Luxury-Investments-LLC-Los-Angeles-CA-90025-1996126"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 42
+    },
+    {
+      "id": "24",
+      "name": "Lido Apartments - 1550 Brockton Ave",
+      "section": "core",
+      "address": "1550 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$5,595",
+      "minPrice": 5595,
+      "bedsBaths": "3 bed",
+      "sourceNotes": "ApartmentHomeLiving showed contact for availability.",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Lido-Apartments-1550-Brockton-Ave-Los-Angeles-CA-90025-16413383"
+      ],
+      "availabilityStatus": "contact_for_availability",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "ApartmentHomeLiving says to contact/check for availability; no 3BR date exposed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/Lido-Apartments-1550-Brockton-Ave-Los-Angeles-CA-90025-16413383",
+          "status": "contact_for_availability",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "ApartmentHomeLiving says to contact/check for availability; no 3BR date exposed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.apartmenthomeliving.com/apartment-finder/Lido-Apartments-1550-Brockton-Ave-Los-Angeles-CA-90025-16413383"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 43
+    },
+    {
+      "id": "44",
+      "name": "Barry Diamond by Wiseman",
+      "section": "core",
+      "address": "90025; Barry Ave area",
+      "rent": "$4,795",
+      "minPrice": 4795,
+      "bedsBaths": "3 bed / 3 bath on HotPads text",
+      "sourceNotes": "HotPads showed 1 unit available.",
+      "links": [
+        "https://hotpads.com/barry-diamond-by-wiseman-los-angeles-ca-90025-1ukavpg/pad"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads denied automated access; manual browser check needed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/barry-diamond-by-wiseman-los-angeles-ca-90025-1ukavpg/pad",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads denied automated access; manual browser check needed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/barry-diamond-by-wiseman-los-angeles-ca-90025-1ukavpg/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 44
+    },
+    {
+      "id": "46",
+      "name": "Iowa Homes by Wiseman",
+      "section": "core",
+      "address": "90025; Iowa Ave area",
+      "rent": "$4,795-$4,895",
+      "minPrice": 4795,
+      "bedsBaths": "3 bed; HotPads showed 3 units available",
+      "sourceNotes": "Verify exact address/unit.",
+      "links": [
+        "https://hotpads.com/iowa-homes-by-wiseman-los-angeles-ca-90025-250zvdu/pad"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads denied automated access; manual browser check needed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/iowa-homes-by-wiseman-los-angeles-ca-90025-250zvdu/pad",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads denied automated access; manual browser check needed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/iowa-homes-by-wiseman-los-angeles-ca-90025-250zvdu/pad"
+        }
+      ],
+      "reviewTier": "mixed-or-manager-wide",
+      "reviewScore": 52,
+      "reviewRank": null,
+      "reviewHeadline": "Manager-wide review caution",
+      "reviewSummary": "Wiseman-managed listing: management-wide sources are mixed/polarized. VeryApt showed Wiseman Management with 91 reviews and a 6.8 management rating; prior scrape also found Birdeye/Wiseman caution themes around responsiveness, packages, and fees.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 45
+    },
+    {
+      "id": "25",
+      "name": "1409 S Westgate Ave",
+      "section": "core",
+      "address": "1409 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "$4,200-$4,950",
+      "minPrice": 4200,
+      "bedsBaths": "3 bed",
+      "sourceNotes": "ApartmentHomeLiving showed available Jun 20.",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/1409-S-Westgate-Ave-Los-Angeles-CA-90025-6064618"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "ApartmentHomeLiving page loaded, but no current 3BR availability signal was found.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "ApartmentHomeLiving",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/1409-S-Westgate-Ave-Los-Angeles-CA-90025-6064618",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "ApartmentHomeLiving page loaded, but no current 3BR availability signal was found.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.apartmenthomeliving.com/apartment-finder/1409-S-Westgate-Ave-Los-Angeles-CA-90025-6064618"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 46
+    },
+    {
+      "id": "67",
+      "name": "12018 Rhode Island Ave",
+      "section": "core",
+      "address": "12018 Rhode Island Ave, Los Angeles, CA 90025",
+      "rent": "$4,700 in HotPads text",
+      "minPrice": 4700,
+      "bedsBaths": "3 bed / 2.5 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/12018-rhode-island-ave-los-angeles-ca-90025-1m2kynz/pad"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads denied automated access; manual browser check needed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/12018-rhode-island-ave-los-angeles-ca-90025-1m2kynz/pad",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads denied automated access; manual browser check needed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/12018-rhode-island-ave-los-angeles-ca-90025-1m2kynz/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 47
+    },
+    {
+      "id": "69",
+      "name": "1301 S Westgate Ave #402",
+      "section": "core",
+      "address": "1301 S Westgate Ave #402, Los Angeles, CA 90025",
+      "rent": "$4,700 in HotPads text",
+      "minPrice": 4700,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/1301-s-westgate-ave-los-angeles-ca-90025-svdnmf/402/pad"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads denied automated access; manual browser check needed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1301-s-westgate-ave-los-angeles-ca-90025-svdnmf/402/pad",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads denied automated access; manual browser check needed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1301-s-westgate-ave-los-angeles-ca-90025-svdnmf/402/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 48
+    },
+    {
+      "id": "58",
+      "name": "1316 Amherst Ave #201",
+      "section": "core",
+      "address": "1316 Amherst Ave #201, Los Angeles, CA 90025",
+      "rent": "$4,990",
+      "minPrice": 4990,
+      "bedsBaths": "3 bed / 3.5 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/1316-amherst-ave-los-angeles-ca-90025-skrt6c/201/pad"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads denied automated access; manual browser check needed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1316-amherst-ave-los-angeles-ca-90025-skrt6c/201/pad",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads denied automated access; manual browser check needed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1316-amherst-ave-los-angeles-ca-90025-skrt6c/201/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 49
+    },
+    {
+      "id": "65",
+      "name": "1832 S Barrington Ave #401",
+      "section": "core",
+      "address": "1832 S Barrington Ave #401, Los Angeles, CA 90025",
+      "rent": "$5,990 in HotPads text",
+      "minPrice": 5990,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Condo listing.",
+      "links": [
+        "https://hotpads.com/1832-s-barrington-ave-los-angeles-ca-90025-tzc6ks/401/pad"
+      ],
+      "availabilityStatus": "needs_manual",
+      "moveInTodaySignal": "needs-confirmation",
+      "availabilitySummary": "HotPads denied automated access; manual browser check needed.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "HotPads",
+          "url": "https://hotpads.com/1832-s-barrington-ave-los-angeles-ca-90025-tzc6ks/401/pad",
+          "status": "needs_manual",
+          "moveInTodaySignal": "needs-confirmation",
+          "summary": "HotPads denied automated access; manual browser check needed.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://hotpads.com/1832-s-barrington-ave-los-angeles-ca-90025-tzc6ks/401/pad"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "backup-or-manual-check",
+      "availabilityRank": 50
+    },
+    {
+      "id": "16",
+      "name": "1621 Barry Ave #PH3",
+      "section": "core",
+      "address": "1621 Barry Ave #PH3, Los Angeles, CA 90025",
+      "rent": "$6,500",
+      "minPrice": 6500,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "Zumper title mentioned utilities included / great amenities; verify.",
+      "links": [
+        "https://www.zumper.com/listings/13334302p/3-bedroom-west-los-angeles-los-angeles-ca"
+      ],
+      "availabilityStatus": "unavailable_or_stale",
+      "moveInTodaySignal": "no",
+      "availabilitySummary": "Zumper listing entity 64349752 shows 4 bed/3 bath, $6,300 if price is exposed, status=1, date_available=2026/05/13. Parsed Zumper canonical path: /listings/28493557p/4-bedroom-west-los-angeles-los-angeles-ca.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/listings/13334302p/3-bedroom-west-los-angeles-los-angeles-ca",
+          "status": "unavailable_or_stale",
+          "moveInTodaySignal": "no",
+          "summary": "Zumper listing entity 64349752 shows 4 bed/3 bath, $6,300 if price is exposed, status=1, date_available=2026/05/13. Parsed Zumper canonical path: /listings/28493557p/4-bedroom-west-los-angeles-los-angeles-ca.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/listings/13334302p/3-bedroom-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 70,
+      "reviewRank": 9,
+      "reviewHeadline": "Top-of-budget penthouse-style option with little review evidence.",
+      "reviewSummary": "Listing data shows 3 bed / 3 bath at $6,500. No independent review source was confirmed in the scrape.",
+      "disposition": "likely-stale",
+      "availabilityRank": 51
+    },
+    {
+      "id": "15",
+      "name": "1621 Barry Ave #203",
+      "section": "core",
+      "address": "1621 Barry Ave #203, Los Angeles, CA 90025",
+      "rent": "$4,700 on Zumper, down from $4,900",
+      "minPrice": 4700,
+      "bedsBaths": "3 bed / 3 bath",
+      "sourceNotes": "In-unit laundry, garage/assigned parking.",
+      "links": [
+        "https://www.zumper.com/address/1621-barry-ave-los-angeles-ca-90025-usa"
+      ],
+      "availabilityStatus": "unavailable_or_stale",
+      "moveInTodaySignal": "no",
+      "availabilitySummary": "Zumper listing entity 64349752 shows 4 bed/3 bath, $6,300 if price is exposed, status=1, date_available=2026/05/13. Parsed Zumper canonical path: /listings/28493557p/4-bedroom-west-los-angeles-los-angeles-ca.",
+      "availableUnits": [],
+      "allSignals": [
+        {
+          "source": "Zumper",
+          "url": "https://www.zumper.com/address/1621-barry-ave-los-angeles-ca-90025-usa",
+          "status": "unavailable_or_stale",
+          "moveInTodaySignal": "no",
+          "summary": "Zumper listing entity 64349752 shows 4 bed/3 bath, $6,300 if price is exposed, status=1, date_available=2026/05/13. Parsed Zumper canonical path: /listings/28493557p/4-bedroom-west-los-angeles-los-angeles-ca.",
+          "units": [],
+          "fetchedStatus": 200,
+          "fetchedUrl": "https://www.zumper.com/address/1621-barry-ave-los-angeles-ca-90025-usa"
+        }
+      ],
+      "reviewTier": "thin",
+      "reviewScore": 45,
+      "reviewRank": null,
+      "reviewHeadline": "Review-light",
+      "reviewSummary": "No reliable building-specific review compilation was confirmed; tour and recent-resident questions matter more.",
+      "disposition": "likely-stale",
+      "availabilityRank": 52
+    }
+  ]
+}

@@ -439,6 +439,110 @@ input, select {
 }
 .review-source-list li + li, .checklist li + li { margin-top: .45rem; }
 
+.availability-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+  gap: .75rem;
+  margin: 0 0 1rem;
+}
+.availability-stat {
+  padding: .9rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgb(37 32 24 / 6%);
+}
+.availability-stat.total { background: #edf5f2; border-color: #b8d2c9; }
+.availability-stat dd { font-size: 1.55rem; }
+.availability-notes { margin: 1rem 0 1.25rem; }
+.availability-notes p { margin: .45rem 0 0; color: var(--muted); }
+.availability-subsection { margin-top: 1.5rem; }
+.compact-heading { margin-bottom: .75rem; }
+.availability-list {
+  display: grid;
+  gap: .9rem;
+}
+.availability-card {
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left-width: 6px;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgb(37 32 24 / 7%);
+}
+.availability-list.compact .availability-card { padding: .85rem; }
+.availability-card.status-available_now { border-left-color: var(--green); }
+.availability-card.status-future_availability { border-left-color: var(--blue); }
+.availability-card.status-active_no_date { border-left-color: var(--orange); }
+.availability-card.status-contact_for_availability { border-left-color: var(--purple); }
+.availability-card.status-needs_manual { border-left-color: var(--muted); }
+.availability-card.status-unavailable_or_stale { border-left-color: var(--accent); }
+.availability-card-top {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .75rem;
+  align-items: start;
+}
+.availability-rank {
+  display: grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  background: #f4efe4;
+  border: 1px solid var(--line);
+  font-weight: 900;
+}
+.availability-main { display: grid; gap: .45rem; }
+.availability-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: .85rem;
+}
+.availability-title-row h3 { margin: 0 0 .25rem; }
+.status-pill {
+  flex: 0 0 auto;
+  padding: .32rem .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #f4efe4;
+  font-size: .77rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.status-pill.status-available_now { color: #125333; background: #e4f2ea; border-color: #a8ceb9; }
+.status-pill.status-future_availability { color: #1d4779; background: #e9f0fb; border-color: #b8cae6; }
+.status-pill.status-unavailable_or_stale { color: #8d231d; background: #f8e5e3; border-color: #e3b5b1; }
+.status-pill.status-active_no_date { color: #874715; background: #fbecdc; border-color: #dfbd9b; }
+.status-pill.status-contact_for_availability { color: #563177; background: #f0e8f5; border-color: #cbb8dc; }
+.status-pill.status-needs_manual { color: #45423c; background: #efebe3; border-color: #d5cec1; }
+.availability-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: .85rem;
+  margin-top: .85rem;
+}
+.availability-body .links { grid-column: 1 / -1; }
+.availability-body p { margin: .25rem 0 0; }
+.availability-body ul { margin: .45rem 0 0; padding-left: 1.1rem; }
+.availability-body li + li { margin-top: .25rem; }
+.all-options {
+  padding: 1rem;
+  background: #fbf8f1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.all-options summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+  margin-bottom: .75rem;
+}
+
 @media (max-width: 880px) {
   .hero-grid, .map-layout { grid-template-columns: 1fr; }
   .hero { min-height: auto; }
@@ -457,4 +561,6 @@ input, select {
   .map-wrap, #map { min-height: 420px; }
   .rank-card { grid-template-columns: 1fr; }
   .rank-title { flex-direction: column; }
+  .availability-card-top, .availability-body { grid-template-columns: 1fr; }
+  .availability-title-row, .all-options summary { flex-direction: column; align-items: start; }
 }
