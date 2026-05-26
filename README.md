@@ -4,11 +4,15 @@ Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apa
 
 ## Files
 
-- `index.html` - single-page app shell.
-- `styles.css` - responsive styling.
+- `index.html` - main interactive map/listing app shell.
+- `top-picks.html` - ranked recommendations page for the $4,000-$6,500 target budget.
+- `styles.css` - responsive styling for the map, listing filters, and ranked page.
 - `leaflet-fallback.css` - local critical Leaflet layout CSS so panes, tiles, markers, controls, and popups still render correctly if the CDN stylesheet fails.
-- `app.js` - client-side JSON loading, filtering, cards, and Leaflet map rendering.
+- `app.js` - client-side JSON loading, map rendering, listing cards, bed/bath filters, price filters, and source links.
+- `top-picks.js` - client-side renderer for the ranked top-picks page.
 - `data/app-data.json` - source of truth for listings, stats, reviews, area notes, and asset paths.
+- `data/top-picks.json` - ranked shortlist, review summaries, evidence snippets, source links, and tour checklist.
+- `data/ranking-source-snippets.json` - raw text-rendered scrape evidence archive used to build the top-picks summaries.
 - `assets/` - mapped PDF and static fallback map images.
 - `.nojekyll` - keeps GitHub Pages from running Jekyll processing.
 

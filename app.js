@@ -88,7 +88,7 @@
   }
 
   function bindControls() {
-    ["search", "section-filter", "tier-filter", "sort", "hide-room"].forEach((id) => {
+    ["search", "section-filter", "tier-filter", "bath-filter", "min-price", "max-price", "sort", "hide-room"].forEach((id) => {
       $(id).addEventListener("input", renderListings);
       $(id).addEventListener("change", renderListings);
     });
@@ -99,14 +99,25 @@
     const query = $("search").value.trim().toLowerCase();
     const section = $("section-filter").value;
     const tier = $("tier-filter").value;
+    const bath = $("bath-filter").value;
+    const minPrice = parsePriceInput($("min-price").value);
+    const maxPrice = parsePriceInput($("max-price").value);
     const sort = $("sort").value;
     const hideRoom = $("hide-room").checked;
+    const hasPriceFilter = minPrice !== null || maxPrice !== null;
 
     let listings = state.listings.filter((item) => {
       const text = [item.id, item.name, item.address, item.rent, item.beds_baths, item.source_notes].join(" ").toLowerCase();
+      const itemBath = parseBedsBaths(item.beds_baths);
+      const price = Number(item.min_price);
+      const hasKnownPrice = Number.isFinite(price);
       return (!query || text.includes(query)) &&
         (section === "all" || item.section === section) &&
         (tier === "all" || normalizedClass(item) === tier) &&
+        (bath === "all" || itemBath === bath) &&
+        (!hasPriceFilter || (hasKnownPrice &&
+          (minPrice === null || price >= minPrice) &&
+          (maxPrice === null || price <= maxPrice))) &&
         (!hideRoom || !item.co_living_or_room);
     });
 
@@ -181,12 +192,19 @@
 
   function renderListingCard(item) {
     const markerClass = normalizedClass(item);
-    const links = (item.links || []).map((url, index) => `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">Source ${index + 1}</a>`).join("");
+    const links = renderSourceLinks(item.links);
+    const primaryUrl = firstUrl(item.links);
+    const title = primaryUrl
+      ? `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${escapeHtml(item.name)}</a>`
+      : escapeHtml(item.name);
+    const primary = primaryUrl
+      ? `<a class="primary-source" href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">Open primary source</a>`
+      : "";
     return `
       <article class="card listing-card">
         <div class="card-top">
           <div>
-            <h3>${escapeHtml(item.name)}</h3>
+            <h3>${title}</h3>
             <div class="meta">${escapeHtml(item.address_raw || item.address)}</div>
           </div>
           <span class="pin" style="background:${COLORS[markerClass] || COLORS.unknown}">${escapeHtml(item.id)}</span>
@@ -199,21 +217,28 @@
           <span class="badge">${escapeHtml(LABELS[markerClass] || markerClass)}</span>
           ${item.co_living_or_room ? '<span class="badge">Co-living / per-room risk</span>' : ""}
         </div>
-        <div class="links">${links || "<span class=\"meta\">No source link listed</span>"}</div>
+        <div class="links">${primary}${links || "<span class=\"meta\">No source link listed</span>"}</div>
       </article>
     `;
   }
 
   function renderPopup(item) {
-    const links = (item.links || []).map((url, index) => `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">Source ${index + 1}</a>`).join(" ");
+    const primaryUrl = firstUrl(item.links);
+    const title = primaryUrl
+      ? `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${escapeHtml(item.id)}. ${escapeHtml(item.name)}</a>`
+      : `${escapeHtml(item.id)}. ${escapeHtml(item.name)}`;
+    const primary = primaryUrl
+      ? `<a class="primary-source" href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">Open primary source</a>`
+      : "";
+    const links = renderSourceLinks(item.links);
     return `
       <div class="popup">
-        <h3>${escapeHtml(item.id)}. ${escapeHtml(item.name)}</h3>
+        <h3>${title}</h3>
         <p><strong>Address:</strong> ${escapeHtml(item.address_raw || item.address)}</p>
         <p><strong>Rent:</strong> ${escapeHtml(item.rent)}</p>
         <p><strong>Beds:</strong> ${escapeHtml(item.beds_baths || "Not specified")}</p>
         <p><strong>Notes:</strong> ${escapeHtml(item.source_notes || "No source notes provided.")}</p>
-        <p>${links}</p>
+        <div class="links">${primary}${links}</div>
       </div>
     `;
   }
@@ -240,6 +265,50 @@
 
   function normalizedClass(item) {
     return item.marker_class || "unknown";
+  }
+
+  function parseBedsBaths(value) {
+    const text = String(value || "").toLowerCase();
+    const allowedBaths = new Set([1, 2, 2.5, 3, 3.5, 4]);
+    const pairs = [];
+    const pairedPattern = /(\d+(?:\.\d+)?)\s*(?:bed|br|bd|bedroom)s?\s*(?:\/|,|and|with|-)\s*(\d+(?:\.\d+)?)\s*(?:bath|ba|bth|bathroom)s?/g;
+    let match;
+
+    while ((match = pairedPattern.exec(text)) !== null) {
+      pairs.push({ beds: Number(match[1]), baths: Number(match[2]) });
+    }
+
+    if (!pairs.length) {
+      const bedMatch = text.match(/(\d+(?:\.\d+)?)\s*(?:bed|br|bd|bedroom)s?/);
+      const bathMatch = text.match(/(\d+(?:\.\d+)?)\s*(?:bath|ba|bth|bathroom)s?/);
+      if (bedMatch && bathMatch) pairs.push({ beds: Number(bedMatch[1]), baths: Number(bathMatch[1]) });
+    }
+
+    const validPairs = pairs.filter((pair) => pair.beds === 3 && allowedBaths.has(pair.baths));
+    const distinctBaths = [...new Set(validPairs.map((pair) => pair.baths))];
+    if (distinctBaths.length !== 1) return "unknown";
+    return `3-${formatBathValue(distinctBaths[0])}`;
+  }
+
+  function formatBathValue(value) {
+    return Number.isInteger(value) ? String(value) : String(value);
+  }
+
+  function parsePriceInput(value) {
+    const trimmed = String(value || "").trim();
+    if (!trimmed) return null;
+    const number = Number(trimmed);
+    return Number.isFinite(number) ? number : null;
+  }
+
+  function firstUrl(links) {
+    return Array.isArray(links) && links.length ? links[0] : "";
+  }
+
+  function renderSourceLinks(links) {
+    return (links || []).map((url, index) => (
+      `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">Source ${index + 1}</a>`
+    )).join("");
   }
 
   function priceSort(a, b) {

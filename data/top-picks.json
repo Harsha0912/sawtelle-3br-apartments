@@ -1,0 +1,714 @@
+{
+  "generatedAt": "2026-05-26 00:06 PDT",
+  "budgetTarget": "$4,000-$6,500, with slight stretch for exceptional units",
+  "scope": "Sawtelle / West Los Angeles 3-bedroom candidates from the mapped report, prioritized for whole-unit listings and review/reputation evidence.",
+  "methodology": [
+    "Filtered out obvious co-living/private-room listings for primary rankings.",
+    "Prioritized listings near $4k-$6.5k, 3BR/2+ bath layouts, direct listing links, review-source depth, amenity strength, and management/reputation risk.",
+    "Used existing mapped listing data plus fresh text-rendered scrapes from VeryApt, Birdeye, ApartmentHomeLiving, Zumper/HotPads/Rent.com where accessible."
+  ],
+  "sourceLimitations": [
+    "Rental availability and concessions change quickly; verify every price and unit before applying.",
+    "Zillow/Yelp/Apartments.com/ApartmentRatings and some portals may block automated access, so blocked pages are listed as manual-review leads rather than summarized as facts.",
+    "Manager-wide reviews do not prove conditions at a specific building, but recurring themes are useful tour questions."
+  ],
+  "summary": "The Adler and 1771 Beloit are the strongest reviewed picks. Maxwell and Stoner1247 look attractive on budget/amenities but need more resident review verification. Wiseman-managed options are abundant and often well-located, but management/package/security/noise questions should be asked before applying.",
+  "rankings": [
+    {
+      "rank": 1,
+      "listingId": "3",
+      "name": "The Adler Apartments",
+      "address": "11950 / 12000 Idaho Ave, Los Angeles, CA 90025",
+      "priceText": "$5,178-$6,078 on Zumper/HotPads; Rent.com showed $5,146+",
+      "minPrice": 5146,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 92,
+      "headline": "Best overall reviewed full-service option inside the target budget.",
+      "reviewSummary": "VeryApt currently exposes an 8.3/10 user rating from 3 reviews; earlier report themes: secure feel, strong amenities, in-unit laundry, gym/pool, good floor plans; cautions around expensive rent, noise/footsteps, and maintenance responsiveness.",
+      "pros": [
+        "3 bed / 3 bath pricing sits in the target band around the low-$5k to low-$6k range.",
+        "Best amenity stack among reviewed candidates: fitness center, pool, resident lounge, washer/dryer in unit, controlled access, parking available.",
+        "Good location signals near Star Market, Stoner Recreation Center, bus access, and Sawtelle restaurants."
+      ],
+      "cautions": [
+        "Upper end of budget; confirm exact unit, parking, utility, and concession math.",
+        "Only 3 VeryApt reviews, so supplement with a tour and recent resident questions.",
+        "Yelp result exists but was blocked in prior scrape; read it manually if possible."
+      ],
+      "whyRanked": "Highest blend of review score, 3/3 configuration, amenities, and budget fit.",
+      "primaryUrl": "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/the-adler-apartments-los-angeles-ca-90049-23zdm0n/pad"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://www.veryapt.com/ApartmentReview-a16222-the-adler-apartments-los-angeles"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "The Adler Apartments, Los Angeles",
+          "sourceUrl": "https://www.veryapt.com/ApartmentReview-a16222-the-adler-apartments-los-angeles",
+          "snippets": [
+            "VeryApt source shows User Rating 8.3 Great from 3 reviews.",
+            "VeryApt pricing section shows 3 Bedrooms, 3 Baths from $5,309+.",
+            "Listed top amenities include controlled access, fitness center, resident lounge, swimming pool, parking available, pet friendly, stainless steel appliances, and washer/dryer in unit.",
+            "Location notes include Star Market 7 min walk, Stoner Recreation Center 9 min walk, and bus access nearby."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 8,
+        "amenities": 10,
+        "risk": 7
+      }
+    },
+    {
+      "rank": 2,
+      "listingId": "27",
+      "name": "1771 Beloit",
+      "address": "1771 Beloit Ave, Los Angeles, CA 90025",
+      "priceText": "$3,795",
+      "minPrice": 3795,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 89,
+      "headline": "Best value pick if you are okay being slightly below the stated budget.",
+      "reviewSummary": "VeryApt exposes an 8.2/10 user rating from 4 reviews. Report themes: responsive management, good price/location, spacious living/dining areas; downsides include smaller non-master bedrooms, fewer amenities, small kitchen, and street parking considerations.",
+      "pros": [
+        "Strong review score and renter comments around responsive management/value.",
+        "3 bed / 3 bath configuration at about $3,795 is below your target range but financially attractive.",
+        "Amenities listed by VeryApt include rooftop deck, parking garage, balconies, hardwood floors, and stainless appliances."
+      ],
+      "cautions": [
+        "Below your ideal budget band, which may indicate fewer luxury finishes/amenities.",
+        "Verify parking terms and bedroom sizes.",
+        "ApartmentRatings result exists but was blocked; use as manual-review lead."
+      ],
+      "whyRanked": "Best reviewed value option; lower price offsets fewer amenities.",
+      "primaryUrl": "https://hotpads.com/1771-beloit-los-angeles-ca-90025-ss52x0/pad",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/1771-beloit-los-angeles-ca-90025-ss52x0/pad"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://www.rent.com/apartment/1771-beloit-los-angeles-ca-lc6466597"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://www.veryapt.com/ApartmentReview-a9208-1771-beloit-los-angeles"
+        },
+        {
+          "label": "ApartmentRatings lead",
+          "url": "https://www.apartmentratings.com/ca/los-angeles/1771-beloit-avenue-apartments_9199332346275219236/"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "1771 Beloit, Los Angeles | Reviews, photos, prices for 1771 Beloit Ave",
+          "sourceUrl": "https://www.veryapt.com/ApartmentReview-a9208-1771-beloit-los-angeles",
+          "snippets": [
+            "VeryApt source shows User Rating 8.2 Great from 4 reviews.",
+            "Listed amenities include doorman building, fireplace, fitness center, parking garage, private balconies, rooftop deck, hardwood floors, and stainless steel appliances.",
+            "Location notes include Sprouts Farmers Market by bus, Westwood Park 16 min walk, and bus stops within roughly 2-10 min.",
+            "Report review themes: responsive management, good price/location, spacious living/dining, with smaller non-master bedrooms and fewer amenities as caveats."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 8,
+        "reviews": 9,
+        "amenities": 7,
+        "risk": 8
+      }
+    },
+    {
+      "rank": 3,
+      "listingId": "30",
+      "name": "Maxwell",
+      "address": "1855 Westwood Blvd, Los Angeles, CA 90025",
+      "priceText": "$4,167-$5,357",
+      "minPrice": 4167,
+      "bedsBaths": "3 bed",
+      "score": 83,
+      "headline": "Best modern amenities/value candidate, but review coverage is incomplete.",
+      "reviewSummary": "ApartmentHomeLiving scrape describes Maxwell as a newer/modern community with 1\u20133 bedrooms, $2,768-$5,357 pricing, in-unit laundry, balcony/views, rooftop deck, BBQ/seating, quartz countertops, stainless appliances, and rent specials. ApartmentRatings lead exists but was blocked.",
+      "pros": [
+        "Budget fit is strong for the stated $4k-$6.5k target.",
+        "Modern-building profile and amenities look strong for the price.",
+        "ApartmentHomeLiving calls it materially cheaper than West LA neighborhood averages in its affordability section."
+      ],
+      "cautions": [
+        "Exact 3BR bath count and available unit details need verification.",
+        "Independent resident reviews were not fully accessible in this run.",
+        "1,152 sqft max listed by ApartmentHomeLiving may feel compact for roommates."
+      ],
+      "whyRanked": "High upside because of price + modern amenities, with a review-data discount.",
+      "primaryUrl": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://www.apartmentratings.com/ca/los-angeles/maxwell_9199332346275219221/"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "Maxwell Apartments in Los Angeles, CA | ApartmentHomeLiving.com",
+          "sourceUrl": "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
+          "snippets": [
+            "ApartmentHomeLiving source shows 1-3 bedrooms, $2,768-$5,357 pricing, and 621-1,152 square feet.",
+            "Source advertises rent specials: 1 month free on 13 months or 1.5 months free on 15 months plus look-and-lease bonus, subject to verification.",
+            "About section describes modern finishes, stainless appliances, white quartz countertops, large windows, in-unit laundry, balconies/views, and rooftop deck with BBQ/seating.",
+            "ApartmentHomeLiving affordability section describes Maxwell as cheaper than West LA neighborhood averages; verify with current unit sheet."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 5,
+        "amenities": 9,
+        "risk": 6
+      }
+    },
+    {
+      "rank": 4,
+      "listingId": "6",
+      "name": "Stoner1247 / 1247 Stoner Ave",
+      "address": "1247 Stoner Ave, Los Angeles, CA 90025",
+      "priceText": "$4,095",
+      "minPrice": 4095,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 81,
+      "headline": "Best 3 bed / 3 bath budget-fit listing with limited review coverage.",
+      "reviewSummary": "No strong independent review page surfaced in the prior scrape. Zumper source notes showed a 9.4 \u201cExcellent\u201d listing/building score, plus on-site laundry, balcony, and assigned parking.",
+      "pros": [
+        "3 bed / 3 bath at about $4,095 is excellent budget fit.",
+        "Core Sawtelle/West LA address and useful everyday amenities.",
+        "A related unit (#109) also appeared around $4,295, suggesting building-level availability."
+      ],
+      "cautions": [
+        "Independent resident reviews were not found; tour/questions matter more.",
+        "On-site laundry rather than confirmed in-unit laundry for the building listing.",
+        "Confirm whether listed price is still current and whether parking is included."
+      ],
+      "whyRanked": "Ranks high for price and 3/3 configuration; held back by review-light evidence.",
+      "primaryUrl": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "1247 Stoner Avenue / Stoner1247 listing source",
+          "sourceUrl": "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca",
+          "snippets": [
+            "Zumper is the primary listing lead for 1247 Stoner/Stoner1247.",
+            "Mapped report source notes recorded Zumper score 9.4 \u201cExcellent,\u201d on-site laundry, balcony, and assigned parking.",
+            "No independent review compilation was confirmed during the scrape, so verify with tour questions and recent residents."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 10,
+        "reviews": 4,
+        "amenities": 6,
+        "risk": 7
+      }
+    },
+    {
+      "rank": 5,
+      "listingId": "40",
+      "name": "Santa Monica Federal by Wiseman",
+      "address": "90025; property name implies Santa Monica Blvd / Federal Ave area",
+      "priceText": "$4,595",
+      "minPrice": 4595,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 79,
+      "headline": "Best data-rich Wiseman option, with management caveats.",
+      "reviewSummary": "VeryApt page exposes 32 reviews and a 7.4/10 safety score with location 9.1, management 4.9, value 7.1, and mixed review text. Themes include good location/newer apartments but subpar management, package/security concerns, and Santa Monica Blvd noise.",
+      "pros": [
+        "3 bed / 3 bath around $4,595 fits the target well.",
+        "Large review sample compared with most candidates.",
+        "Good location scores and controlled access/elevator/garage/fitness amenities listed."
+      ],
+      "cautions": [
+        "Wiseman management reviews are polarized; building-specific management score is weak.",
+        "Road noise on Santa Monica Blvd is a real risk.",
+        "Ask specifically about package theft, garage security, parking cost, and recent maintenance."
+      ],
+      "whyRanked": "Useful if you want more review data and can tolerate management risk after touring.",
+      "primaryUrl": "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://www.veryapt.com/ApartmentReview-a1591-santa-monica-at-federal-los-angeles"
+        },
+        {
+          "label": "Wiseman Birdeye",
+          "url": "https://reviews.birdeye.com/wiseman-residential-164883614053526"
+        },
+        {
+          "label": "Wiseman VeryApt",
+          "url": "https://www.veryapt.com/m828-wiseman-management"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "Santa Monica at Federal, Los Angeles",
+          "sourceUrl": "https://www.veryapt.com/ApartmentReview-a1591-santa-monica-at-federal-los-angeles",
+          "snippets": [
+            "VeryApt source shows 32 renter reviews and sub-scores including 9.1 Location, 4.9 Management, 7.1 Value, and 7.4 Safety.",
+            "Review snippets include good location/newer-style apartment comments, but also subpar/tough management comments.",
+            "One VeryApt review notes road noise from Santa Monica Blvd.",
+            "Amenities listed include central A/C, controlled access, elevators, fitness center, parking garage, pet friendly, stainless appliances, and walk-in closets."
+          ]
+        },
+        {
+          "sourceTitle": "Wiseman Residential - 215 Reviews - Real Estate Agents in Los Angeles, CA - Birdeye",
+          "sourceUrl": "https://reviews.birdeye.com/wiseman-residential-164883614053526",
+          "snippets": [
+            "VeryApt source shows Wiseman Management with 91 reviews, 7.9 building rating, and 6.8 management rating.",
+            "VeryApt page explicitly notes unresponsiveness can be an issue."
+          ]
+        },
+        {
+          "sourceTitle": "Wiseman Management Apartments - 91 Reviews",
+          "sourceUrl": "https://www.veryapt.com/m828-wiseman-management",
+          "snippets": [
+            "VeryApt source shows Wiseman Management with 91 reviews, 7.9 building rating, and 6.8 management rating.",
+            "VeryApt page explicitly notes unresponsiveness can be an issue."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 8,
+        "amenities": 7,
+        "risk": 5
+      }
+    },
+    {
+      "rank": 6,
+      "listingId": "10",
+      "name": "1319 Barry Apartments",
+      "address": "1319 Barry Ave, Los Angeles, CA 90025",
+      "priceText": "$4,995 on Zumper; HotPads showed $4,995-$5,295 depending row/unit",
+      "minPrice": 4995,
+      "bedsBaths": "3 bed / 2 bath on Zumper; HotPads had 3 bed / 3 bath on one row",
+      "score": 76,
+      "headline": "Solid core Sawtelle candidate with source links, but reviews need manual verification.",
+      "reviewSummary": "No independent review page was confirmed in the scrape. Zumper and HotPads sources show 3BR availability around $4,995-$5,295, with bath count needing unit-level verification.",
+      "pros": [
+        "Core Sawtelle location.",
+        "Price sits squarely inside the target range.",
+        "Multiple listing sources make availability easier to cross-check."
+      ],
+      "cautions": [
+        "Bath count conflicts: Zumper showed 3 bed / 2 bath while HotPads had a 3 bed / 3 bath row.",
+        "No reliable review compilation found; ask current residents if possible.",
+        "Confirm noise/parking/package setup."
+      ],
+      "whyRanked": "Good fallback tour candidate because price/location fit well, but less review evidence.",
+      "primaryUrl": "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/1319-barry-apartments-los-angeles-ca-90025-1m2kzn3/pad"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "1319 Barry Apartments listing sources",
+          "sourceUrl": "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca",
+          "snippets": [
+            "Zumper and HotPads are the direct listing leads for 1319 Barry Apartments.",
+            "Mapped report shows roughly $4,995-$5,295 depending source/unit, with conflicting 3/2 vs 3/3 bath text to verify.",
+            "No independent resident review compilation was confirmed during the scrape."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 3,
+        "amenities": 6,
+        "risk": 6
+      }
+    },
+    {
+      "rank": 7,
+      "listingId": "12",
+      "name": "11540 Rochester Ave #103",
+      "address": "11540 Rochester Ave #103, Los Angeles, CA 90025",
+      "priceText": "$4,900 on Zumper; HotPads showed a related page",
+      "minPrice": 4900,
+      "bedsBaths": "3 bed / 3 bath on Zumper",
+      "score": 74,
+      "headline": "Straightforward 3 bed / 3 bath unit near the middle of the budget.",
+      "reviewSummary": "No independent review page surfaced. Listing sources showed about $4,900 with balcony, assigned parking, and hardwood floor notes.",
+      "pros": [
+        "3 bed / 3 bath at about $4,900 is a clean fit.",
+        "Useful unit-level features: balcony, assigned parking, hardwood floor.",
+        "Multiple listing links for cross-checking."
+      ],
+      "cautions": [
+        "Review coverage is thin.",
+        "Unit-specific condo/apartment listings can change quickly.",
+        "Verify HOA/building rules, parking terms, and appliance/laundry details."
+      ],
+      "whyRanked": "Ranked as a practical unit-level option after higher-confidence reviewed buildings.",
+      "primaryUrl": "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/11540-rochester-ave-los-angeles-ca-90025-srbv30/103/pad"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "11540 Rochester Ave #103 listing sources",
+          "sourceUrl": "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa",
+          "snippets": [
+            "Zumper and HotPads are the direct listing leads for this unit.",
+            "Mapped report records about $4,900, 3 bed / 3 bath on Zumper, balcony, assigned parking, and hardwood floor notes.",
+            "No independent resident review compilation was confirmed during the scrape."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 3,
+        "amenities": 6,
+        "risk": 6
+      }
+    },
+    {
+      "rank": 8,
+      "listingId": "32",
+      "name": "Bellerive",
+      "address": "1929 Beloit Ave, Los Angeles, CA 90025",
+      "priceText": "$3,939 on Rent.com",
+      "minPrice": 3939,
+      "bedsBaths": "3 bed / 2 bath",
+      "score": 72,
+      "headline": "Good value but review risk is meaningfully mixed.",
+      "reviewSummary": "Birdeye scrape shows 3.9/5 from 32 reviews. Positive building copy highlights spacious 2- and 3-bedroom homes, quartz counters, stainless appliances, air conditioning, in-home washer/dryer, and patios/balconies; negative review themes include management/maintenance delays, noise, safety/theft/car break-in concerns, fees/deposit issues, and water shutoffs.",
+      "pros": [
+        "3 bed / 2 bath around $3,939 is slightly below budget and may be value-positive.",
+        "Modern finish and in-home washer/dryer claims are attractive if confirmed.",
+        "32-review sample gives more reputation data than most listings."
+      ],
+      "cautions": [
+        "Mixed reputation; read recent reviews carefully.",
+        "Below-budget price may come with tradeoffs.",
+        "Ask about car break-ins, water shutoffs, noise, deposits, and current management team."
+      ],
+      "whyRanked": "Worth considering only if the tour and recent resident feedback resolve review concerns.",
+      "primaryUrl": "https://www.rent.com/apartment/bellerive-los-angeles-ca-lc5926979",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.rent.com/apartment/bellerive-los-angeles-ca-lc5926979"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://reviews.birdeye.com/bellerive-156779734174824"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "Bellerive - 32 Reviews - Apartments in Los Angeles, CA - Birdeye",
+          "sourceUrl": "https://reviews.birdeye.com/bellerive-156779734174824",
+          "snippets": [
+            "Birdeye source shows Bellerive 3.9 rating from 32 reviews.",
+            "Birdeye business copy describes spacious 2- and 3-bedroom homes, quartz counters, stainless appliances, air conditioning, in-home washer/dryer, and private patio/balcony options.",
+            "Review distribution includes many positive ratings but a meaningful 1-star group; report themes include management/maintenance delays, noise, theft/car break-in concerns, fees/deposit issues, and water shutoffs."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 8,
+        "reviews": 6,
+        "amenities": 7,
+        "risk": 4
+      }
+    },
+    {
+      "rank": 9,
+      "listingId": "16",
+      "name": "1621 Barry Ave #PH3",
+      "address": "1621 Barry Ave #PH3, Los Angeles, CA 90025",
+      "priceText": "$6,500",
+      "minPrice": 6500,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 70,
+      "headline": "Top-of-budget penthouse-style option with little review evidence.",
+      "reviewSummary": "Listing data shows 3 bed / 3 bath at $6,500. No independent review source was confirmed in the scrape.",
+      "pros": [
+        "Right at your upper budget limit.",
+        "3 bed / 3 bath configuration.",
+        "Penthouse label may indicate better light/views/privacy than standard units."
+      ],
+      "cautions": [
+        "No review compilation found.",
+        "At the budget ceiling; confirm all fees and parking before prioritizing.",
+        "Tour carefully for noise, elevator/garage reliability, and actual finishes."
+      ],
+      "whyRanked": "A high-budget option to tour if you want a nicer unit and can accept review uncertainty.",
+      "primaryUrl": "https://www.zumper.com/listings/13334302p/3-bedroom-west-los-angeles-los-angeles-ca",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.zumper.com/listings/13334302p/3-bedroom-west-los-angeles-los-angeles-ca"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "1621 Barry Ave #PH3 listing source",
+          "sourceUrl": "https://www.zumper.com/listings/63162970p/3-bedroom-west-los-angeles-los-angeles-ca",
+          "snippets": [
+            "Zumper is the direct listing lead for this top-of-budget unit.",
+            "Mapped report records $6,500 and 3 bed / 3 bath.",
+            "No independent resident review compilation was confirmed during the scrape."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 7,
+        "reviews": 2,
+        "amenities": 6,
+        "risk": 5
+      }
+    },
+    {
+      "rank": 10,
+      "listingId": "33",
+      "name": "Purdue Ohio by Wiseman",
+      "address": "1500 Purdue Ave, Los Angeles, CA 90025",
+      "priceText": "$4,895",
+      "minPrice": 4895,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 68,
+      "headline": "Budget-fit Wiseman listing; management-wide reviews make due diligence important.",
+      "reviewSummary": "No building-specific review compilation was confirmed. Management-wide sources: Birdeye shows Wiseman Residential 3.1/5 from 215 reviews; VeryApt shows Wiseman Management 91 reviews, 7.9 building rating, 6.8 management rating, and notes unresponsiveness can be an issue.",
+      "pros": [
+        "3 bed / 3 bath around $4,895 fits the target.",
+        "Likely professionally managed and in the core West LA/Sawtelle cluster.",
+        "Can compare against many other Wiseman options in the same area."
+      ],
+      "cautions": [
+        "Wiseman-specific due diligence is mandatory: management responsiveness, package theft, maintenance, parking, fees.",
+        "No confirmed building-specific resident review compilation in this pass.",
+        "Check exact unit condition; same manager can vary by property."
+      ],
+      "whyRanked": "Good enough to compare, but not ahead of better-reviewed non-Wiseman options.",
+      "primaryUrl": "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467"
+        },
+        {
+          "label": "Wiseman Birdeye",
+          "url": "https://reviews.birdeye.com/wiseman-residential-164883614053526"
+        },
+        {
+          "label": "Wiseman VeryApt",
+          "url": "https://www.veryapt.com/m828-wiseman-management"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "Wiseman Residential - 215 Reviews - Real Estate Agents in Los Angeles, CA - Birdeye",
+          "sourceUrl": "https://reviews.birdeye.com/wiseman-residential-164883614053526",
+          "snippets": [
+            "VeryApt source shows Wiseman Management with 91 reviews, 7.9 building rating, and 6.8 management rating.",
+            "VeryApt page explicitly notes unresponsiveness can be an issue."
+          ]
+        },
+        {
+          "sourceTitle": "Wiseman Management Apartments - 91 Reviews",
+          "sourceUrl": "https://www.veryapt.com/m828-wiseman-management",
+          "snippets": [
+            "VeryApt source shows Wiseman Management with 91 reviews, 7.9 building rating, and 6.8 management rating.",
+            "VeryApt page explicitly notes unresponsiveness can be an issue."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 4,
+        "amenities": 6,
+        "risk": 4
+      }
+    },
+    {
+      "rank": 11,
+      "listingId": "45",
+      "name": "Butler Cabana by Wiseman",
+      "address": "90025; Butler Ave area",
+      "priceText": "$4,695",
+      "minPrice": 4695,
+      "bedsBaths": "3 bed / 2.5 bath",
+      "score": 66,
+      "headline": "2.5-bath Wiseman option in budget, lower priority than 3/3 choices.",
+      "reviewSummary": "No building-specific review compilation was confirmed. Prior report noted related Wiseman management review signals; DuckDuckGo exposed Apartments.com as a listing lead.",
+      "pros": [
+        "3 bed / 2.5 bath around $4,695 fits the budget.",
+        "Likely newer managed inventory.",
+        "Could be a useful backup if 3/3 options are unavailable."
+      ],
+      "cautions": [
+        "2.5 baths may be less ideal for roommates than true 3/3.",
+        "Wiseman management-wide cautions apply.",
+        "Review data is mostly manager-wide, not building-specific."
+      ],
+      "whyRanked": "Backup option because of fit, but not a top-first tour unless location/unit is excellent.",
+      "primaryUrl": "https://hotpads.com/butler-cabana-by-wiseman-los-angeles-ca-90025-stec83/pad",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/butler-cabana-by-wiseman-los-angeles-ca-90025-stec83/pad"
+        },
+        {
+          "label": "Wiseman Birdeye",
+          "url": "https://reviews.birdeye.com/wiseman-residential-164883614053526"
+        },
+        {
+          "label": "Wiseman VeryApt",
+          "url": "https://www.veryapt.com/m828-wiseman-management"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "Wiseman Residential - 215 Reviews - Real Estate Agents in Los Angeles, CA - Birdeye",
+          "sourceUrl": "https://reviews.birdeye.com/wiseman-residential-164883614053526",
+          "snippets": [
+            "VeryApt source shows Wiseman Management with 91 reviews, 7.9 building rating, and 6.8 management rating.",
+            "VeryApt page explicitly notes unresponsiveness can be an issue."
+          ]
+        },
+        {
+          "sourceTitle": "Wiseman Management Apartments - 91 Reviews",
+          "sourceUrl": "https://www.veryapt.com/m828-wiseman-management",
+          "snippets": [
+            "VeryApt source shows Wiseman Management with 91 reviews, 7.9 building rating, and 6.8 management rating.",
+            "VeryApt page explicitly notes unresponsiveness can be an issue."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 9,
+        "reviews": 4,
+        "amenities": 5,
+        "risk": 4
+      }
+    },
+    {
+      "rank": 12,
+      "listingId": "5",
+      "name": "11610 Ohio Ave #1",
+      "address": "11610 Ohio Ave #1, Los Angeles, CA 90025",
+      "priceText": "$6,700 on Zumper, down from $7,000",
+      "minPrice": 6700,
+      "bedsBaths": "3 bed / 3 bath",
+      "score": 65,
+      "headline": "Nice-looking above-budget option to keep as a stretch candidate.",
+      "reviewSummary": "Listing data shows 3 bed / 3 bath at $6,700, down from $7,000, with Zumper and HotPads links. No independent review compilation was confirmed.",
+      "pros": [
+        "3 bed / 3 bath configuration.",
+        "Stretch option only slightly above your stated upper bound.",
+        "Multiple listing links."
+      ],
+      "cautions": [
+        "Above target budget before fees.",
+        "No independent review source found.",
+        "Only include if it clearly wins on tour quality, parking, and layout."
+      ],
+      "whyRanked": "Included because you allowed slight budget stretch for nicer places.",
+      "primaryUrl": "https://www.zumper.com/address/11610-ohio-ave-los-angeles-ca-90025-usa",
+      "links": [
+        {
+          "label": "Listing source",
+          "url": "https://www.zumper.com/address/11610-ohio-ave-los-angeles-ca-90025-usa"
+        },
+        {
+          "label": "Listing source",
+          "url": "https://hotpads.com/11610-ohio-ave-los-angeles-ca-90025-1m2kxr0/1/pad"
+        }
+      ],
+      "evidence": [
+        {
+          "sourceTitle": "11610 Ohio Ave #1 listing sources",
+          "sourceUrl": "https://www.zumper.com/address/11610-ohio-ave-los-angeles-ca-90025-usa",
+          "snippets": [
+            "Zumper and HotPads are the direct listing leads for this stretch-budget option.",
+            "Mapped report records $6,700, down from $7,000, and 3 bed / 3 bath.",
+            "No independent resident review compilation was confirmed during the scrape."
+          ]
+        }
+      ],
+      "scoreBreakdown": {
+        "budgetFit": 5,
+        "reviews": 2,
+        "amenities": 6,
+        "risk": 5
+      }
+    }
+  ],
+  "reviewSources": [
+    {
+      "name": "VeryApt building reviews",
+      "url": "https://www.veryapt.com/",
+      "notes": "Used for The Adler, 1771 Beloit, Santa Monica at Federal, and Wiseman Management snippets."
+    },
+    {
+      "name": "Birdeye",
+      "url": "https://reviews.birdeye.com/",
+      "notes": "Used for Bellerive and Wiseman Residential review counts/ratings."
+    },
+    {
+      "name": "ApartmentHomeLiving",
+      "url": "https://www.apartmenthomeliving.com/",
+      "notes": "Used for Maxwell pricing, amenity, and affordability text."
+    },
+    {
+      "name": "Zumper / HotPads / Rent.com listing pages",
+      "url": "data/app-data.json",
+      "notes": "Used for direct listing links, rent, beds/baths, and availability notes from the mapped report."
+    }
+  ],
+  "tourChecklist": [
+    "Confirm whole-unit rent, not per-bedroom pricing.",
+    "Ask for a full monthly fee sheet: parking, trash, utilities, internet, pets, amenities, application/admin fees.",
+    "Verify exact unit bath count and floor plan, especially listings with conflicting portal text.",
+    "Ask about package theft, garage/car break-ins, bike storage, and controlled access.",
+    "Ask about recent maintenance response times, water shutoffs, elevator reliability, noise, and construction.",
+    "Tour during evening/commute hours near Santa Monica Blvd, Olympic, Wilshire, Sepulveda, Barrington, Federal, and the 405."
+  ]
+}

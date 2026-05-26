@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Sawtelle 3BR Picks</title>
+    <meta name="description" content="Ranked Sawtelle and West Los Angeles 3-bedroom apartment recommendations with source evidence and tour checklist.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="light-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="ranking-hero">
+      <nav class="topbar" aria-label="Report navigation">
+        <a class="brand" href="./">Sawtelle 3BR Report</a>
+        <div class="nav-links">
+          <a href="index.html#map-section">Map</a>
+          <a href="index.html#listings">Listings</a>
+          <a href="top-picks.html" aria-current="page">Top picks</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Ranked recommendations</p>
+          <h1>Top Sawtelle 3-bedroom apartment picks</h1>
+          <p id="top-picks-summary">Loading ranked recommendations...</p>
+          <div class="hero-actions">
+            <a class="button primary" href="index.html#listings">Back to map and listings</a>
+            <a class="button secondary" href="#ranked-list">View rankings</a>
+          </div>
+        </div>
+        <aside class="summary-panel" aria-label="Budget summary">
+          <dl>
+            <div><dt>Budget target</dt><dd id="budget-target">--</dd></div>
+            <div><dt>Generated</dt><dd id="generated-at">--</dd></div>
+            <div><dt>Scope</dt><dd id="scope">--</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" aria-labelledby="methodology-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Methodology</p>
+            <h2 id="methodology-title">How the ranking was built</h2>
+          </div>
+        </div>
+        <div class="top-picks-grid">
+          <article class="info-card">
+            <h3>Methodology</h3>
+            <ul id="methodology-list"></ul>
+          </article>
+          <article class="info-card">
+            <h3>Limitations</h3>
+            <ul id="limitations-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="rankings-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ranked shortlist</p>
+            <h2 id="rankings-title">Recommendations</h2>
+          </div>
+          <p class="result-count" id="ranking-count" aria-live="polite">Loading...</p>
+        </div>
+        <div class="ranked-list" id="ranked-list"></div>
+      </section>
+
+      <section class="section" aria-labelledby="review-sources-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Source trail</p>
+            <h2 id="review-sources-title">Review sources and tour checklist</h2>
+          </div>
+        </div>
+        <div class="top-picks-grid">
+          <article class="info-card">
+            <h3>Review sources</h3>
+            <ul class="review-source-list" id="review-sources"></ul>
+          </article>
+          <article class="info-card">
+            <h3>Tour checklist</h3>
+            <ul class="checklist" id="tour-checklist"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Data loaded from <code>data/top-picks.json</code>. Verify availability, fees, concessions, parking, pets, utilities, and lease terms before applying.</p>
+    </footer>
+
+    <script src="top-picks.js"></script>
+  </body>
+</html>
