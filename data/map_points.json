@@ -1,0 +1,1248 @@
+{
+  "mapped": [
+    {
+      "id": "1",
+      "name": "Maison De Glen LLC",
+      "raw_address": "1238 Barry Ave, Los Angeles, CA 90025",
+      "address": "1238 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$4,300",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p422950/maison-de-glen-llc-west-los-angeles-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0492082,
+      "lon": -118.4591849,
+      "geocode_display": "1238, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "2",
+      "name": "Westgate Place",
+      "raw_address": "1441 S Westgate Ave, Los Angeles, CA 90025",
+      "address": "1441 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "$3,300",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p1103669/westgate-place-west-los-angeles-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0436738,
+      "lon": -118.4604231,
+      "geocode_display": "1441, South Westgate Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "3",
+      "name": "The Adler Apartments",
+      "raw_address": "11950 / 12000 Idaho Ave, Los Angeles, CA 90025",
+      "address": "11950 Idaho Ave, Los Angeles, CA 90025",
+      "rent": "$5,178-$6,078 on Zumper/HotPads; Rent.com showed $5,146+",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p1146319/1561-s-carmelina-ave-west-los-angeles-los-angeles-ca",
+        "https://hotpads.com/the-adler-apartments-los-angeles-ca-90049-23zdm0n/pad",
+        "https://www.veryapt.com/ApartmentReview-a16222-the-adler-apartments-los-angeles"
+      ],
+      "kind": "listing",
+      "lat": 34.039609,
+      "lon": -118.459864,
+      "geocode_display": "11950, Idaho Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "4",
+      "name": "10323 Missouri Ave #1",
+      "raw_address": "10323 Missouri Ave #1, Los Angeles, CA 90025",
+      "address": "10323 Missouri Ave, Los Angeles, CA 90025",
+      "rent": "$3,750",
+      "links": [
+        "https://www.zumper.com/address/10323-missouri-ave-los-angeles-ca-90025-usa"
+      ],
+      "kind": "listing",
+      "lat": 34.057616,
+      "lon": -118.421957,
+      "geocode_display": "10323, Missouri Avenue, Century City, Westwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "5",
+      "name": "11610 Ohio Ave #1",
+      "raw_address": "11610 Ohio Ave #1, Los Angeles, CA 90025",
+      "address": "11610 Ohio Ave, Los Angeles, CA 90025",
+      "rent": "$6,700 on Zumper, down from $7,000",
+      "links": [
+        "https://www.zumper.com/address/11610-ohio-ave-los-angeles-ca-90025-usa",
+        "https://hotpads.com/11610-ohio-ave-los-angeles-ca-90025-1m2kxr0/1/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0452246,
+      "lon": -118.4550053,
+      "geocode_display": "11610, Ohio Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "6",
+      "name": "Stoner1247",
+      "raw_address": "1247 Stoner Ave, Los Angeles, CA 90025",
+      "address": "1247 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$4,095",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p103139/1247-stoner-avenue-west-los-angeles-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0475606,
+      "lon": -118.4608918,
+      "geocode_display": "1247, Stoner Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "7",
+      "name": "1824 Fairburn Ave",
+      "raw_address": "1824 Fairburn Ave, Los Angeles, CA 90025",
+      "address": "1824 Fairburn Ave, Los Angeles, CA 90025",
+      "rent": "$4,637",
+      "links": [
+        "https://www.zumper.com/listings/28246329p/3-bedroom-westside-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0544889,
+      "lon": -118.4271424,
+      "geocode_display": "1824, Fairburn Avenue, West Los Angeles, Westwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "8",
+      "name": "1850 Camden Ave",
+      "raw_address": "1850 Camden Ave, Los Angeles, CA 90025",
+      "address": "1850 Camden Ave, Los Angeles, CA 90025",
+      "rent": "$4,250",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p234734/1850-greenfield-ave-westside-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0459858,
+      "lon": -118.4397737,
+      "geocode_display": "Camden House, 1850, Camden Avenue, Sawtelle Japantown, West Los Angeles, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "9",
+      "name": "Navda LLC / 1261 Stoner Ave",
+      "raw_address": "1261 Stoner Ave, Los Angeles, CA 90025",
+      "address": "1261 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$5,495 on Zumper; HotPads had a related page with 3BR availability",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p716309/navda-llc-1261-stoner-ave-west-los-angeles-los-angeles-ca",
+        "https://hotpads.com/navda-llc-(1261-stoner-ave)-los-angeles-ca-90025-tyg7wv/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.047121,
+      "lon": -118.460512,
+      "geocode_display": "1261, Stoner Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "10",
+      "name": "1319 Barry Apartments",
+      "raw_address": "1319 Barry Ave, Los Angeles, CA 90025",
+      "address": "1319 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$4,995 on Zumper; HotPads showed $4,995-$5,295 depending row/unit",
+      "links": [
+        "https://www.zumper.com/apartment-buildings/p318865/1319-barry-avenue-west-los-angeles-ca",
+        "https://hotpads.com/1319-barry-apartments-los-angeles-ca-90025-1m2kzn3/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0474423,
+      "lon": -118.4579052,
+      "geocode_display": "1319, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "11",
+      "name": "1825 Pandora Ave #404",
+      "raw_address": "1825 Pandora Ave #404, Los Angeles, CA 90025",
+      "address": "1825 Pandora Ave, Los Angeles, CA 90025",
+      "rent": "$12,950",
+      "links": [
+        "https://www.zumper.com/address/1825-pandora-ave-los-angeles-ca-90025-usa"
+      ],
+      "kind": "listing",
+      "lat": 34.0560159,
+      "lon": -118.424404,
+      "geocode_display": "1825, Pandora Avenue, Century City, Westwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "12",
+      "name": "11540 Rochester Ave #103",
+      "raw_address": "11540 Rochester Ave #103, Los Angeles, CA 90025",
+      "address": "11540 Rochester Ave, Los Angeles, CA 90025",
+      "rent": "$4,900 on Zumper; HotPads showed a related page",
+      "links": [
+        "https://www.zumper.com/address/11540-rochester-ave-los-angeles-ca-90025-usa",
+        "https://hotpads.com/11540-rochester-ave-los-angeles-ca-90025-srbv30/103/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0476249,
+      "lon": -118.4554671,
+      "geocode_display": "11540, Rochester Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "13",
+      "name": "1726 S Bentley Ave #304",
+      "raw_address": "1726 S Bentley Ave #304, Los Angeles, CA 90025",
+      "address": "1726 S Bentley Ave, Los Angeles, CA 90025",
+      "rent": "$4,650",
+      "links": [
+        "https://www.zumper.com/address/1726-s-bentley-ave-los-angeles-ca-90025-usa"
+      ],
+      "kind": "listing",
+      "lat": 34.0473109,
+      "lon": -118.4423734,
+      "geocode_display": "1726, South Bentley Avenue, Sawtelle Japantown, West Los Angeles, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "14",
+      "name": "1522 Amherst Ave #402",
+      "raw_address": "1522 Amherst Ave #402, Los Angeles, CA 90025",
+      "address": "1522 Amherst Ave, Los Angeles, CA 90025",
+      "rent": "$4,950 on Zumper/HotPads text",
+      "links": [
+        "https://www.zumper.com/listings/9133806p/3-bedroom-west-los-angeles-ca",
+        "https://hotpads.com/1522-amherst-ave-los-angeles-ca-90025-skq2yd/402/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0391809,
+      "lon": -118.4632034,
+      "geocode_display": "1522, Amherst Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "15",
+      "name": "1621 Barry Ave #203",
+      "raw_address": "1621 Barry Ave #203, Los Angeles, CA 90025",
+      "address": "1621 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$4,700 on Zumper, down from $4,900",
+      "links": [
+        "https://www.zumper.com/address/1621-barry-ave-los-angeles-ca-90025-usa"
+      ],
+      "kind": "listing",
+      "lat": 34.0423796,
+      "lon": -118.4539902,
+      "geocode_display": "1621, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "16",
+      "name": "1621 Barry Ave #PH3",
+      "raw_address": "1621 Barry Ave #PH3, Los Angeles, CA 90025",
+      "address": "1621 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$6,500",
+      "links": [
+        "https://www.zumper.com/listings/13334302p/3-bedroom-west-los-angeles-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0423796,
+      "lon": -118.4539902,
+      "geocode_display": "1621, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "17",
+      "name": "1247 Stoner Ave #109",
+      "raw_address": "1247 Stoner Ave #109, Los Angeles, CA 90025",
+      "address": "1247 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$4,295",
+      "links": [
+        "https://www.zumper.com/listings/9729182p/3-bedroom-west-los-angeles-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0475606,
+      "lon": -118.4608918,
+      "geocode_display": "1247, Stoner Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "18",
+      "name": "1819 Parnell Ave #5",
+      "raw_address": "1819 Parnell Ave #5, Los Angeles, CA 90025",
+      "address": "1819 Parnell Ave, Los Angeles, CA 90025",
+      "rent": "$4,195",
+      "links": [
+        "https://www.zumper.com/listings/6045889p/3-bedroom-westside-los-angeles-ca"
+      ],
+      "kind": "listing",
+      "lat": 34.0526804,
+      "lon": -118.4300132,
+      "geocode_display": "1819, Parnell Avenue, West Los Angeles, Westwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "19",
+      "name": "1330 Federal Ave #302",
+      "raw_address": "1330 Federal Ave #302, Los Angeles, CA 90025",
+      "address": "1330 Federal Ave, Los Angeles, CA 90025",
+      "rent": "$5,195",
+      "links": [
+        "https://www.zumper.com/address/1330-federal-ave-los-angeles-ca-90025-usa"
+      ],
+      "kind": "listing",
+      "lat": 34.047621,
+      "lon": -118.4563711,
+      "geocode_display": "1330, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "20",
+      "name": "1444 S Saltair Ave #201 / 1444 S. Saltair",
+      "raw_address": "1444 S Saltair Ave #201, Los Angeles, CA 90025",
+      "address": "1444 S Saltair Ave, Los Angeles, CA 90025",
+      "rent": "$3,995 on Zumper/HotPads",
+      "links": [
+        "https://www.zumper.com/address/1444-s-saltair-ave-los-angeles-ca-90025-usa",
+        "https://hotpads.com/1444-s-saltair-los-angeles-ca-90025-249hbq9/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0419896,
+      "lon": -118.4630533,
+      "geocode_display": "1444, South Saltair Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "21",
+      "name": "1301 Brockton Ave / Brockton Manor by Wiseman",
+      "raw_address": "1301 Brockton Ave, Los Angeles, CA 90025",
+      "address": "1301 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$4,750-$4,995 on HotPads; Apartment List page showed price range $1,350-$6,000 and earlier search row showed Unit 313 at $5,200, available Sep 14",
+      "links": [
+        "https://hotpads.com/brockton-manor-by-wiseman-los-angeles-ca-90025-2428jgc/pad",
+        "https://www.apartmentlist.com/ca/los-angeles/1301-brockton-ave--1"
+      ],
+      "kind": "listing",
+      "lat": 34.044182,
+      "lon": -118.463748,
+      "geocode_display": "1301, Brockton Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "room"
+    },
+    {
+      "id": "22",
+      "name": "1515 Colby Ave / Colby at Ohio / 1515 Colby Ave Co-Living",
+      "raw_address": "1515 Colby Ave, Los Angeles, CA 90025",
+      "address": "1515 Colby Ave, Los Angeles, CA 90025",
+      "rent": "$1,300-$6,200 on Apartment List page; HotPads showed $1,600-$5,611; earlier Apartment List search row showed Unit 208 at $5,495 available now",
+      "links": [
+        "https://hotpads.com/1515-colby-ave-los-angeles-ca-90025-24egr4k/pad",
+        "https://www.apartmentlist.com/ca/los-angeles/1515-colby-ave-co-living",
+        "https://www.veryapt.com/ApartmentReview-a26073-colby-at-ohio-los-angeles"
+      ],
+      "kind": "listing",
+      "lat": 34.0458301,
+      "lon": -118.4537419,
+      "geocode_display": "1515, Colby Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "room"
+    },
+    {
+      "id": "23",
+      "name": "Lido Apartments - 1532 Brockton Ave",
+      "raw_address": "1532 Brockton Ave, Los Angeles, CA 90025",
+      "address": "1532 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "Contact / call for pricing",
+      "links": [
+        "https://hotpads.com/lido-apartments-1532-brockton-ave-los-angeles-ca-90025-swkch6/pad",
+        "https://www.apartmenthomeliving.com/apartment-finder/Lido-Apartments-1532-Brockton-Ave-Los-Angeles-CA-90025-17157866"
+      ],
+      "kind": "listing",
+      "lat": 34.0409096,
+      "lon": -118.4606812,
+      "geocode_display": "1532, Brockton Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "unknown"
+    },
+    {
+      "id": "24",
+      "name": "Lido Apartments - 1550 Brockton Ave",
+      "raw_address": "1550 Brockton Ave, Los Angeles, CA 90025",
+      "address": "1550 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$5,595",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Lido-Apartments-1550-Brockton-Ave-Los-Angeles-CA-90025-16413383"
+      ],
+      "kind": "listing",
+      "lat": 34.0404068,
+      "lon": -118.459864,
+      "geocode_display": "1550, Brockton Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "25",
+      "name": "1409 S Westgate Ave",
+      "raw_address": "1409 S Westgate Ave, Los Angeles, CA 90025",
+      "address": "1409 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "$4,200-$4,950",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/1409-S-Westgate-Ave-Los-Angeles-CA-90025-6064618"
+      ],
+      "kind": "listing",
+      "lat": 34.0441692,
+      "lon": -118.4608502,
+      "geocode_display": "1409, South Westgate Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "26",
+      "name": "Bentley Luxury Investments LLC",
+      "raw_address": "2050 S Bentley Ave, Los Angeles, CA 90025",
+      "address": "2050 S Bentley Ave, Los Angeles, CA 90025",
+      "rent": "$5,295",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Bentley-Luxury-Investments-LLC-Los-Angeles-CA-90025-1996126"
+      ],
+      "kind": "listing",
+      "lat": 34.0424051,
+      "lon": -118.4381314,
+      "geocode_display": "2050, South Bentley Avenue, Sawtelle Japantown, West Los Angeles, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "27",
+      "name": "1771 Beloit",
+      "raw_address": "1771 Beloit Ave, Los Angeles, CA 90025",
+      "address": "1771 Beloit Ave, Los Angeles, CA 90025",
+      "rent": "$3,795",
+      "links": [
+        "https://hotpads.com/1771-beloit-los-angeles-ca-90025-ss52x0/pad",
+        "https://www.rent.com/apartment/1771-beloit-los-angeles-ca-lc6466597",
+        "https://www.veryapt.com/ApartmentReview-a9208-1771-beloit-los-angeles"
+      ],
+      "kind": "listing",
+      "lat": 34.045046,
+      "lon": -118.4458801,
+      "geocode_display": "1771, Beloit Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "28",
+      "name": "Chateau Barry Apartments",
+      "raw_address": "1285 Barry Ave, Los Angeles, CA 90025",
+      "address": "1285 Barry Ave, Los Angeles, CA 90025",
+      "rent": "Contact for pricing",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Chateau-Barry-Apartments-Los-Angeles-CA-90025-1875874"
+      ],
+      "kind": "listing",
+      "lat": 34.0481016,
+      "lon": -118.4584743,
+      "geocode_display": "1285, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "unknown"
+    },
+    {
+      "id": "29",
+      "name": "1403 Brockton Ave / #1403",
+      "raw_address": "1403 Brockton Ave, Los Angeles, CA 90025",
+      "address": "1403 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$4,995",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/1403-Brockton-Ave-Los-Angeles-CA-90025-5973814",
+        "https://hotpads.com/1403-brockton-ave-los-angeles-ca-90025-1m2kzr4/1403/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0431203,
+      "lon": -118.462832,
+      "geocode_display": "1403, Brockton Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "30",
+      "name": "Maxwell",
+      "raw_address": "1855 Westwood Blvd, Los Angeles, CA 90025",
+      "address": "1855 Westwood Blvd, Los Angeles, CA 90025",
+      "rent": "$4,167-$5,357",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Maxwell-Los-Angeles-CA-90025-16952784",
+        "https://www.apartmentratings.com/ca/los-angeles/maxwell_9199332346275219221/"
+      ],
+      "kind": "listing",
+      "lat": 34.0484411,
+      "lon": -118.4362325,
+      "geocode_display": "1855, Westwood Boulevard, West Los Angeles, Sawtelle, Los Angeles, Los Angeles County, California, 90024, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "31",
+      "name": "1842 Purdue Ave / #208",
+      "raw_address": "1842 Purdue Ave, Los Angeles, CA 90025",
+      "address": "1842 Purdue Ave, Los Angeles, CA 90025",
+      "rent": "$4,100-$4,350 on ApartmentHomeLiving; HotPads exposed a $4,995 row for #208",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/1842-Purdue-Ave-Los-Angeles-CA-90025-1879988",
+        "https://hotpads.com/1842-purdue-ave-los-angeles-ca-90025-244bdkb/208/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0421957,
+      "lon": -118.4474791,
+      "geocode_display": "1842, Purdue Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "32",
+      "name": "Bellerive",
+      "raw_address": "1929 Beloit Ave, Los Angeles, CA 90025",
+      "address": "1929 Beloit Ave, Los Angeles, CA 90025",
+      "rent": "$3,939 on Rent.com",
+      "links": [
+        "https://www.rent.com/apartment/bellerive-los-angeles-ca-lc5926979",
+        "https://reviews.birdeye.com/bellerive-156779734174824"
+      ],
+      "kind": "listing",
+      "lat": 34.0425347,
+      "lon": -118.4436879,
+      "geocode_display": "1929, Beloit Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "33",
+      "name": "Purdue Ohio by Wiseman",
+      "raw_address": "1500 Purdue Ave, Los Angeles, CA 90025",
+      "address": "1500 Purdue Ave, Los Angeles, CA 90025",
+      "rent": "$4,895",
+      "links": [
+        "https://www.rent.com/apartment/purdue-ohio-by-wiseman-los-angeles-ca-lc6037467"
+      ],
+      "kind": "listing",
+      "lat": 34.0471627,
+      "lon": -118.4515802,
+      "geocode_display": "1500, Purdue Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "34",
+      "name": "Stoner Homes by Wiseman",
+      "raw_address": "1605 Stoner Ave, Los Angeles, CA 90025",
+      "address": "1605 Stoner Ave, Los Angeles, CA 90025",
+      "rent": "$4,595",
+      "links": [
+        "https://hotpads.com/stoner-homes-by-wiseman-los-angeles-ca-90025-tmusbn/pad",
+        "https://www.rent.com/apartment/stoner-homes-by-wiseman-los-angeles-ca-lc6178204"
+      ],
+      "kind": "listing",
+      "lat": 34.0418355,
+      "lon": -118.4559541,
+      "geocode_display": "1605, Stoner Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "35",
+      "name": "Westgate Wonder by Wiseman",
+      "raw_address": "1233 S Westgate Ave, Los Angeles, CA 90025",
+      "address": "1233 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "$4,795+ on Rent.com; HotPads showed $4,795-$5,395",
+      "links": [
+        "https://hotpads.com/westgate-wonder-by-wiseman-los-angeles-ca-90025-24b7kn8/pad",
+        "https://www.rent.com/apartment/westgate-wonder-by-wiseman-los-angeles-ca-lc6004309"
+      ],
+      "kind": "listing",
+      "lat": 34.0466491,
+      "lon": -118.4629895,
+      "geocode_display": "1233, South Westgate Avenue, Brentwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "36",
+      "name": "10608 Santa Monica Blvd",
+      "raw_address": "10608 Santa Monica Blvd, Los Angeles, CA 90025",
+      "address": "10608 Santa Monica Blvd, Los Angeles, CA 90025",
+      "rent": "$5,099+",
+      "links": [
+        "https://www.rent.com/apartment/10608-santa-monica-blvd-los-angeles-ca-lc6324257"
+      ],
+      "kind": "listing",
+      "lat": 34.0538274,
+      "lon": -118.4297714,
+      "geocode_display": "10608, Santa Monica Boulevard, West Los Angeles, Westwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "37",
+      "name": "RBM Westwood Apartments",
+      "raw_address": "2121 Westwood Blvd, Los Angeles, CA 90025",
+      "address": "2121 Westwood Blvd, Los Angeles, CA 90025",
+      "rent": "$6,000+",
+      "links": [
+        "https://www.rent.com/apartment/rbm-westwood-apartments-los-angeles-ca-lc6593380"
+      ],
+      "kind": "listing",
+      "lat": 34.0448656,
+      "lon": -118.4327057,
+      "geocode_display": "2121, Westwood Boulevard, West Los Angeles, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "38",
+      "name": "Luxe West",
+      "raw_address": "10750 Missouri Ave, Los Angeles, CA 90025",
+      "address": "10750 Missouri Ave, Los Angeles, CA 90025",
+      "rent": "Contact",
+      "links": [
+        "https://www.rent.com/apartment/luxe-west-los-angeles-ca-lc5936356"
+      ],
+      "kind": "listing",
+      "lat": 34.049896,
+      "lon": -118.4323957,
+      "geocode_display": "10750, Missouri Avenue, West Los Angeles, Westwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "unknown"
+    },
+    {
+      "id": "39",
+      "name": "Purdue Point by Wiseman",
+      "raw_address": "Search/result pages identify 1515 Purdue Ave, Los Angeles, CA 90025",
+      "address": "1515 Purdue Ave, Los Angeles, CA 90025",
+      "rent": "$3,445 in HotPads text",
+      "links": [
+        "https://hotpads.com/purdue-point-by-wiseman-los-angeles-ca-90025-swjwbh/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0466932,
+      "lon": -118.4519889,
+      "geocode_display": "1515, Purdue Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "40",
+      "name": "Santa Monica Federal by Wiseman",
+      "raw_address": "90025; property name implies Santa Monica Blvd / Federal Ave area",
+      "address": "1518 Federal Ave, Los Angeles, CA 90025",
+      "rent": "$4,595",
+      "links": [
+        "https://hotpads.com/santa-monica-federal-by-wiseman-los-angeles-ca-90025-240acjw/pad",
+        "https://www.veryapt.com/ApartmentReview-a1591-santa-monica-at-federal-los-angeles"
+      ],
+      "kind": "listing",
+      "lat": 34.0453883,
+      "lon": -118.4544457,
+      "geocode_display": "1518, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "41",
+      "name": "Armacost Bella by Wiseman",
+      "raw_address": "90025; Armacost Ave area",
+      "address": "1439 Armacost Ave, Los Angeles, CA 90025",
+      "rent": "$4,850-$4,945",
+      "links": [
+        "https://hotpads.com/armacost-bella-by-wiseman-los-angeles-ca-90025-240bjch/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0430419,
+      "lon": -118.4613212,
+      "geocode_display": "1439, Armacost Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "42",
+      "name": "Colby Missouri by Wiseman",
+      "raw_address": "90025; Colby/Missouri area",
+      "address": "1836 Colby Ave, Los Angeles, CA 90025",
+      "rent": "$4,695-$4,950",
+      "links": [
+        "https://hotpads.com/colby-missouri-by-wiseman-los-angeles-ca-90025-249n9h3/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0407297,
+      "lon": -118.4486441,
+      "geocode_display": "1836, Colby Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "43",
+      "name": "1450 S Barrington Ave",
+      "raw_address": "1450 S Barrington Ave, Los Angeles, CA 90025",
+      "address": "1450 S Barrington Ave, Los Angeles, CA 90025",
+      "rent": "$1,525-$1,600 in HotPads text; Rent.com showed $1,525+",
+      "links": [
+        "https://hotpads.com/1450-s-barrington-ave-los-angeles-ca-90025-24f1bb8/pad",
+        "https://www.rent.com/apartment/1450-s-barrington-ave-los-angeles-ca-lc6151298"
+      ],
+      "kind": "listing",
+      "lat": 34.0453205,
+      "lon": -118.4572741,
+      "geocode_display": "1450, South Barrington Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "room"
+    },
+    {
+      "id": "44",
+      "name": "Barry Diamond by Wiseman",
+      "raw_address": "90025; Barry Ave area",
+      "address": "1265 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$4,795",
+      "links": [
+        "https://hotpads.com/barry-diamond-by-wiseman-los-angeles-ca-90025-1ukavpg/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.048541,
+      "lon": -118.4588533,
+      "geocode_display": "1265, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "45",
+      "name": "Butler Cabana by Wiseman",
+      "raw_address": "90025; Butler Ave area",
+      "address": "1417 Butler Ave, Los Angeles, CA 90025",
+      "rent": "$4,695",
+      "links": [
+        "https://hotpads.com/butler-cabana-by-wiseman-los-angeles-ca-90025-stec83/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.047923,
+      "lon": -118.4541041,
+      "geocode_display": "1417, Butler Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "46",
+      "name": "Iowa Homes by Wiseman",
+      "raw_address": "90025; Iowa Ave area",
+      "address": "11346 Iowa Ave, Los Angeles, CA 90025",
+      "rent": "$4,795-$4,895",
+      "links": [
+        "https://hotpads.com/iowa-homes-by-wiseman-los-angeles-ca-90025-250zvdu/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0444335,
+      "lon": -118.4487777,
+      "geocode_display": "11346, Iowa Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "47",
+      "name": "MySuite at Cara Co-Living",
+      "raw_address": "1743 Butler Ave, Los Angeles, CA 90025",
+      "address": "1743 Butler Ave, Los Angeles, CA 90025",
+      "rent": "$1,931-$2,145 on HotPads; Rent.com showed $1,931+",
+      "links": [
+        "https://hotpads.com/mysuite-at-cara-co-living-los-angeles-ca-90025-23yxh16/pad",
+        "https://www.rent.com/apartment/mysuite-at-cara-co-living-los-angeles-ca-lc6278248"
+      ],
+      "kind": "listing",
+      "lat": 34.0429593,
+      "lon": -118.4498241,
+      "geocode_display": "1743, Butler Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "room"
+    },
+    {
+      "id": "48",
+      "name": "11516 Ohio Ave #101",
+      "raw_address": "11516 Ohio Ave #101, Los Angeles, CA 90025",
+      "address": "11516 Ohio Ave, Los Angeles, CA 90025",
+      "rent": "$4,495 in HotPads text",
+      "links": [
+        "https://hotpads.com/11516-ohio-ave-los-angeles-ca-90025-swyyq6/101/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0463787,
+      "lon": -118.4531937,
+      "geocode_display": "11516, Ohio Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "49",
+      "name": "11701 Texas Ave",
+      "raw_address": "11701 Texas Ave, West Los Angeles, CA 90025",
+      "address": "11701 Texas Ave, Los Angeles, CA 90025",
+      "rent": "$4,700-$12,000 in HotPads text",
+      "links": [
+        "https://hotpads.com/11701-texas-ave-west-los-angeles-ca-90025-snrrec/building"
+      ],
+      "kind": "listing",
+      "lat": 34.047168,
+      "lon": -118.459172,
+      "geocode_display": "11701, Texas Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "50",
+      "name": "11700 Texas Ave",
+      "raw_address": "11700 Texas Ave, Los Angeles, CA 90025",
+      "address": "11700 Texas Ave, Los Angeles, CA 90025",
+      "rent": "$1,595 in HotPads text",
+      "links": [
+        "https://hotpads.com/11700-texas-ave-los-angeles-ca-90025-1sze0ma/pad-for-sublet"
+      ],
+      "kind": "listing",
+      "lat": 34.047034,
+      "lon": -118.459057,
+      "geocode_display": "11700, Texas Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "room"
+    },
+    {
+      "id": "51",
+      "name": "1581 S Barrington Ave",
+      "raw_address": "1581 S Barrington Ave, Los Angeles, CA 90025",
+      "address": "1581 S Barrington Ave, Los Angeles, CA 90025",
+      "rent": "$1,850 in HotPads text",
+      "links": [
+        "https://hotpads.com/1581-s-barrington-ave-los-angeles-ca-90025-24t1y6f/pad-for-sublet"
+      ],
+      "kind": "listing",
+      "lat": 34.0428996,
+      "lon": -118.4554294,
+      "geocode_display": "1581, South Barrington Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "room"
+    },
+    {
+      "id": "52",
+      "name": "1410 Federal Ave #1412",
+      "raw_address": "1410 Federal Ave #1412, Los Angeles, CA 90025",
+      "address": "1410 Federal Ave, Los Angeles, CA 90025",
+      "rent": "$4,200 total price in HotPads text",
+      "links": [
+        "https://hotpads.com/1410-federal-ave-los-angeles-ca-90025-1m2kzs6/1412/pad-for-sublet"
+      ],
+      "kind": "listing",
+      "lat": 34.0470516,
+      "lon": -118.4558799,
+      "geocode_display": "1410, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "53",
+      "name": "2121 Beloit Ave #303",
+      "raw_address": "2121 Beloit Ave #303, Los Angeles, CA 90025",
+      "address": "2121 Beloit Ave, Los Angeles, CA 90025",
+      "rent": "HotPads text exposed a nearby $4,195 row; verify on page.",
+      "links": [
+        "https://hotpads.com/2121-beloit-ave-los-angeles-ca-90025-skpwuu/303/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0397383,
+      "lon": -118.4412904,
+      "geocode_display": "2121, Beloit Avenue, Sawtelle Japantown, West Los Angeles, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "54",
+      "name": "1672 Federal Ave #1",
+      "raw_address": "1672 Federal Ave #1, Los Angeles, CA 90025",
+      "address": "1672 Federal Ave, Los Angeles, CA 90025",
+      "rent": "HotPads text exposed a nearby $4,750 row; verify on page.",
+      "links": [
+        "https://hotpads.com/1672-federal-ave-los-angeles-ca-90025-ttuqf4/1/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0431036,
+      "lon": -118.4524761,
+      "geocode_display": "1672, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "55",
+      "name": "11260 Mississippi Ave #405",
+      "raw_address": "11260 Mississippi Ave #405, Los Angeles, CA 90025",
+      "address": "11260 Mississippi Ave, Los Angeles, CA 90025",
+      "rent": "$5,299 in HotPads text",
+      "links": [
+        "https://hotpads.com/11260-mississippi-ave-los-angeles-ca-90025-1m2kx2t/405/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0397308,
+      "lon": -118.4419909,
+      "geocode_display": "11260, Mississippi Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "56",
+      "name": "1529 S Westgate Ave #301",
+      "raw_address": "1529 S Westgate Ave #301, Los Angeles, CA 90025",
+      "address": "1529 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "HotPads page exposed listing but price extraction was not reliable; verify directly.",
+      "links": [
+        "https://hotpads.com/1529-s-westgate-ave-los-angeles-ca-90025-skqcme/301/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.041858,
+      "lon": -118.4588571,
+      "geocode_display": "1529, South Westgate Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "unknown"
+    },
+    {
+      "id": "57",
+      "name": "1452 Butler Ave #1460",
+      "raw_address": "1452 Butler Ave #1460, Los Angeles, CA 90025",
+      "address": "1452 Butler Ave, Los Angeles, CA 90025",
+      "rent": "$6,900",
+      "links": [
+        "https://hotpads.com/1452-butler-ave-los-angeles-ca-90025-1m2kzzt/1460/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0473035,
+      "lon": -118.4533275,
+      "geocode_display": "1452, Butler Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "58",
+      "name": "1316 Amherst Ave #201",
+      "raw_address": "1316 Amherst Ave #201, Los Angeles, CA 90025",
+      "address": "1316 Amherst Ave, Los Angeles, CA 90025",
+      "rent": "$4,990",
+      "links": [
+        "https://hotpads.com/1316-amherst-ave-los-angeles-ca-90025-skrt6c/201/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0420325,
+      "lon": -118.4665429,
+      "geocode_display": "1316, Amherst Avenue, Brentwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "59",
+      "name": "1815 Armacost Ave #A",
+      "raw_address": "1815 Armacost Ave #A, Los Angeles, CA 90025",
+      "address": "1815 Armacost Ave, Los Angeles, CA 90025",
+      "rent": "$5,300 total price in HotPads text",
+      "links": [
+        "https://hotpads.com/1815-armacost-ave-los-angeles-ca-90025-1m2m21t/a/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.037227,
+      "lon": -118.4565012,
+      "geocode_display": "1815, Armacost Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "60",
+      "name": "11254 Mississippi Ave #104A",
+      "raw_address": "11254 Mississippi Ave #104A, Los Angeles, CA 90025",
+      "address": "11254 Mississippi Ave, Los Angeles, CA 90025",
+      "rent": "$6,500",
+      "links": [
+        "https://hotpads.com/11254-mississippi-ave-los-angeles-ca-90025-1m2kx2m/104a/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0397568,
+      "lon": -118.4419473,
+      "geocode_display": "11254, Mississippi Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "61",
+      "name": "1288 Barry Ave #4",
+      "raw_address": "1288 Barry Ave #4, Los Angeles, CA 90025",
+      "address": "1288 Barry Ave, Los Angeles, CA 90025",
+      "rent": "$3,450 in HotPads text",
+      "links": [
+        "https://hotpads.com/1288-barry-ave-los-angeles-ca-90025-snsr0h/4/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0481097,
+      "lon": -118.4582375,
+      "geocode_display": "1288, Barry Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "62",
+      "name": "1851 Brockton Ave",
+      "raw_address": "1851 Brockton Ave, Los Angeles, CA 90025",
+      "address": "1851 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$5,000 in HotPads text",
+      "links": [
+        "https://hotpads.com/1851-brockton-ave-los-angeles-ca-90025-suawfk/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0363407,
+      "lon": -118.4569731,
+      "geocode_display": "1851, Brockton Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "63",
+      "name": "1458 Butler Ave",
+      "raw_address": "1458 Butler Ave, Los Angeles, CA 90025",
+      "address": "1458 Butler Ave, Los Angeles, CA 90025",
+      "rent": "$6,900 in HotPads text",
+      "links": [
+        "https://hotpads.com/1458-butler-ave-los-angeles-ca-90025-23jtrw2/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0472387,
+      "lon": -118.4532717,
+      "geocode_display": "1458, Butler Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "64",
+      "name": "1449 Butler Ave #3",
+      "raw_address": "1449 Butler Ave #3, Los Angeles, CA 90025",
+      "address": "1449 Butler Ave, Los Angeles, CA 90025",
+      "rent": "$4,750 in HotPads text",
+      "links": [
+        "https://hotpads.com/1449-butler-ave-los-angeles-ca-90025-skp8z8/3/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0472337,
+      "lon": -118.4535102,
+      "geocode_display": "1449, Butler Avenue, Sawtelle Japantown, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "65",
+      "name": "1832 S Barrington Ave #401",
+      "raw_address": "1832 S Barrington Ave #401, Los Angeles, CA 90025",
+      "address": "1832 S Barrington Ave, Los Angeles, CA 90025",
+      "rent": "$5,990 in HotPads text",
+      "links": [
+        "https://hotpads.com/1832-s-barrington-ave-los-angeles-ca-90025-tzc6ks/401/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0395197,
+      "lon": -118.4522712,
+      "geocode_display": "1832, South Barrington Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "66",
+      "name": "1525 S Carmelina Ave #1527-1/2",
+      "raw_address": "1525 S Carmelina Ave #1527-1/2, Los Angeles, CA 90025",
+      "address": "1525 S Carmelina Ave, Los Angeles, CA 90025",
+      "rent": "$5,312 in HotPads text",
+      "links": [
+        "https://hotpads.com/1525-s-carmelina-ave-los-angeles-ca-90025-1n1w3yk/1527-12/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0375904,
+      "lon": -118.4649632,
+      "geocode_display": "1525, South Carmelina Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "67",
+      "name": "12018 Rhode Island Ave",
+      "raw_address": "12018 Rhode Island Ave, Los Angeles, CA 90025",
+      "address": "12018 Rhode Island Ave, Los Angeles, CA 90025",
+      "rent": "$4,700 in HotPads text",
+      "links": [
+        "https://hotpads.com/12018-rhode-island-ave-los-angeles-ca-90025-1m2kynz/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0429919,
+      "lon": -118.4645181,
+      "geocode_display": "12018, Rhode Island Avenue, Brentwood, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "68",
+      "name": "1321 Brockton Ave / Brockton Palace by Wiseman",
+      "raw_address": "1321 Brockton Ave, Los Angeles, CA 90025",
+      "address": "1321 Brockton Ave, Los Angeles, CA 90025",
+      "rent": "$4,995-$5,095 in HotPads text",
+      "links": [
+        "https://hotpads.com/brockton-palace-by-wiseman-los-angeles-ca-90025-ttum7w/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.044013,
+      "lon": -118.4636023,
+      "geocode_display": "1321, Brockton Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "69",
+      "name": "1301 S Westgate Ave #402",
+      "raw_address": "1301 S Westgate Ave #402, Los Angeles, CA 90025",
+      "address": "1301 S Westgate Ave, Los Angeles, CA 90025",
+      "rent": "$4,700 in HotPads text",
+      "links": [
+        "https://hotpads.com/1301-s-westgate-ave-los-angeles-ca-90025-svdnmf/402/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.045319,
+      "lon": -118.461842,
+      "geocode_display": "1301, South Westgate Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "70",
+      "name": "Wellesley House",
+      "raw_address": "Los Angeles, CA 90025; Wellesley Ave area",
+      "address": "1303 Wellesley Ave, Los Angeles, CA 90025",
+      "rent": "$5,750 in HotPads text",
+      "links": [
+        "https://hotpads.com/wellesley-house-los-angeles-ca-90025-241tftc/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0413106,
+      "lon": -118.4676084,
+      "geocode_display": "1303, Wellesley Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "71",
+      "name": "1526 Armacost Ave",
+      "raw_address": "1526 Armacost Ave, Los Angeles, CA 90025",
+      "address": "1526 Armacost Ave, Los Angeles, CA 90025",
+      "rent": "$4,690 in HotPads text",
+      "links": [
+        "https://hotpads.com/1526-armacost-ave-los-angeles-ca-90025-wdt8h5/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0414906,
+      "lon": -118.4597398,
+      "geocode_display": "1526, Armacost Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "72",
+      "name": "1731 Federal Ave",
+      "raw_address": "1731 Federal Ave, Los Angeles, CA 90025",
+      "address": "1731 Federal Ave, Los Angeles, CA 90025",
+      "rent": "HotPads page exposed listing but price extraction was not reliable; verify directly.",
+      "links": [
+        "https://hotpads.com/1731-federal-ave-los-angeles-ca-90025-1z6ftgw/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0420158,
+      "lon": -118.4517818,
+      "geocode_display": "1731, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "unknown"
+    },
+    {
+      "id": "A1",
+      "name": "2820 Sawtelle Blvd",
+      "raw_address": "2820 Sawtelle Blvd, Los Angeles, CA 90064",
+      "address": "2820 Sawtelle Blvd, Los Angeles, CA 90064",
+      "rent": "$3,798",
+      "links": [
+        "https://www.rent.com/apartment/2820-sawtelle-blvd-los-angeles-ca-lc5920478"
+      ],
+      "kind": "listing",
+      "lat": 34.0280213,
+      "lon": -118.4327004,
+      "geocode_display": "2820, Sawtelle Boulevard, Westdale, Rancho Park, Palms, Los Angeles, Los Angeles County, California, 90064, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "A2",
+      "name": "2830 S Sepulveda",
+      "raw_address": "2830 S Sepulveda Blvd, Los Angeles, CA 90064",
+      "address": "2830 S Sepulveda Blvd, Los Angeles, CA 90064",
+      "rent": "$2,600",
+      "links": [
+        "https://www.rent.com/apartment/2830-s-sepulveda-los-angeles-ca-lc5903426"
+      ],
+      "kind": "listing",
+      "lat": 34.0295183,
+      "lon": -118.4296198,
+      "geocode_display": "2830, South Sepulveda Boulevard, Rancho Park, Palms, Los Angeles, Los Angeles County, California, 90064, United States",
+      "marker_class": "low"
+    },
+    {
+      "id": "A3",
+      "name": "Barringway Place",
+      "raw_address": "11701 W Gateway Blvd, Los Angeles, CA 90064",
+      "address": "11701 Gateway Blvd, Los Angeles, CA 90064",
+      "rent": "Contact",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Barringway-Place-Los-Angeles-CA-90064-17286548"
+      ],
+      "kind": "listing",
+      "lat": 34.0284245,
+      "lon": -118.4435163,
+      "geocode_display": "11701, Gateway Boulevard, Sawtelle, Los Angeles, Los Angeles County, California, 90064, United States",
+      "marker_class": "unknown"
+    },
+    {
+      "id": "A4",
+      "name": "Residences at West Edge",
+      "raw_address": "12121 W Olympic Blvd, Los Angeles, CA 90064",
+      "address": "12121 W Olympic Blvd, Los Angeles, CA 90064",
+      "rent": "$6,972-$8,119",
+      "links": [
+        "https://www.apartmenthomeliving.com/apartment-finder/Residences-at-West-Edge-Los-Angeles-CA-90064-14941877"
+      ],
+      "kind": "listing",
+      "lat": 34.0328723,
+      "lon": -118.4552568,
+      "geocode_display": "Gelson's, 12121, West Olympic Boulevard, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "luxury"
+    },
+    {
+      "id": "A5",
+      "name": "2415 Federal Ave #2419",
+      "raw_address": "2415 Federal Ave #2419, Los Angeles, CA 90064",
+      "address": "2415 Federal Ave, Los Angeles, CA 90064",
+      "rent": "$4,395 in HotPads text",
+      "links": [
+        "https://hotpads.com/2415-federal-ave-los-angeles-ca-90064-1m2ruyp/2419/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0320981,
+      "lon": -118.4437785,
+      "geocode_display": "2415, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90064, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "A6",
+      "name": "2441 Federal Ave",
+      "raw_address": "2441 Federal Ave, Los Angeles, CA 90064",
+      "address": "2441 Federal Ave, Los Angeles, CA 90064",
+      "rent": "$5,295 in HotPads text",
+      "links": [
+        "https://hotpads.com/2441-federal-ave-los-angeles-ca-90064-1m2rv07/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0315245,
+      "lon": -118.4433246,
+      "geocode_display": "2441, Federal Avenue, Sawtelle, Los Angeles, Los Angeles County, California, 90064, United States",
+      "marker_class": "high"
+    },
+    {
+      "id": "A7",
+      "name": "2452 Colby Ave",
+      "raw_address": "2452 Colby Ave, Los Angeles, CA 90064",
+      "address": "2452 Colby Ave, Los Angeles, CA 90064",
+      "rent": "$4,650",
+      "links": [
+        "https://hotpads.com/2452-colby-ave-los-angeles-ca-90064-1m2rv1a/pad"
+      ],
+      "kind": "listing",
+      "lat": 34.0277115,
+      "lon": -118.4373251,
+      "geocode_display": "Colby Avenue, Westdale, Rancho Park, Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States",
+      "marker_class": "mid"
+    },
+    {
+      "id": "A8",
+      "name": "Sardis",
+      "raw_address": "11210 W Sardis Ave, Los Angeles, CA 90064",
+      "address": "11210 Sardis Ave, Los Angeles, CA 90064",
+      "rent": "$4,595",
+      "links": [
+        "https://www.rent.com/apartment/sardis-los-angeles-ca-lc6424610"
+      ],
+      "kind": "listing",
+      "lat": 34.0285662,
+      "lon": -118.4322733,
+      "geocode_display": "11210, Sardis Avenue, Rancho Park, Palms, Los Angeles, Los Angeles County, California, 90064, United States",
+      "marker_class": "mid"
+    }
+  ],
+  "unmapped": [],
+  "metro": {
+    "id": "M",
+    "name": "Expo/Bundy Metro E Line Station",
+    "address": "Expo/Bundy Station, Los Angeles, CA",
+    "lat": 34.0316631,
+    "lon": -118.4531105,
+    "kind": "metro",
+    "rent": "",
+    "marker_class": "metro"
+  },
+  "extra_labels": [
+    {
+      "id": "J",
+      "name": "Sawtelle Japantown / Sawtelle Blvd corridor",
+      "lat": 34.0392,
+      "lon": -118.4422,
+      "kind": "landmark",
+      "marker_class": "landmark"
+    }
+  ]
+}

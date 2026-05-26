@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sawtelle 3BR Apartment Report</title>
+    <meta name="description" content="Interactive static report for mapped Sawtelle and West Los Angeles 3-bedroom apartment listings.">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ6tmI9bK7gY+ZXeN0R93R4zB/0WjW8=" crossorigin="">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="hero">
+      <nav class="topbar" aria-label="Report navigation">
+        <a class="brand" href="./">Sawtelle 3BR Report</a>
+        <div class="nav-links">
+          <a href="#map-section">Map</a>
+          <a href="#listings">Listings</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#area">Area</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Client-side static report</p>
+          <h1>Sawtelle / West LA 3-bedroom apartment map</h1>
+          <p id="hero-summary">Loading report data...</p>
+          <div class="hero-actions">
+            <a class="button primary" id="pdf-link" href="assets/Sawtelle_3BR_Apartment_Report_2026-05-25_MAPPED.pdf" target="_blank" rel="noopener">Open mapped PDF</a>
+            <a class="button secondary" href="#listings">Browse listings</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Report highlights">
+          <dl class="stat-grid" id="stats-grid">
+            <div><dt>Total</dt><dd>--</dd></div>
+            <div><dt>Core</dt><dd>--</dd></div>
+            <div><dt>Adjacent</dt><dd>--</dd></div>
+            <div><dt>Typical</dt><dd>$4.1k-$5.5k</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section map-section" id="map-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive map</p>
+            <h2 id="map-title">Mapped listings, transit, and Sawtelle corridor</h2>
+          </div>
+          <div class="legend" id="legend" aria-label="Map legend"></div>
+        </div>
+        <div class="map-layout">
+          <div class="map-wrap">
+            <div id="map" role="application" aria-label="OpenStreetMap with apartment listing markers"></div>
+            <div class="map-error" id="map-error" hidden>Interactive map unavailable. Static maps are shown below.</div>
+          </div>
+          <div class="map-notes">
+            <h3>Marker guide</h3>
+            <p>Numbered pins match listing IDs. The red M marker is Expo/Bundy Metro E Line station. The black/yellow J marker is the Sawtelle Japantown corridor.</p>
+            <p>Colors follow the report's <code>marker_class</code> tiers. Teal usually flags co-living or likely per-room pricing.</p>
+          </div>
+        </div>
+        <section class="fallback-maps" aria-labelledby="fallback-title">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Fallback maps</p>
+              <h3 id="fallback-title">Static images available without map JavaScript</h3>
+            </div>
+          </div>
+          <div class="image-grid">
+            <figure>
+              <img id="overview-map-img" src="assets/sawtelle_all_listings_map.png" alt="Overview map of all mapped Sawtelle apartment listings and Expo/Bundy station">
+              <figcaption>All mapped listings and Expo/Bundy Metro.</figcaption>
+            </figure>
+            <figure>
+              <img id="detail-map-img" src="assets/sawtelle_core_zoom_map.png" alt="Core Sawtelle 90025 detail map with apartment listing pins">
+              <figcaption>Core Sawtelle / 90025 detail map.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </section>
+
+      <section class="section" id="listings" aria-labelledby="listings-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Search and filter</p>
+            <h2 id="listings-title">Listings</h2>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite">Loading...</p>
+        </div>
+        <form class="controls" id="controls" aria-label="Listing filters">
+          <label>
+            <span>Search listings</span>
+            <input id="search" type="search" placeholder="Name, address, notes" autocomplete="off">
+          </label>
+          <label>
+            <span>Area</span>
+            <select id="section-filter">
+              <option value="all">Core and adjacent</option>
+              <option value="core">Core only</option>
+              <option value="adjacent">Adjacent only</option>
+            </select>
+          </label>
+          <label>
+            <span>Rent tier</span>
+            <select id="tier-filter">
+              <option value="all">All tiers</option>
+              <option value="room">Very low / room</option>
+              <option value="low">Low</option>
+              <option value="mid">Mid</option>
+              <option value="high">High</option>
+              <option value="luxury">Luxury</option>
+              <option value="unknown">Unknown</option>
+            </select>
+          </label>
+          <label>
+            <span>Sort by</span>
+            <select id="sort">
+              <option value="price">Price</option>
+              <option value="name">Name</option>
+              <option value="id">ID</option>
+            </select>
+          </label>
+          <label class="checkbox">
+            <input id="hide-room" type="checkbox">
+            <span>Hide co-living / per-room</span>
+          </label>
+        </form>
+        <div class="empty-state" id="empty-state" hidden>No listings match the current filters.</div>
+        <div class="cards" id="listing-cards"></div>
+      </section>
+
+      <section class="section" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Due diligence</p>
+            <h2 id="reviews-title">Review and reputation notes</h2>
+          </div>
+        </div>
+        <div class="cards review-cards" id="review-cards"></div>
+      </section>
+
+      <section class="section area-section" id="area" aria-labelledby="area-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Neighborhood context</p>
+            <h2 id="area-title">Area, transit, amenities, and cautions</h2>
+          </div>
+        </div>
+        <div class="info-grid" id="area-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Data loaded from <code>data/app-data.json</code>. Verify price, availability, fees, parking, utilities, pets, and lease terms before applying.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+  </body>
+</html>
