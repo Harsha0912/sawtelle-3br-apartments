@@ -17,6 +17,7 @@
         <a class="brand" href="./">Sawtelle 3BR Report</a>
         <div class="nav-links">
           <a href="#map-section">Map</a>
+          <a href="#basketball-courts">Courts</a>
           <a href="#listings">Listings</a>
           <a href="top-picks.html">Top picks</a>
           <a href="#reviews">Reviews</a>
@@ -82,6 +83,44 @@
             </figure>
           </div>
         </section>
+      </section>
+
+      <section class="section basketball-section" id="basketball-courts" aria-labelledby="basketball-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Basketball access</p>
+            <h2 id="basketball-title">Closest indoor basketball courts from 225 Arizona Ave</h2>
+            <p id="basketball-summary">Loading indoor basketball court data...</p>
+          </div>
+        </div>
+
+        <dl class="court-stat-grid" id="basketball-stats" aria-label="Basketball court highlights"></dl>
+
+        <div class="map-layout basketball-layout">
+          <div class="map-wrap">
+            <div id="basketball-map" role="application" aria-label="OpenStreetMap with indoor basketball court, office, and Metro markers"></div>
+            <div class="map-error" id="basketball-map-error" hidden>Basketball map unavailable. Court cards and directions links are listed below.</div>
+          </div>
+          <div class="map-notes">
+            <h3>Basketball map guide</h3>
+            <p>Orange markers are public/drop-in or public recreation-center leads, purple is member/guest gym access, teal is college/campus access, gray means verify indoor/open-gym status, black is the office, and red is the nearest Metro E Line station for each court.</p>
+            <p>Black dashed lines point toward 225 Arizona Ave. Blue dashed lines point toward each court's nearest Metro E Line station. Use the card buttons for live Google Maps directions.</p>
+            <div class="legend basketball-legend" id="basketball-legend" aria-label="Basketball map legend"></div>
+          </div>
+        </div>
+
+        <div class="top-picks-grid basketball-notes">
+          <article class="info-card">
+            <h3>Methodology and caveats</h3>
+            <ul id="basketball-methodology"></ul>
+          </article>
+          <article class="info-card">
+            <h3>Distance note</h3>
+            <p id="basketball-distance-note">Loading distance methodology...</p>
+          </article>
+        </div>
+
+        <div class="cards court-cards" id="basketball-cards"></div>
       </section>
 
       <section class="section" id="listings" aria-labelledby="listings-title">
@@ -177,7 +216,7 @@
     </main>
 
     <footer class="footer">
-      <p>Data loaded from <code>data/app-data.json</code>. Verify price, availability, fees, parking, utilities, pets, and lease terms before applying.</p>
+      <p>Data loaded from <code>data/app-data.json</code>. Verify apartment price, availability, fees, parking, utilities, pets, lease terms, and basketball court access/open-gym schedules before relying on the report.</p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>

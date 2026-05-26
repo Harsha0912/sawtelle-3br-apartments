@@ -1,6 +1,6 @@
 # Sawtelle 3BR Apartment Report
 
-Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apartment report generated on 2026-05-25.
+Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apartment report generated on 2026-05-25. The main page now also includes a mapped indoor-basketball shortlist from the 225 Arizona Ave office, with each court's office distance and nearest Metro E Line distance.
 
 ## Files
 
@@ -8,9 +8,9 @@ Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apa
 - `top-picks.html` - ranked recommendations page for the $4,000-$6,500 target budget.
 - `styles.css` - responsive styling for the map, listing filters, and ranked page.
 - `leaflet-fallback.css` - local critical Leaflet layout CSS so panes, tiles, markers, controls, and popups still render correctly if the CDN stylesheet fails.
-- `app.js` - client-side JSON loading, map rendering, listing cards, bed/bath filters, price filters, and source links.
+- `app.js` - client-side JSON loading, map rendering, listing cards, basketball court cards, bed/bath filters, price filters, and source links.
 - `top-picks.js` - client-side renderer for the ranked top-picks page.
-- `data/app-data.json` - source of truth for listings, stats, reviews, area notes, and asset paths.
+- `data/app-data.json` - source of truth for listings, stats, reviews, area notes, basketball court/Metro/office distances, and asset paths.
 - `data/top-picks.json` - ranked shortlist, review summaries, evidence snippets, source links, and tour checklist.
 - `data/ranking-source-snippets.json` - raw text-rendered scrape evidence archive used to build the top-picks summaries.
 - `assets/` - mapped PDF and static fallback map images.

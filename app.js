@@ -10,7 +10,12 @@
     luxury: "#7a4e9e",
     unknown: "#76716a",
     metro: "#d22f27",
-    landmark: "#f1c84b"
+    landmark: "#f1c84b",
+    office: "#111827",
+    court_public: "#d97706",
+    court_member: "#8b5cf6",
+    court_college: "#0f766e",
+    court_verify: "#64748b"
   };
   const LABELS = {
     room: "Very low / room",
@@ -20,7 +25,12 @@
     luxury: "Luxury",
     unknown: "Unknown",
     metro: "Metro",
-    landmark: "Japantown"
+    landmark: "Japantown",
+    office: "Office",
+    court_public: "Public court",
+    court_member: "Member gym",
+    court_college: "College court",
+    court_verify: "Verify indoor"
   };
 
   const state = { data: null, listings: [] };
@@ -41,6 +51,7 @@
       renderStaticContent(data);
       renderListings();
       initMap(data);
+      initBasketballMap(data.basketball);
     } catch (error) {
       showMapError();
       $("hero-summary").textContent = "Report data could not be loaded. Static map assets and PDF links remain available.";
@@ -64,6 +75,19 @@
         throw new Error(`Invalid listing ${item.id}: coordinates must be numeric.`);
       }
     });
+
+    if (data.basketball && Array.isArray(data.basketball.courts)) {
+      data.basketball.courts.forEach((court, index) => {
+        ["id", "name", "address", "lat", "lon", "nearest_metro_id", "office_distance_mi", "metro_distance_mi"].forEach((key) => {
+          if (court[key] === undefined || court[key] === null || court[key] === "") {
+            throw new Error(`Invalid basketball court at index ${index}: missing ${key}.`);
+          }
+        });
+        if (!Number.isFinite(Number(court.lat)) || !Number.isFinite(Number(court.lon))) {
+          throw new Error(`Invalid basketball court ${court.id}: coordinates must be numeric.`);
+        }
+      });
+    }
   }
 
   function renderStaticContent(data) {
@@ -85,6 +109,7 @@
       ["Amenities", data.area.amenities],
       ["Cautions", data.area.cautions]
     ].map(renderInfoCard).join("");
+    renderBasketballSection(data.basketball);
   }
 
   function bindControls() {
@@ -263,6 +288,157 @@
     `;
   }
 
+  function renderBasketballSection(basketball) {
+    if (!basketball || !Array.isArray(basketball.courts) || !$("basketball-cards")) return;
+    const courts = basketball.courts;
+    const publicPick = courts.find((court) => court.id === "B1") || courts.find((court) => court.marker_class === "court_public") || courts[0];
+    const closest = courts.reduce((best, court) => Number(court.office_distance_mi) < Number(best.office_distance_mi) ? court : best, courts[0]);
+    const collegeCount = courts.filter((court) => court.college).length;
+
+    $("basketball-summary").textContent = `${basketball.summary} Distances updated ${formatDate(basketball.generated)}.`;
+    $("basketball-stats").innerHTML = [
+      ["Closest option", `${closest.name} (${formatMiles(closest.office_distance_mi)} from office)`],
+      ["Best public drop-in", `${publicPick.name} (${formatMiles(publicPick.office_distance_mi)} from office)`],
+      ["College leads", `${collegeCount} option${collegeCount === 1 ? "" : "s"}`],
+      ["Office", basketball.office.address]
+    ].map(renderCourtStat).join("");
+    $("basketball-methodology").innerHTML = (basketball.methodology || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    $("basketball-distance-note").textContent = basketball.distance_notes?.sourceDistanceMethod || "Distances are route estimates; verify live routing before traveling.";
+    $("basketball-cards").innerHTML = courts.map(renderCourtCard).join("");
+    renderBasketballLegend(basketball.legend || []);
+  }
+
+  function renderCourtStat([label, value]) {
+    return `
+      <div class="court-stat">
+        <dt>${escapeHtml(label)}</dt>
+        <dd>${escapeHtml(value)}</dd>
+      </div>
+    `;
+  }
+
+  function renderCourtCard(court) {
+    const markerClass = normalizedClass(court);
+    const sourceLinks = renderNamedLinks(court.links || [], "Source");
+    return `
+      <article class="card court-card">
+        <div class="card-top">
+          <div>
+            <h3><a href="${escapeAttr(court.maps_url)}" target="_blank" rel="noopener">${escapeHtml(court.name)}</a></h3>
+            <div class="meta">${escapeHtml(court.address)}</div>
+          </div>
+          <span class="pin" style="background:${COLORS[markerClass] || COLORS.unknown}">${escapeHtml(court.id)}</span>
+        </div>
+        <p class="price">${escapeHtml(court.rank_note || court.category || "Basketball option")}</p>
+        <div class="court-distances">
+          <div><strong>${formatMiles(court.office_distance_mi)}</strong><span>to 225 Arizona Ave</span></div>
+          <div><strong>${formatMiles(court.metro_distance_mi)}</strong><span>to ${escapeHtml(court.nearest_metro_name)}</span></div>
+          <div><strong>${escapeHtml(court.metro_walk_minutes)} min</strong><span>estimated Metro walk</span></div>
+        </div>
+        <p>${escapeHtml(court.source_notes || "Verify schedule and access before going.")}</p>
+        <div class="badges">
+          <span class="badge">${escapeHtml(court.category || LABELS[markerClass] || markerClass)}</span>
+          <span class="badge">${escapeHtml(court.indoor_status || "Indoor status: verify")}</span>
+          ${court.college ? '<span class="badge">College court</span>' : ""}
+        </div>
+        <p class="meta"><strong>Access:</strong> ${escapeHtml(court.access || "Verify access before going.")}</p>
+        <div class="links">
+          <a class="primary-source" href="${escapeAttr(court.office_directions_url)}" target="_blank" rel="noopener">Directions from office</a>
+          <a href="${escapeAttr(court.metro_directions_url)}" target="_blank" rel="noopener">Walk to Metro</a>
+          ${sourceLinks}
+        </div>
+      </article>
+    `;
+  }
+
+  function renderBasketballLegend(legend) {
+    const target = $("basketball-legend");
+    if (!target) return;
+    target.innerHTML = legend.map((item) => (
+      `<span class="legend-item"><span class="swatch" style="background:${COLORS[item.class] || COLORS.unknown}"></span>${escapeHtml(item.label)}</span>`
+    )).join("");
+  }
+
+  function initBasketballMap(basketball) {
+    if (!$("basketball-map")) return;
+    if (!basketball || !Array.isArray(basketball.courts) || !window.L) {
+      showMapError("basketball-map-error");
+      return;
+    }
+    try {
+      const map = L.map("basketball-map", { scrollWheelZoom: false });
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      const bounds = [];
+      const stationById = Object.fromEntries((basketball.metro_stations || []).map((station) => [station.id, station]));
+      const usedStations = new Set(basketball.courts.map((court) => court.nearest_metro_id));
+      const office = basketball.office;
+
+      if (office) {
+        const officeMarker = L.marker([office.lat, office.lon], { icon: makeIcon("O", "office") })
+          .bindPopup(`<div class="popup"><h3>${escapeHtml(office.name)}</h3><p>${escapeHtml(office.address)}</p></div>`)
+          .addTo(map);
+        bounds.push(officeMarker.getLatLng());
+      }
+
+      (basketball.metro_stations || []).filter((station) => usedStations.has(station.id)).forEach((station) => {
+        const marker = L.marker([station.lat, station.lon], { icon: makeIcon("M", "metro") })
+          .bindPopup(`<div class="popup"><h3>${escapeHtml(station.name)}</h3><p>${escapeHtml(station.address || "Metro E Line station")}</p></div>`)
+          .addTo(map);
+        bounds.push(marker.getLatLng());
+      });
+
+      basketball.courts.forEach((court) => {
+        const station = stationById[court.nearest_metro_id];
+        const marker = L.marker([court.lat, court.lon], { icon: makeIcon(court.id, normalizedClass(court)) })
+          .bindPopup(renderCourtPopup(court))
+          .addTo(map);
+        bounds.push(marker.getLatLng());
+
+        if (office) {
+          L.polyline([[court.lat, court.lon], [office.lat, office.lon]], {
+            color: "#111827",
+            weight: 1.5,
+            opacity: 0.45,
+            dashArray: "6 8",
+            interactive: false
+          }).addTo(map);
+        }
+        if (station) {
+          L.polyline([[court.lat, court.lon], [station.lat, station.lon]], {
+            color: "#2563eb",
+            weight: 1.5,
+            opacity: 0.55,
+            dashArray: "3 7",
+            interactive: false
+          }).addTo(map);
+        }
+      });
+
+      if (bounds.length) map.fitBounds(bounds, { padding: [24, 24] });
+    } catch (error) {
+      showMapError("basketball-map-error");
+      console.error(error);
+    }
+  }
+
+  function renderCourtPopup(court) {
+    const sourceLinks = renderNamedLinks(court.links || [], "Source");
+    return `
+      <div class="popup">
+        <h3>${escapeHtml(court.id)}. ${escapeHtml(court.name)}</h3>
+        <p><strong>Address:</strong> ${escapeHtml(court.address)}</p>
+        <p><strong>Office:</strong> ${formatMiles(court.office_distance_mi)} driving-route miles from 225 Arizona Ave.</p>
+        <p><strong>Metro:</strong> ${formatMiles(court.metro_distance_mi)} to ${escapeHtml(court.nearest_metro_name)}.</p>
+        <p><strong>Access:</strong> ${escapeHtml(court.access || "Verify before going.")}</p>
+        <div class="links"><a class="primary-source" href="${escapeAttr(court.office_directions_url)}" target="_blank" rel="noopener">Office directions</a>${sourceLinks}</div>
+      </div>
+    `;
+  }
+
   function normalizedClass(item) {
     return item.marker_class || "unknown";
   }
@@ -311,6 +487,12 @@
     )).join("");
   }
 
+  function renderNamedLinks(links, label) {
+    return (links || []).map((url, index) => (
+      `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">${escapeHtml(label)} ${index + 1}</a>`
+    )).join("");
+  }
+
   function priceSort(a, b) {
     const ap = Number.isFinite(a.min_price) ? a.min_price : Number.POSITIVE_INFINITY;
     const bp = Number.isFinite(b.min_price) ? b.min_price : Number.POSITIVE_INFINITY;
@@ -331,8 +513,15 @@
     return date.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
   }
 
-  function showMapError() {
-    $("map-error").hidden = false;
+  function formatMiles(value) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) return "-- mi";
+    return `${number.toFixed(number < 10 ? 2 : 1)} mi`;
+  }
+
+  function showMapError(id = "map-error") {
+    const element = $(id);
+    if (element) element.hidden = false;
   }
 
   function escapeHtml(value) {

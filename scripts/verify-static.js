@@ -9,7 +9,9 @@ const checks = [
       /id="bath-filter"/,
       /id="min-price"/,
       /id="max-price"/,
-      /href="top-picks\.html"/
+      /href="top-picks\.html"/,
+      /id="basketball-courts"/,
+      /id="basketball-map"/
     ]
   },
   {
@@ -20,7 +22,10 @@ const checks = [
       /min-price/,
       /max-price/,
       /primary-source/,
-      /Open primary source/
+      /Open primary source/,
+      /initBasketballMap/,
+      /renderCourtCard/,
+      /basketball-map-error/
     ]
   },
   {
@@ -69,7 +74,9 @@ const checks = [
       /\.rank-card/,
       /\.ranking-hero/,
       /\.primary-source/,
-      /\.availability-card/
+      /\.availability-card/,
+      /\.court-card/,
+      /#basketball-map/
     ]
   },
   {
@@ -97,6 +104,13 @@ for (const check of checks) {
 }
 
 JSON.parse(fs.readFileSync("data/app-data.json", "utf8"));
+const appData = JSON.parse(fs.readFileSync("data/app-data.json", "utf8"));
+if (!appData.basketball || !Array.isArray(appData.basketball.courts) || appData.basketball.courts.length < 6) {
+  throw new Error("data/app-data.json failed verification: expected basketball court shortlist.");
+}
+if (!appData.basketball.courts.some((court) => court.nearest_metro_id && court.office_distance_mi && court.metro_distance_mi)) {
+  throw new Error("data/app-data.json failed verification: expected basketball court office and Metro distances.");
+}
 const availabilityChecks = JSON.parse(fs.readFileSync("data/availability-checks.json", "utf8"));
 if (!Array.isArray(availabilityChecks.listings) || availabilityChecks.listings.length < 40) {
   throw new Error("data/availability-checks.json failed verification: expected strict-budget listing rows.");

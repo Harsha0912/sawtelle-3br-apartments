@@ -124,7 +124,7 @@
       "address_raw": "1247 Stoner Ave, Los Angeles, CA 90025",
       "rent": "$4,095",
       "beds_baths": "3 bed / 3 bath",
-      "source_notes": "Zumper score 9.4 \u201cExcellent\u201d; on-site laundry, balcony, assigned parking.",
+      "source_notes": "Zumper score 9.4 “Excellent”; on-site laundry, balcony, assigned parking.",
       "address": "1247 Stoner Ave, Los Angeles, CA 90025",
       "lat": 34.0475606,
       "lon": -118.4608918,
@@ -1529,7 +1529,7 @@
   "area": {
     "summary": [
       "Sawtelle is a West Los Angeles / Westside neighborhood associated with Japanese American history and Sawtelle Japantown.",
-      "Rental portal boundaries are loose: some nearby West LA, Rancho Park, Brentwood, Santa Monica, and Palms results show up as \u201cSawtelle.\u201d",
+      "Rental portal boundaries are loose: some nearby West LA, Rancho Park, Brentwood, Santa Monica, and Palms results show up as “Sawtelle.”",
       "Most core 90025 whole-unit 3BR rents found cluster around $4,100-$5,500/month; lower apparent prices are often co-living or room listings."
     ],
     "transit": [
@@ -1538,7 +1538,7 @@
       "Key roads nearby include Santa Monica Blvd, Olympic Blvd, Wilshire Blvd, Sepulveda Blvd, Bundy Dr, and I-405."
     ],
     "amenities": [
-      "Stoner Recreation Center, West LA Regional Branch Library, Ralphs, Trader Joe\u2019s, Nijiya Market, Gelson\u2019s, Marukai, Smart & Final, and the Sawtelle Blvd restaurant corridor are nearby."
+      "Stoner Recreation Center, West LA Regional Branch Library, Ralphs, Trader Joe’s, Nijiya Market, Gelson’s, Marukai, Smart & Final, and the Sawtelle Blvd restaurant corridor are nearby."
     ],
     "cautions": [
       "Verify whole-unit vs per-room pricing.",
@@ -1552,5 +1552,278 @@
     "pdf": "assets/Sawtelle_3BR_Apartment_Report_2026-05-25_MAPPED.pdf",
     "overviewMap": "assets/sawtelle_all_listings_map.png",
     "detailMap": "assets/sawtelle_core_zoom_map.png"
+  },
+  "basketball": {
+    "generated": "2026-05-26",
+    "title": "Closest indoor basketball courts from 225 Arizona Ave",
+    "summary": "Shortlist of the closest indoor or gym-based basketball options from the office, prioritizing public drop-in access and then college/rec-center options with transparent access caveats.",
+    "office": {
+      "id": "O",
+      "name": "225 Arizona Ave office",
+      "address": "225 Arizona Ave, Santa Monica, CA 90401",
+      "lat": 34.016733,
+      "lon": -118.498116,
+      "marker_class": "office"
+    },
+    "metro_stations": [
+      {
+        "id": "M1",
+        "name": "Downtown Santa Monica E Line",
+        "lat": 34.0136604,
+        "lon": -118.4916499,
+        "address": "4th St & Colorado Ave, Santa Monica, CA"
+      },
+      {
+        "id": "M2",
+        "name": "17th Street/SMC E Line",
+        "lat": 34.0231598,
+        "lon": -118.480379,
+        "address": "17th St & Colorado Ave, Santa Monica, CA"
+      },
+      {
+        "id": "M3",
+        "name": "26th Street/Bergamot E Line",
+        "lat": 34.0280089,
+        "lon": -118.4690898,
+        "address": "26th St & Olympic Blvd, Santa Monica, CA"
+      },
+      {
+        "id": "M4",
+        "name": "Expo/Bundy E Line",
+        "lat": 34.0316631,
+        "lon": -118.4531105,
+        "address": "Exposition Blvd & Bundy Dr, Los Angeles, CA"
+      },
+      {
+        "id": "M5",
+        "name": "Expo/Sepulveda E Line",
+        "lat": 34.0354335,
+        "lon": -118.4341435,
+        "address": "Exposition Blvd & Sepulveda Blvd, Los Angeles, CA"
+      },
+      {
+        "id": "M6",
+        "name": "Westwood/Rancho Park E Line",
+        "lat": 34.0368181,
+        "lon": -118.4245788,
+        "address": "Westwood Blvd & Exposition Blvd, Los Angeles, CA"
+      }
+    ],
+    "methodology": [
+      "Started from official city/college/YMCA/UCLA pages, not review snippets, and kept only facilities with indoor gym/basketball evidence or a clearly marked verify-first caveat.",
+      "Ranked by route distance from 225 Arizona Ave, while flagging whether a court is truly public drop-in, membership-based, college-affiliated, or verify-first.",
+      "Mapped each court with a dashed connector to the office and a blue connector to the nearest Metro E Line station. Use each card's directions links for live routing and current traffic/transit details.",
+      "Call ahead before going: open-gym schedules can be preempted by leagues, classes, camps, permits, and campus construction."
+    ],
+    "legend": [
+      {
+        "label": "Public/drop-in or public rec center",
+        "class": "court_public"
+      },
+      {
+        "label": "Member/guest gym",
+        "class": "court_member"
+      },
+      {
+        "label": "College rec/campus court",
+        "class": "court_college"
+      },
+      {
+        "label": "Verify indoor/open gym",
+        "class": "court_verify"
+      },
+      {
+        "label": "Office",
+        "class": "office"
+      },
+      {
+        "label": "Metro E Line station",
+        "class": "metro"
+      }
+    ],
+    "distance_notes": {
+      "sourceDistanceMethod": "Office miles are traffic-free OSRM driving-route miles from 225 Arizona Ave. Metro miles are OSRM route miles from each court to the nearest Metro E Line station; walking minutes are estimated at 20 min/mi because the public OSRM demo returns car-speed durations for foot routes.",
+      "mapMethod": "Map connector lines are straight-line visual guides, not turn-by-turn route polylines; directions links open Google Maps for live routing."
+    },
+    "courts": [
+      {
+        "id": "B2",
+        "name": "Santa Monica Family YMCA",
+        "address": "1332 6th St, Santa Monica, CA 90401",
+        "lat": 34.0187586,
+        "lon": -118.4943432,
+        "marker_class": "court_member",
+        "category": "Member/guest gym",
+        "access": "Gym access is membership/guest-pass based; verify free-play windows on the branch schedule.",
+        "indoor_status": "Confirmed gym; basketball programming/free-play noted by YMCA sources.",
+        "college": false,
+        "rank_note": "Closest indoor gym option to the office, but not true public drop-in.",
+        "office_distance_mi": 0.3,
+        "nearest_metro_id": "M1",
+        "nearest_metro_name": "Downtown Santa Monica E Line",
+        "metro_distance_mi": 0.51,
+        "metro_walk_minutes": 10,
+        "source_notes": "YMCA location page lists a Gym among facilities; Santa Monica YMCA basketball page says youth games are held at the branch and the Y offers pick-up basketball/free-play windows at local YMCA locations.",
+        "links": [
+          "https://www.ymca.org/locations/santa-monica-family-ymca",
+          "https://ymcasm.org/youth-basketball/"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0187586,-118.4943432&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0187586,-118.4943432&destination=34.0136604,-118.4916499&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0187586,-118.4943432"
+      },
+      {
+        "id": "B1",
+        "name": "Memorial Park Gym and Fitness Room",
+        "address": "1401 Olympic Blvd, Santa Monica, CA 90404",
+        "lat": 34.019769,
+        "lon": -118.480427,
+        "marker_class": "court_public",
+        "category": "Public drop-in gym",
+        "access": "Public drop-in basketball; no advance reservation; low daily fee/pass listed by the City.",
+        "indoor_status": "Confirmed indoor gymnasium.",
+        "college": false,
+        "rank_note": "Best true public indoor drop-in option close to the office.",
+        "office_distance_mi": 1.51,
+        "nearest_metro_id": "M2",
+        "nearest_metro_name": "17th Street/SMC E Line",
+        "metro_distance_mi": 0.44,
+        "metro_walk_minutes": 9,
+        "source_notes": "City page says Memorial Park Gym is popular for drop-in sports like basketball; the drop-in page lists weekday and Saturday basketball windows and daily fees.",
+        "links": [
+          "https://www.santamonica.gov/places/city-facilities/memorial-park-gym-and-fitness-room",
+          "https://www.santamonica.gov/process-explainers/how-to-access-memorial-park-gym-drop-in-sports"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.019769,-118.480427&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.019769,-118.480427&destination=34.0231598,-118.480379&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.019769,-118.480427"
+      },
+      {
+        "id": "B3",
+        "name": "Santa Monica College Corsair Gym",
+        "address": "1900 Pico Blvd, Santa Monica, CA 90405",
+        "lat": 34.0189,
+        "lon": -118.4711,
+        "marker_class": "court_college",
+        "category": "College gym / verify public access",
+        "access": "College facility; public drop-in was not confirmed from official sources. Best lead if someone can access SMC classes, campus programs, or events.",
+        "indoor_status": "Confirmed indoor college gym used for basketball classes/competitions.",
+        "college": true,
+        "rank_note": "Closest college-court lead, but treat as verify-first rather than guaranteed open gym.",
+        "office_distance_mi": 2.34,
+        "nearest_metro_id": "M2",
+        "nearest_metro_name": "17th Street/SMC E Line",
+        "metro_distance_mi": 0.76,
+        "metro_walk_minutes": 15,
+        "source_notes": "SMC facilities page says Corsair Gym is home to classes and competitions in basketball, badminton, table tennis, volleyball, and other indoor sports. SMC maps page provides the main-campus address/coordinates; marker is approximate for the gym area.",
+        "links": [
+          "https://www.smc.edu/academics/academic-departments/kinesiology-athletics/facilities.php",
+          "https://www.smc.edu/about/campuses/maps-directions.php"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0189,-118.4711&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0189,-118.4711&destination=34.0231598,-118.480379&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0189,-118.4711"
+      },
+      {
+        "id": "B4",
+        "name": "Rustic Canyon Recreation Center",
+        "address": "601 Latimer Rd, Santa Monica, CA 90402",
+        "lat": 34.0390043,
+        "lon": -118.5144192,
+        "marker_class": "court_public",
+        "category": "Public recreation center",
+        "access": "Public LA City recreation center; call ahead for open-gym hours and conflicts with classes/permits.",
+        "indoor_status": "Confirmed indoor/lighted basketball courts in facility features.",
+        "college": false,
+        "rank_note": "Strong public indoor-court fallback north of Santa Monica; not Metro-convenient.",
+        "office_distance_mi": 2.55,
+        "nearest_metro_id": "M1",
+        "nearest_metro_name": "Downtown Santa Monica E Line",
+        "metro_distance_mi": 3.35,
+        "metro_walk_minutes": 67,
+        "source_notes": "LA Parks page lists basketball under sports/fitness and facility features include Basketball Courts (Lighted / Indoor).",
+        "links": [
+          "https://recreation.parks.lacity.gov/reccenter/rustic-canyon"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0390043,-118.5144192&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0390043,-118.5144192&destination=34.0136604,-118.4916499&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0390043,-118.5144192"
+      },
+      {
+        "id": "B5",
+        "name": "Stoner Recreation Center",
+        "address": "1835 Stoner Ave, Los Angeles, CA 90025",
+        "lat": 34.038829,
+        "lon": -118.4533616,
+        "marker_class": "court_public",
+        "category": "Public recreation center",
+        "access": "Public LA City recreation center with adult open-gym basketball references; verify current schedule before going.",
+        "indoor_status": "Gym/open-gym basketball noted; indoor basketball court details should be verified by phone.",
+        "college": false,
+        "rank_note": "Closest public West LA option near the Expo/Bundy station.",
+        "office_distance_mi": 4.34,
+        "nearest_metro_id": "M4",
+        "nearest_metro_name": "Expo/Bundy E Line",
+        "metro_distance_mi": 0.73,
+        "metro_walk_minutes": 15,
+        "source_notes": "LA Parks page lists Basketball in sports/fitness programs and notes adult open gym basketball; page also references gym use/permits.",
+        "links": [
+          "https://recreation.parks.lacity.gov/reccenter/stoner"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.038829,-118.4533616&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.038829,-118.4533616&destination=34.0316631,-118.4531105&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.038829,-118.4533616"
+      },
+      {
+        "id": "B7",
+        "name": "Westwood Recreation Center",
+        "address": "1350 S Sepulveda Blvd, Los Angeles, CA 90025",
+        "lat": 34.0532353,
+        "lon": -118.448078,
+        "marker_class": "court_verify",
+        "category": "Public recreation center / verify indoor",
+        "access": "Public LA City recreation center; official page lists basketball programs/court, but indoor status/open-gym availability should be verified.",
+        "indoor_status": "Basketball court confirmed; indoor status not clearly confirmed in the official page extract.",
+        "college": false,
+        "rank_note": "Useful nearby backup, especially if Stoner is booked; verify indoor/open-gym before traveling.",
+        "office_distance_mi": 5.96,
+        "nearest_metro_id": "M5",
+        "nearest_metro_name": "Expo/Sepulveda E Line",
+        "metro_distance_mi": 1.48,
+        "metro_walk_minutes": 30,
+        "source_notes": "LA Parks page lists Basketball in sports/fitness programs and Basketball Court in facility features, but the page labels the outdoor courts separately and does not clearly label the main court as indoor.",
+        "links": [
+          "https://recreation.parks.lacity.gov/reccenter/westwood"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.0532353,-118.448078&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.0532353,-118.448078&destination=34.0354335,-118.4341435&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.0532353,-118.448078"
+      },
+      {
+        "id": "B6",
+        "name": "UCLA John Wooden Center / Pardee Gym",
+        "address": "221 Westwood Plaza, Los Angeles, CA 90095",
+        "lat": 34.071649,
+        "lon": -118.4454088,
+        "marker_class": "court_college",
+        "category": "College rec center / membership",
+        "access": "UCLA Recreation access is for registered UCLA students and eligible affiliates/community members with Rec membership; not casual public drop-in.",
+        "indoor_status": "Confirmed indoor college basketball; Collins Courts closed during JWC project and sport activity is relocated to Pardee Gym.",
+        "college": true,
+        "rank_note": "Best full college-rec option if someone has or can obtain UCLA Rec access; farthest from office among this shortlist.",
+        "office_distance_mi": 9.07,
+        "nearest_metro_id": "M6",
+        "nearest_metro_name": "Westwood/Rancho Park E Line",
+        "metro_distance_mi": 3.57,
+        "metro_walk_minutes": 71,
+        "source_notes": "UCLA Recreation page says JWC is available to registered students/faculty/staff/retirees/alumni/community members via Rec membership, and notes open-rec basketball in Pardee Gym during Collins Court closure; Collins Courts are described as an indoor basketball gymnasium with 3 full-sized courts.",
+        "links": [
+          "https://recreation.ucla.edu/facilities/jwc"
+        ],
+        "office_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.016733,-118.498116&destination=34.071649,-118.4454088&travelmode=driving",
+        "metro_directions_url": "https://www.google.com/maps/dir/?api=1&origin=34.071649,-118.4454088&destination=34.0368181,-118.4245788&travelmode=walking",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=34.071649,-118.4454088"
+      }
+    ]
   }
 }
