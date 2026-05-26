@@ -6,6 +6,7 @@ Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apa
 
 - `index.html` - single-page app shell.
 - `styles.css` - responsive styling.
+- `leaflet-fallback.css` - local critical Leaflet layout CSS so panes, tiles, markers, controls, and popups still render correctly if the CDN stylesheet fails.
 - `app.js` - client-side JSON loading, filtering, cards, and Leaflet map rendering.
 - `data/app-data.json` - source of truth for listings, stats, reviews, area notes, and asset paths.
 - `assets/` - mapped PDF and static fallback map images.
@@ -21,7 +22,15 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000/`.
 
-No build step and no npm dependencies are required. Leaflet and OpenStreetMap tiles load from CDN at runtime; the static map images remain visible if the interactive map cannot load.
+No build step and no npm dependencies are required. Leaflet JavaScript and OpenStreetMap tiles load from CDN at runtime; critical Leaflet CSS is also committed locally as `leaflet-fallback.css`, so the interactive map layout survives a failed CDN stylesheet. The static map images remain visible if the interactive map cannot load.
+
+Optional static verification:
+
+```sh
+node --check app.js
+node --check scripts/verify-static.js
+node scripts/verify-static.js
+```
 
 ## GitHub Pages
 
