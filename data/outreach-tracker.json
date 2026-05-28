@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T00:27:20-07:00",
+  "generatedAt": "2026-05-28T08:45:41-07:00",
   "sender": {
     "name": "Harsha",
     "email": "harsha3190@gmail.com"
@@ -7,11 +7,10 @@
   "summary": {
     "totalLeads": 9,
     "emailCandidates": 5,
-    "sent": 0,
-    "failed": 5,
+    "sent": 5,
+    "failed": 0,
     "notSentNoEmail": 4,
-    "authStatus": "auth_failed",
-    "authError": "SMTP authentication failed; no emails were sent. Provide a valid Gmail App Password or complete Gmail OAuth before retrying."
+    "authStatus": "authenticated_sent"
   },
   "messageTemplate": {
     "subjectBase": "3 Bed / 3 Bath Availability + Tour on 05/29 or 05/30",
@@ -50,10 +49,11 @@
       "contactConfidence": "medium",
       "sourceNotes": "Contact was exposed on a property page for 11254 Mississippi; page appeared more sales/investment oriented than a pure rental leasing page.",
       "recipientEmail": "anisa@anisaabji.com",
-      "sentAt": "",
+      "sentAt": "2026-05-28T08:45:30-07:00",
       "subject": "3 Bed / 3 Bath Availability + Tour on 05/29 or 05/30 \u2014 11254 Mississippi Ave #104A",
-      "emailStatus": "blocked_email_auth_failed",
-      "smtpResponse": ""
+      "emailStatus": "sent",
+      "smtpResponse": "Sent via Gmail SMTP.",
+      "messageId": "<177998312921.29197.11129555978487044738@gmail.com>"
     },
     {
       "priority": 3,
@@ -82,10 +82,11 @@
       "contactConfidence": "low-medium",
       "sourceNotes": "Email came from search snippet/agent pattern; phone/contact path is stronger than direct email confidence.",
       "recipientEmail": "eric.cortes@exprealty.com",
-      "sentAt": "",
+      "sentAt": "2026-05-28T08:45:32-07:00",
       "subject": "3 Bed / 3 Bath Availability + Tour on 05/29 or 05/30 \u2014 1301 S Westgate Ave #402",
-      "emailStatus": "blocked_email_auth_failed",
-      "smtpResponse": ""
+      "emailStatus": "sent",
+      "smtpResponse": "Sent via Gmail SMTP.",
+      "messageId": "<177998313160.29197.2923820626017559372@gmail.com>"
     },
     {
       "priority": 5,
@@ -98,10 +99,11 @@
       "contactConfidence": "high",
       "sourceNotes": "Verified in Rent.com page HTML.",
       "recipientEmail": "avagoldenproperties@gmail.com",
-      "sentAt": "",
+      "sentAt": "2026-05-28T08:45:34-07:00",
       "subject": "3 Bed / 3 Bath Availability + Tour on 05/29 or 05/30 \u2014 1449 Butler Ave #3",
-      "emailStatus": "blocked_email_auth_failed",
-      "smtpResponse": ""
+      "emailStatus": "sent",
+      "smtpResponse": "Sent via Gmail SMTP.",
+      "messageId": "<177998313394.29197.15488883271614496763@gmail.com>"
     },
     {
       "priority": 6,
@@ -114,10 +116,11 @@
       "contactConfidence": "high",
       "sourceNotes": "Verified in Zumper page state.",
       "recipientEmail": "remax91108@gmail.com",
-      "sentAt": "",
+      "sentAt": "2026-05-28T08:45:37-07:00",
       "subject": "3 Bed / 3 Bath Availability + Tour on 05/29 or 05/30 \u2014 1522 Amherst Ave #402",
-      "emailStatus": "blocked_email_auth_failed",
-      "smtpResponse": ""
+      "emailStatus": "sent",
+      "smtpResponse": "Sent via Gmail SMTP.",
+      "messageId": "<177998313623.29197.15321860185952277624@gmail.com>"
     },
     {
       "priority": 7,
@@ -130,10 +133,11 @@
       "contactConfidence": "high",
       "sourceNotes": "Verified on Coldwell Banker listing and team profile.",
       "recipientEmail": "la.realtors9@gmail.com",
-      "sentAt": "",
+      "sentAt": "2026-05-28T08:45:39-07:00",
       "subject": "3 Bed / 3 Bath Availability + Tour on 05/29 or 05/30 \u2014 1832 S Barrington Ave #401",
-      "emailStatus": "blocked_email_auth_failed",
-      "smtpResponse": ""
+      "emailStatus": "sent",
+      "smtpResponse": "Sent via Gmail SMTP.",
+      "messageId": "<177998313866.29197.9357794705635115367@gmail.com>"
     },
     {
       "priority": 8,
