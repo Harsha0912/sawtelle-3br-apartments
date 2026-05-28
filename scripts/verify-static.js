@@ -38,7 +38,9 @@ const checks = [
       /id="lifestyle-routes"/,
       /id="route-priority"/,
       /id="availability-filter"/,
-      /data\/availability-checks\.json/
+      /id="outreach-tracker"/,
+      /data\/availability-checks\.json/,
+      /data\/outreach-tracker\.json/
     ]
   },
   {
@@ -53,7 +55,10 @@ const checks = [
       /renderLifestyleFit/,
       /AVAILABILITY_URL/,
       /renderAvailabilityReport/,
-      /availability-card/
+      /availability-card/,
+      /OUTREACH_URL/,
+      /renderOutreachTracker/,
+      /outreach-card/
     ]
   },
   {
@@ -75,12 +80,21 @@ const checks = [
     ]
   },
   {
+    file: "data/outreach-tracker.json",
+    tests: [
+      /"leads"\s*:/,
+      /"messageTemplate"\s*:/,
+      /"emailStatus"\s*:/
+    ]
+  },
+  {
     file: "styles.css",
     tests: [
       /\.rank-card/,
       /\.ranking-hero/,
       /\.primary-source/,
       /\.availability-card/,
+      /\.outreach-card/,
       /\.lifestyle-fit/,
       /\.anchor-grid/,
       /\.court-card/,
@@ -125,6 +139,17 @@ if (!Array.isArray(availabilityChecks.listings) || availabilityChecks.listings.l
 }
 if (!availabilityChecks.listings.some((item) => item.availabilityStatus === "available_now")) {
   throw new Error("data/availability-checks.json failed verification: expected at least one available_now row.");
+}
+const outreachText = fs.readFileSync("data/outreach-tracker.json", "utf8");
+if (/SMTPAuthenticationError|BadCredentials|support\.google\.com\/mail/.test(outreachText)) {
+  throw new Error("data/outreach-tracker.json failed verification: raw SMTP auth diagnostics should not be published.");
+}
+const outreach = JSON.parse(outreachText);
+if (!Array.isArray(outreach.leads) || outreach.leads.length < 9) {
+  throw new Error("data/outreach-tracker.json failed verification: expected nine townhome-focused outreach leads.");
+}
+if (!outreach.leads.some((lead) => lead.emailStatus === "blocked_email_auth_failed" || lead.emailStatus === "sent")) {
+  throw new Error("data/outreach-tracker.json failed verification: expected sent or auth-blocked direct-email rows.");
 }
 const topPicks = JSON.parse(fs.readFileSync("data/top-picks.json", "utf8"));
 if (!Array.isArray(topPicks.rankings) || topPicks.rankings.length === 0) {

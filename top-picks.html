@@ -18,6 +18,7 @@
           <a href="index.html#listings">Listings</a>
           <a href="top-picks.html#lifestyle-routes">UCLA/Sawtelle fit</a>
           <a href="top-picks.html#availability-filter">Availability</a>
+          <a href="top-picks.html#outreach-tracker">Outreach</a>
           <a href="top-picks.html" aria-current="page">Top picks</a>
         </div>
       </nav>
@@ -29,6 +30,7 @@
           <div class="hero-actions">
             <a class="button primary" href="#lifestyle-routes">UCLA/Sawtelle fit</a>
             <a class="button secondary" href="#availability-filter">Check availability</a>
+            <a class="button secondary" href="#outreach-tracker">Outreach tracker</a>
             <a class="button secondary" href="index.html#listings">Back to map and listings</a>
             <a class="button secondary" href="#ranked-list">View review rankings</a>
           </div>
@@ -137,6 +139,33 @@
         </details>
       </section>
 
+      <section class="section" id="outreach-tracker" aria-labelledby="outreach-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Leasing outreach tracker</p>
+            <h2 id="outreach-title">3x3 tour/application email status</h2>
+            <p id="outreach-summary">Loading outreach tracker...</p>
+          </div>
+          <p class="result-count" id="outreach-generated" aria-live="polite">Loading...</p>
+        </div>
+
+        <div id="outreach-stats" class="outreach-stats" aria-label="Outreach status counts"></div>
+
+        <div class="top-picks-grid outreach-notes">
+          <article class="info-card">
+            <h3>Message sent / queued</h3>
+            <p id="outreach-message-summary">Loading outreach message details...</p>
+            <ul id="outreach-questions"></ul>
+          </article>
+          <article class="info-card">
+            <h3>Next steps</h3>
+            <p id="outreach-next-steps">Loading follow-up notes...</p>
+          </article>
+        </div>
+
+        <div class="outreach-list" id="outreach-list"></div>
+      </section>
+
       <section class="section" aria-labelledby="rankings-title">
         <div class="section-heading">
           <div>
@@ -169,7 +198,7 @@
     </main>
 
     <footer class="footer">
-      <p>Data loaded from <code>data/top-picks.json</code> and <code>data/availability-checks.json</code>. Verify availability, fees, concessions, parking, pets, utilities, and lease terms before applying.</p>
+      <p>Data loaded from <code>data/top-picks.json</code>, <code>data/availability-checks.json</code>, and <code>data/outreach-tracker.json</code>. Verify availability, fees, concessions, parking, pets, utilities, and lease terms before applying.</p>
     </footer>
 
     <script src="top-picks.js"></script>

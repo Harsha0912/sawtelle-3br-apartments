@@ -3,22 +3,26 @@
 
   const TOP_PICKS_URL = "data/top-picks.json";
   const AVAILABILITY_URL = "data/availability-checks.json";
+  const OUTREACH_URL = "data/outreach-tracker.json";
   const $ = (id) => document.getElementById(id);
 
   document.addEventListener("DOMContentLoaded", init);
 
   async function init() {
     try {
-      const [topPicks, availability] = await Promise.all([
+      const [topPicks, availability, outreach] = await Promise.all([
         loadJson(TOP_PICKS_URL),
         loadJson(AVAILABILITY_URL),
+        loadJson(OUTREACH_URL),
       ]);
       renderTopPicks(topPicks);
       renderAvailabilityReport(availability);
+      renderOutreachTracker(outreach);
     } catch (error) {
       $("top-picks-summary").textContent = error.message || "Unable to load ranked recommendations.";
       $("ranking-count").textContent = "Data unavailable";
       if ($("availability-summary")) $("availability-summary").textContent = error.message || "Unable to load availability data.";
+      if ($("outreach-summary")) $("outreach-summary").textContent = error.message || "Unable to load outreach tracker.";
       console.error(error);
     }
   }
@@ -108,6 +112,117 @@
     $("availability-list").innerHTML = rows.length
       ? rows.map((row) => renderAvailabilityCard(row, false)).join("")
       : '<div class="empty-state">No availability rows loaded.</div>';
+  }
+
+  function renderOutreachTracker(data) {
+    if (!$("outreach-summary")) return;
+    const rows = Array.isArray(data.leads) ? data.leads.slice().sort((a, b) => Number(a.priority || 0) - Number(b.priority || 0)) : [];
+    const summary = data.summary || {};
+    const sent = Number(summary.sent || 0);
+    const failed = Number(summary.failed || 0);
+    const noEmail = Number(summary.notSentNoEmail || rows.filter((row) => !row.recipientEmail).length);
+    const emailCandidates = Number(summary.emailCandidates || rows.filter((row) => row.recipientEmail).length);
+    const blocked = rows.filter((row) => row.emailStatus === "blocked_email_auth_failed").length;
+    const authFailed = summary.authStatus === "auth_failed";
+
+    $("outreach-summary").textContent = rows.length
+      ? `${rows.length} exact 3x3/townhome-focused leads are tracked. ${emailCandidates} have direct email recipients; ${sent} sent; ${failed} failed/blocked; ${noEmail} need phone or contact-form follow-up.`
+      : "No outreach rows loaded.";
+    $("outreach-generated").textContent = data.generatedAt || "Unknown";
+    $("outreach-stats").innerHTML = renderOutreachStats({ total: rows.length, emailCandidates, sent, failed, blocked, noEmail });
+
+    const template = data.messageTemplate || {};
+    $("outreach-message-summary").textContent = template.subjectBase
+      ? `Subject base: ${template.subjectBase}. Tour window requested: ${template.tourDates || "Friday/Saturday"}.`
+      : "No outreach message template loaded.";
+    $("outreach-questions").innerHTML = renderList(template.questions || []);
+    $("outreach-next-steps").textContent = authFailed
+      ? "Gmail SMTP authentication failed, so no messages were sent yet. Retry after providing a valid Gmail App Password or completing Gmail OAuth; use phone/contact forms for rows without verified direct email."
+      : "Watch for leasing replies, then call or submit contact forms for rows without verified direct email.";
+
+    $("outreach-list").innerHTML = rows.length
+      ? rows.map(renderOutreachCard).join("")
+      : '<div class="empty-state">No outreach tracker rows loaded.</div>';
+  }
+
+  function renderOutreachStats(counts) {
+    const items = [
+      ["Total tracked", counts.total],
+      ["Direct email leads", counts.emailCandidates],
+      ["Sent", counts.sent],
+      ["Failed/blocked", counts.failed],
+      ["Auth-blocked", counts.blocked],
+      ["Phone/form follow-up", counts.noEmail],
+    ];
+    return `<dl class="outreach-stats-grid">${items.map(([label, value]) => `
+      <div class="outreach-stat ${label === "Sent" ? "success" : label === "Failed/blocked" || label === "Auth-blocked" ? "warning" : ""}">
+        <dt>${escapeHtml(label)}</dt>
+        <dd>${escapeHtml(value || 0)}</dd>
+      </div>
+    `).join("")}</dl>`;
+  }
+
+  function renderOutreachCard(lead) {
+    const status = lead.emailStatus || "needs_follow_up";
+    const email = lead.recipientEmail
+      ? `<a href="mailto:${escapeAttr(lead.recipientEmail)}">${escapeHtml(lead.recipientEmail)}</a>`
+      : '<span class="meta">No verified direct email</span>';
+    const subject = lead.subject ? `<p><strong>Subject:</strong> ${escapeHtml(lead.subject)}</p>` : "";
+    const sent = lead.sentAt ? `<p><strong>Sent:</strong> ${escapeHtml(lead.sentAt)}</p>` : "";
+    return `
+      <article class="outreach-card status-${escapeAttr(statusClass(status))}">
+        <div class="outreach-card-top">
+          <div class="outreach-rank">${escapeHtml(lead.priority || "")}</div>
+          <div>
+            <div class="outreach-title-row">
+              <div>
+                <h3>${escapeHtml(lead.name || "Unnamed lead")}</h3>
+                <div class="meta">${escapeHtml(lead.address || "Address to verify")}</div>
+              </div>
+              <span class="status-pill status-${escapeAttr(statusClass(status))}">${escapeHtml(formatOutreachStatus(status))}</span>
+            </div>
+            <div class="badges">
+              <span class="badge">${escapeHtml(lead.rent || "Rent to verify")}</span>
+              <span class="badge">${escapeHtml(lead.bedsBaths || "Beds/baths to verify")}</span>
+              <span class="badge">${lead.townhomeFocus ? "Townhome-focused" : "3x3 lead"}</span>
+              <span class="badge">${escapeHtml(lead.contactConfidence || "confidence unknown")}</span>
+            </div>
+          </div>
+        </div>
+        <div class="outreach-card-body">
+          <section class="detail-block">
+            <h4>Recipient / status</h4>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Status:</strong> ${escapeHtml(formatOutreachStatus(status))}</p>
+            ${sent}
+            ${subject}
+          </section>
+          <section class="detail-block">
+            <h4>Contact path and source notes</h4>
+            <p>${escapeHtml(lead.contactPath || "Contact path needs follow-up.")}</p>
+            <p class="meta">${escapeHtml(lead.sourceNotes || "No source notes loaded.")}</p>
+          </section>
+        </div>
+      </article>
+    `;
+  }
+
+  function formatOutreachStatus(status) {
+    return ({
+      sent: "Sent",
+      failed_refused: "Failed: recipient refused",
+      failed_exception: "Failed: send error",
+      blocked_email_auth_failed: "Blocked: Gmail auth failed",
+      not_sent_no_verified_email: "No verified email — use phone/form",
+      pending: "Pending",
+    })[status] || "Needs follow-up";
+  }
+
+  function statusClass(status) {
+    if (status === "sent") return "sent";
+    if (status === "not_sent_no_verified_email") return "no-email";
+    if (status && status.includes("failed")) return "failed";
+    return "pending";
   }
 
   function renderRankCard(item) {

@@ -1,6 +1,6 @@
 # Sawtelle 3BR Apartment Report
 
-Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apartment report generated on 2026-05-25. The main page now also includes a mapped indoor-basketball shortlist from the 255 Arizona Ave office, with each court's office distance and nearest Metro E Line distance. The top-picks page includes a UCLA basketball + Sawtelle food route lens for each ranked apartment.
+Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apartment report generated on 2026-05-25. The main page now also includes a mapped indoor-basketball shortlist from the 255 Arizona Ave office, with each court's office distance and nearest Metro E Line distance. The top-picks page includes a UCLA basketball + Sawtelle food route lens, strict availability checks, and a 3x3 leasing outreach tracker.
 
 ## Files
 
@@ -13,6 +13,7 @@ Static GitHub Pages app for the mapped Sawtelle / West Los Angeles 3-bedroom apa
 - `data/app-data.json` - source of truth for listings, stats, reviews, area notes, basketball court/Metro/office distances, and asset paths.
 - `data/top-picks.json` - ranked shortlist, review summaries, UCLA/Sawtelle/office route context, evidence snippets, source links, and tour checklist.
 - `data/ranking-source-snippets.json` - raw text-rendered scrape evidence archive used to build the top-picks summaries.
+- `data/outreach-tracker.json` - leasing outreach status tracker for exact 3x3/townhome-focused leads.
 - `assets/` - mapped PDF and static fallback map images.
 - `.nojekyll` - keeps GitHub Pages from running Jekyll processing.
 

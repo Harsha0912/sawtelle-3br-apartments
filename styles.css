@@ -701,3 +701,70 @@ input, select {
   .availability-title-row, .all-options summary, .lifestyle-fit-header { flex-direction: column; align-items: start; }
   .lifestyle-shortlist li { grid-template-columns: 1fr; }
 }
+
+
+.outreach-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .75rem;
+  margin: 0 0 1rem;
+}
+.outreach-stat {
+  padding: .9rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgb(37 32 24 / 6%);
+}
+.outreach-stat.success { background: #edf5f2; border-color: #b8d2c9; }
+.outreach-stat.warning { background: #fff5e5; border-color: #e5b36a; }
+.outreach-stat dd { font-size: 1.55rem; }
+.outreach-notes { margin: 1rem 0 1.25rem; }
+.outreach-notes p { margin: .45rem 0 0; color: var(--muted); }
+.outreach-list {
+  display: grid;
+  gap: .9rem;
+}
+.outreach-card {
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--accent-2);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgb(37 32 24 / 7%);
+}
+.outreach-card.status-sent { border-left-color: var(--green); }
+.outreach-card.status-failed { border-left-color: #b95f27; }
+.outreach-card.status-no-email { border-left-color: #76716a; }
+.outreach-card-top {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .85rem;
+  align-items: start;
+}
+.outreach-rank {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  font-weight: 900;
+}
+.outreach-title-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+.outreach-title-row h3 { margin: 0; }
+.outreach-card-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: .8rem;
+  margin-top: .85rem;
+}
+.status-pill.status-sent { background: #e4f2ea; border-color: #a8ceb9; color: #125333; }
+.status-pill.status-failed { background: #fff0df; border-color: #e5b36a; color: #7a3f14; }
+.status-pill.status-no-email { background: #f2f0ec; border-color: #d7d0c4; color: #4f4a44; }
